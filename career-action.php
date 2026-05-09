@@ -45,9 +45,9 @@ $expected_ctc = htmlspecialchars(stripslashes(trim($_POST['expectedctc'])));
 //     }
 // }
 
-$allowed_origins = array('https://jetcotech.in/', 'https://www.jetcotech.in/', 'http://jetcotech.in/', 'http://www.jetcotech.in/', 'http://jetcotech.in', 'http://www.jetcotech.in', 'https://jetcotech.in', 'https://www.jetcotech.in');
+$allowed_origins = array('https://jetcotech.com/', 'https://www.jetcotech.com/', 'http://jetcotech.com/', 'http://www.jetcotech.com/', 'http://jetcotech.com', 'http://www.jetcotech.com', 'https://jetcotech.com', 'https://www.jetcotech.com');
 if (!in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
-    header('location:https://jetcotech.in/contact-us.html');
+    header('location:https://jetcotech.com/contact-us.html');
 }
 $curlArr = array_merge($_POST, $_SERVER);
 $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
@@ -61,7 +61,7 @@ if ($response->result) {
     $curlArr['bcoz'] = "API CONDITION FAIL";
     $curlArr['status'] = "FAIL";
     $response = send_request($curlArr);
-    header('location:https://jetcotech.in/contact-us.html');
+    header('location:https://jetcotech.com/contact-us.html');
 } else {
     if (
         isset($fname) && trim($fname) !== '' && 
@@ -81,7 +81,7 @@ if ($response->result) {
                 $curlArr['bcoz'] = "JUNK DETACT";
                 $curlArr['status'] = "FAIL";
                 $response = send_request($curlArr);
-                header('location:https://jetcotech.in/contact-us.html');
+                header('location:https://jetcotech.com/contact-us.html');
             } else {
                 // preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $message, $msg_match);
                 // preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $msg_match_email);
@@ -96,7 +96,7 @@ if ($response->result) {
                 //     $curlArr['bcoz'] = "JUNK DETACT";
                 //     $curlArr['status'] = "FAIL";
                 //     $response = send_request($curlArr);
-                //     header('location:https://jetcotech.in/contact-us.html');
+                //     header('location:https://jetcotech.com/contact-us.html');
                 // } else {
                     require_once('phpmailer/class.phpmailer.php');
                     $message_body = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -166,8 +166,8 @@ if ($response->result) {
                     try {
                         $mail->Host = "mail.smtp2go.com"; // SMTP server
                         $mail->SMTPDebug = 0;                     // enables SMTP debug information (for testing)
-                        $mail->AddAddress('hr@jetcotech.in', 'New Career Enquiry From Jetco Industries Corporate Website');
-                        $mail->SetFrom('support@jetcotech.in', 'New Career Enquiry From Jetco Industries Corporate Website');
+                        $mail->AddAddress('hr@jetcotech.com', 'New Career Enquiry From Jetco Industries Corporate Website');
+                        $mail->SetFrom('support@jetcotech.com', 'New Career Enquiry From Jetco Industries Corporate Website');
                         $mail->AddBCC('dcbrainsinquiry@gmail.com', 'New Career Enquiry From Jetco Industries Corporate Website');
                         // $mail->Port = 443;
                         $mail->Port = 80;
@@ -193,7 +193,7 @@ if ($response->result) {
                         $curlArr['bcoz'] = "MAIL SEND SUCCUSS";
                         $curlArr['status'] = "SUCCESS";
                         $response = send_request($curlArr);
-                        header('location:https://www.jetcotech.in/thankyou-career.html');
+                        header('location:https://www.jetcotech.com/thankyou-career.html');
                         //echo "Message Sent OK<p></p>\n";
                     } catch (phpmailerException $e) {
                         $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
@@ -226,9 +226,9 @@ if ($response->result) {
 ?>
             <script>
                 if (confirm("You have enter Wrong Captcha.....Please Enter Correct Captcha Code")) {
-                    window.location.href = "https://jetcotech.in/contact-us.html";
+                    window.location.href = "https://jetcotech.com/contact-us.html";
                 } else {
-                    window.location.href = "https://jetcotech.in/contact-us.html";
+                    window.location.href = "https://jetcotech.com/contact-us.html";
                 }
             </script>
         <?php
@@ -244,9 +244,9 @@ if ($response->result) {
         ?>
         <script>
             if (confirm("Please Enter All Details Correct..")) {
-                window.location.href = "https://jetcotech.in/contact-us.html";
+                window.location.href = "https://jetcotech.com/contact-us.html";
             } else {
-                window.location.href = "https://jetcotech.in/contact-us.html";
+                window.location.href = "https://jetcotech.com/contact-us.html";
             }
         </script>
 

@@ -52,11 +52,11 @@ $path = $_POST['path'];
 
 $path1 = explode("/", $path);
 
-$allowed_origins = array('https://jetcotech.in/', 'https://www.jetcotech.in/', 'http://jetcotech.in/', 'http://www.jetcotech.in/','https://jetcotech.in', 'https://www.jetcotech.in', 'http://jetcotech.in', 'http://www.jetcotech.in');
+$allowed_origins = array('https://jetcotech.com/', 'https://www.jetcotech.com/', 'http://jetcotech.com/', 'http://www.jetcotech.com/','https://jetcotech.com', 'https://www.jetcotech.com', 'http://jetcotech.com', 'http://www.jetcotech.com');
 
 if (!in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
 
-    header('location:https://www.jetcotech.in/contact-us.html');
+    header('location:https://www.jetcotech.com/contact-us.html');
 
 }
 
@@ -88,7 +88,7 @@ if($response->result){
 
   $response = send_request($curlArr);
 
-  header('location:https://www.jetcotech.in/contact-us.html');
+  header('location:https://www.jetcotech.com/contact-us.html');
 
 }else{
 
@@ -112,7 +112,7 @@ if($response->result){
 
               $response = send_request($curlArr);
 
-              header('location:https://www.jetcotech.in/contact-us.html');
+              header('location:https://www.jetcotech.com/contact-us.html');
 
               
 
@@ -269,11 +269,11 @@ curl_close($ch);
 
               $mail->SMTPDebug= 0;                     // enables SMTP debug information (for testing)
 
-              $mail->AddAddress('sales@jetcotech.in', 'New Catalogue Request From Jetco Industries Corporate Website');
+              $mail->AddAddress('sales@jetcotech.com', 'New Catalogue Request From Jetco Industries Corporate Website');
 
-              $mail->SetFrom('support@jetcotech.in', 'New Catalogue Request From Jetco Industries Corporate Website');
+              $mail->SetFrom('support@jetcotech.com', 'New Catalogue Request From Jetco Industries Corporate Website');
 
-              $mail->AddCC('marketing@jetcotech.in', 'New Catalogue Request From Jetco Industries Corporate Website');
+              $mail->AddCC('marketing@jetcotech.com', 'New Catalogue Request From Jetco Industries Corporate Website');
 
               $mail->AddBCC('dcbrainsinquiry@gmail.com', 'New Catalogue Request From Jetco Industries Corporate Website');
 
@@ -346,11 +346,11 @@ curl_close($ch);
 
 if (confirm("You have enter Wrong Captcha.....Please Enter Correct Captcha Code")) {
 
-    window.location.href = "https://www.jetcotech.in/contact-us.html";
+    window.location.href = "https://www.jetcotech.com/contact-us.html";
 
 } else {
 
-    window.location.href = "https://www.jetcotech.in/contact-us.html";
+    window.location.href = "https://www.jetcotech.com/contact-us.html";
 
 }
 
@@ -382,11 +382,11 @@ if (confirm("You have enter Wrong Captcha.....Please Enter Correct Captcha Code"
 
 if (confirm("Please Enter All Details Correct..")) {
 
-    window.location.href = "https://www.jetcotech.in/contact-us.html";
+    window.location.href = "https://www.jetcotech.com/contact-us.html";
 
 } else {
 
-    window.location.href = "https://www.jetcotech.in/contact-us.html";
+    window.location.href = "https://www.jetcotech.com/contact-us.html";
 
 }
 
