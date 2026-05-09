@@ -1,0 +1,13 @@
+[01-Oct-2025 06:06:12 UTC] PHP Deprecated:  Optional parameter $port declared before required parameter $password is implicitly treated as a required parameter in /home/jetcotech/public_html/phpmailer/class.pop3.php on line 145
+[01-Oct-2025 06:06:12 UTC] PHP Deprecated:  Optional parameter $tval declared before required parameter $password is implicitly treated as a required parameter in /home/jetcotech/public_html/phpmailer/class.pop3.php on line 145
+[01-Oct-2025 06:06:12 UTC] PHP Warning:  Undefined array key "name" in /home/jetcotech/public_html/phpmailer/feedback_action.php on line 4
+[01-Oct-2025 06:06:12 UTC] PHP Warning:  Undefined array key "email" in /home/jetcotech/public_html/phpmailer/feedback_action.php on line 5
+[01-Oct-2025 06:06:12 UTC] PHP Warning:  Undefined array key "phone" in /home/jetcotech/public_html/phpmailer/feedback_action.php on line 6
+[01-Oct-2025 06:06:12 UTC] PHP Warning:  Undefined array key "message" in /home/jetcotech/public_html/phpmailer/feedback_action.php on line 7
+[01-Oct-2025 06:06:12 UTC] PHP Warning:  Undefined array key "cname" in /home/jetcotech/public_html/phpmailer/feedback_action.php on line 8
+[01-Oct-2025 06:06:12 UTC] PHP Warning:  Undefined array key "city" in /home/jetcotech/public_html/phpmailer/feedback_action.php on line 9
+[01-Oct-2025 06:06:12 UTC] PHP Warning:  Undefined variable $name in /home/jetcotech/public_html/phpmailer/feedback_action.php on line 11
+[01-Oct-2025 06:06:13 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/jetcotech/public_html/phpmailer/thankyou.php on line 1
+[01-Oct-2025 06:06:13 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/jetcotech/public_html/phpmailer/thankyou.php on line 1
+[01-Oct-2025 06:06:13 UTC] PHP Warning:  include(footer.php): Failed to open stream: No such file or directory in /home/jetcotech/public_html/phpmailer/thankyou.php on line 112
+[01-Oct-2025 06:06:13 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/jetcotech/public_html/phpmailer/thankyou.php on line 112

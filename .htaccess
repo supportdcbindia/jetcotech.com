@@ -1,0 +1,118 @@
+RewriteEngine On
+
+
+
+#RewriteRule 404.html/?$ 404.php
+
+RewriteRule index.html/?$ index.php
+
+RewriteRule about-us.html/?$ about.php
+
+RewriteRule clients.html/?$ clients.php
+
+RewriteRule facility.html/?$ facility.php
+
+RewriteRule certificate.html/?$ certificate.php
+
+RewriteRule gallery.html/?$ gallery.php
+
+RewriteRule contact-us.html/?$ contact-us.php
+
+RewriteRule thankyou.html/?$ thankyou.php
+
+RewriteRule become-a-dealer.html/?$ become-a-dealer.php
+
+
+
+
+
+RewriteRule heavy-duty-ladder-cable-tray.html/?$ heavy-duty-ladder-cable-tray.php
+
+RewriteRule embossed-perforated-cable-tray.html/?$ embossed-perforated-cable-tray.php
+
+RewriteRule perforated-cable-tray.html/?$ perforated-cable-tray.php
+
+RewriteRule ladder-cable-tray.html/?$ ladder-cable-tray.php
+
+RewriteRule wire-mesh-cable-tray.html/?$ wire-mesh-cable-tray.php
+
+RewriteRule raceway-cable-tray.html/?$ raceway-cable-tray.php
+
+RewriteRule cable-tray-accessories.html/?$ cable-tray-accessories.php
+
+RewriteRule decorative-poles.html/?$ decorative-poles.php
+
+RewriteRule frp-moulded-&-pultruded-gratings.html/?$ frp-moulded-&-pultruded-gratings.php
+
+RewriteRule signage-mast-pole.html/?$ signage-mast-pole.php
+
+
+
+
+
+
+
+
+
+RewriteRule polygonal-octagonal-lighting-poles.html/?$ polygonal-octagonal-lighting-poles.php
+
+RewriteRule swaged-lighting-poles.html/?$ swaged-lighting-poles.php
+
+
+
+RewriteRule ^high-mast-poles.html/?$ high-mast-poles.php
+
+RewriteRule flag-mast-poles.html/?$ flag-mast-poles.php
+
+RewriteRule stadium-mast-poles.html/?$ stadium-mast-poles.php
+
+RewriteRule conical-poles.html/?$ conical-poles.php
+
+RewriteRule solar-street-light-poles.html/?$ solar-street-light-poles.php
+
+RewriteRule hot-dip-galvanizing.html/?$ hot-dip-galvanizing.php
+
+
+
+#RewriteRule clients.html/?$ clients.php
+
+RewriteRule career.html/?$ career.php
+
+RewriteRule gallary.html/?$ gallary.php
+
+RewriteRule download.html/?$ download.php
+
+
+
+RewriteRule catalogue.html/?$ catalogue.php
+
+RewriteRule ^catalogue-(.*)\.html$ catalogue.php?data=$1 [L]
+
+
+
+
+
+RewriteRule product.html/?$ product.php
+
+RewriteRule cable-tray.html/?$ cable-tray.php
+
+RewriteRule lighting-poles.html/?$ lighting-poles.php
+
+RewriteRule mast-poles.html/?$ mast-poles.php
+
+RewriteRule frp-products.html/?$ frp-products.php
+
+
+
+
+
+
+
+RewriteRule ^([^_]*)_([^_]*)\.html$ product.php?cat=$1&type=$2 [L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
