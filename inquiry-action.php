@@ -4,17 +4,17 @@ error_reporting(0);
 $myfile = fopen("logs.txt", "a+") or die("Unable to open file!");
 fwrite($myfile, json_encode($_SERVER));
 fwrite($myfile, json_encode($_POST));
-$contact_page = "https://www.jetcotech.in/contact-us.html";
+$contact_page = "https://www.jetcotech.com/contact-us.html";
 
 $subject_line= "Lead From Jetco Industries Corporate Website";
 
-$from_email = "support@dcbindia.in";
+$from_email = "support@dcbindia.com";
 
 $to_email = "sales@jetcotech.in";
 
 $to_email1 = "marketing@jetcotech.in";
 
-$thanks_page = "https://www.jetcotech.in/thankyou.html";
+$thanks_page = "https://www.jetcotech.com/thankyou.html";
 
 
 
@@ -64,7 +64,7 @@ $country= htmlspecialchars(stripslashes(trim($_POST['city'])));
 
 
 
-$allowed_origins = array('https://jetcotech.in/', 'https://www.jetcotech.in/', 'http://jetcotech.in/', 'http://www.jetcotech.in/','https://jetcotech.in', 'https://www.jetcotech.in', 'http://jetcotech.in', 'http://www.jetcotech.in');
+$allowed_origins = array('https://jetcotech.com/', 'https://www.jetcotech.com/', 'http://jetcotech.com/', 'http://www.jetcotech.com/','https://jetcotech.com', 'https://www.jetcotech.com', 'http://jetcotech.com', 'http://www.jetcotech.com');
 
 if (!in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
 
@@ -356,13 +356,13 @@ curl_close($ch);
                   // );
 
                     // $mail->Port = 8025;
-                    $mail->Port = 80;
+                    $mail->Port = 465;
 
                     $mail->Subject = $subject_line;
 
                     $mail->SMTPAuth = true;
 
-                    $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for GMail
+                    $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
 
                     $mail->Username = "jetcotech";  
 

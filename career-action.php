@@ -166,7 +166,7 @@ if ($response->result) {
                     try {
                         $mail->Host = "mail.smtp2go.com"; // SMTP server
                         $mail->SMTPDebug = 0;                     // enables SMTP debug information (for testing)
-                        $mail->AddAddress('hr@jetcotech.com', 'New Career Enquiry From Jetco Industries Corporate Website');
+                        $mail->AddAddress('hr@jetcotech.in', 'New Career Enquiry From Jetco Industries Corporate Website');
                         $mail->SetFrom('support@jetcotech.com', 'New Career Enquiry From Jetco Industries Corporate Website');
                         $mail->AddBCC('dcbrainsinquiry@gmail.com', 'New Career Enquiry From Jetco Industries Corporate Website');
                         // $mail->Port = 443;

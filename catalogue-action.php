@@ -269,11 +269,11 @@ curl_close($ch);
 
               $mail->SMTPDebug= 0;                     // enables SMTP debug information (for testing)
 
-              $mail->AddAddress('sales@jetcotech.com', 'New Catalogue Request From Jetco Industries Corporate Website');
+              $mail->AddAddress('sales@jetcotech.in', 'New Catalogue Request From Jetco Industries Corporate Website');
 
               $mail->SetFrom('support@jetcotech.com', 'New Catalogue Request From Jetco Industries Corporate Website');
 
-              $mail->AddCC('marketing@jetcotech.com', 'New Catalogue Request From Jetco Industries Corporate Website');
+              $mail->AddCC('marketing@jetcotech.in', 'New Catalogue Request From Jetco Industries Corporate Website');
 
               $mail->AddBCC('dcbrainsinquiry@gmail.com', 'New Catalogue Request From Jetco Industries Corporate Website');
 
