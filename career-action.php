@@ -170,10 +170,10 @@ if ($response->result) {
                         $mail->SetFrom('support@jetcotech.com', 'New Career Enquiry From Jetco Industries Corporate Website');
                         $mail->AddBCC('dcbrainsinquiry@gmail.com', 'New Career Enquiry From Jetco Industries Corporate Website');
                         // $mail->Port = 443;
-                        $mail->Port = 80;
+                        $mail->Port = 465;
                         $mail->Subject = 'New Career Enquiry From Jetco Industries Corporate Website';
                         $mail->SMTPAuth = true;
-                        $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for GMail
+                        $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
                         $mail->Username = "jetcotech";
                         $mail->Password = "1X6JUN1HS5rTixGe";
                         $mail->MsgHTML($message_body);

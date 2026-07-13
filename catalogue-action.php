@@ -284,7 +284,7 @@ curl_close($ch);
 
               $mail->SMTPAuth = true;
 
-              $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for GMail
+              $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
 
               $mail->Username = "jetcotech";  
 
