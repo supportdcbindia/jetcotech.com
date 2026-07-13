@@ -14,9 +14,9 @@ error_reporting(-1);
 $siteUrl = "https://www.jetcotech.com";
 $companyName = "Jetcotech";
 $brandName = "Jetcotech";
-$logoUrl = $siteUrl . "/images/logo.png"; // update logo path if needed
-$phone = "+91 99999 99999"; // update phone
-$email = "info@jetcotech.com"; // update email
+$logoUrl = $siteUrl . "/images/logo-2.png"; // update logo path if needed
+$phone = "+91 75750 07163"; // update phone
+$email = "info@jetcotech.in"; // update email
 
 $requestPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $currentPage = basename($requestPath);
