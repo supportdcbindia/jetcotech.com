@@ -1,6 +1,22 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteBase /
+
+# --------------------------------------------------
+# Force HTTPS + WWW
+# http://jetcotech.com/page.php
+# => https://www.jetcotech.com/page.php
+# --------------------------------------------------
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.jetcotech\.com$ [NC]
+RewriteRule ^(.*)$ https://www.jetcotech.com/$1 [R=301,L]
 
 
+
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^index\.php$ https://www.jetcotech.com/? [R=301,L]
+
+</IfModule>
 
 #RewriteRule 404.html/?$ 404.php
 
