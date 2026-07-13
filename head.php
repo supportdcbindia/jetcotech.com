@@ -1,5 +1,10 @@
 <meta charset="utf-8">
-<?php /*?>
+<?php 
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(-1);
+
+/*?>
 <meta name="description" content="Consulting Finance Corporate Business - Consulting HTML Template">
 <meta name="keywords"
     content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
