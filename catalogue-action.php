@@ -278,7 +278,7 @@ curl_close($ch);
               $mail->AddBCC('dcbrainsinquiry@gmail.com', 'New Catalogue Request From Jetco Industries Corporate Website');
 
             //   $mail->Port = 8025;
-              $mail->Port = 80;
+              $mail->Port = 465;
 
               $mail->Subject = 'New Catalogue Request From Jetco Industries Corporate Website';
 
