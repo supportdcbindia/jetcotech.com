@@ -8,7 +8,7 @@ $contact_page = "https://www.jetcotech.com/contact-us.html";
 
 $subject_line= "Lead From Jetco Industries Corporate Website";
 
-$from_email = "support@dcbindia.com";
+$from_email = "support@jetcotech.com";
 
 $to_email = "sales@jetcotech.in";
 
