@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /cable-tray-manufacturer
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /cable-tray-manufacturer/index.html [L]

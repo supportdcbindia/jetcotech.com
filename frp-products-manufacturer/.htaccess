@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /frp-products-manufacturer
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /frp-products-manufacturer/index.html [L]
