@@ -59,8 +59,8 @@
                     <div class="news-block-three col-lg-4 col-md-4 col-sm-12">
                         <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="images/c-1.jpg" alt="" />
-                                <a href="images/c-1.jpg" class="lightbox-image overlay-box"><span
+                                <img src="images/certificate/iso-14001-DGzKy9Gx.webp" alt="" />
+                                <a href="images/certificate/iso-14001-DGzKy9Gx.webp" class="lightbox-image overlay-box"><span
                                         class="fa fa-plus"></span></a>
                             </div>
                         </div>
@@ -68,8 +68,8 @@
                     <div class="news-block-three col-lg-4 col-md-4 col-sm-12">
                         <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="images/c-2.jpg" alt="" />
-                                <a href="images/c-2.jpg" class="lightbox-image overlay-box"><span
+                                <img src="images/certificate/iso-45001-B3vp9Jld.webp" alt="" />
+                                <a href="images/certificate/iso-45001-B3vp9Jld.webp" class="lightbox-image overlay-box"><span
                                         class="fa fa-plus"></span></a>
                             </div>
                         </div>
@@ -77,8 +77,8 @@
                     <div class="news-block-three col-lg-4 col-md-4 col-sm-12">
                         <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="images/c-3.jpg" alt="" />
-                                <a href="images/c-3.jpg" class="lightbox-image overlay-box"><span
+                                <img src="images/certificate/iso-9001-C1-e28Ap.webp" alt="" />
+                                <a href="images/certificate/iso-9001-C1-e28Ap.webp" class="lightbox-image overlay-box"><span
                                         class="fa fa-plus"></span></a>
                             </div>
                         </div>
