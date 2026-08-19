@@ -1,6 +1,18 @@
 RewriteEngine On
 RewriteBase /frp-products-manufacturer
+
+# Force HTTPS + WWW
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.jetcotech\.com$ [NC]
+RewriteRule ^ https://www.jetcotech.com%{REQUEST_URI} [R=301,L]
+
+# Allow index.html
 RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /frp-products-manufacturer/index.html [L]
+
+# Allow existing files and folders
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# React Router fallback
+RewriteRule ^ index.html [L]
