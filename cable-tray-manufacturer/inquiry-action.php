@@ -1,489 +1,200 @@
 <?php
-session_start();
+
+// ================== ERROR + HEADERS ==================
 error_reporting(0);
+// header("Access-Control-Allow-Origin: *");
+// header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+// header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
+// if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+//     http_response_code(200);
+//     exit();
+// }
+
+header("Content-Type: application/json");
+
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
+// echo "<pre>"; print_r($_POST);
+
+// ================== LOG ==================
 $myfile = fopen("logs.txt", "a+") or die("Unable to open file!");
 fwrite($myfile, json_encode($_SERVER));
 fwrite($myfile, json_encode($_POST));
-$contact_page = "https://www.jetcotech.com/contact-us.html";
 
-$subject_line = "Lead From Jetco Industries Cable Tray Manufacturer Landing Page";
-
-$from_email = "support@jetcotech.com";
-
-$to_email = "sales@jetcotech.in";
-
-$to_email1 = "marketing@jetcotech.in";
-
-$thanks_page = "https://www.jetcotech.com/thankyou.html";
-
-
-
+// ================== API SPAM CHECK ==================
 function send_request($data)
 {
-
   $curl = curl_init();
-
   curl_setopt_array($curl, array(
-
     CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
-
     CURLOPT_RETURNTRANSFER => true,
-
-    CURLOPT_ENCODING => '',
-
-    CURLOPT_MAXREDIRS => 10,
-
-    CURLOPT_TIMEOUT => 0,
-
-    CURLOPT_FOLLOWLOCATION => true,
-
-    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-
-    CURLOPT_CUSTOMREQUEST => 'POST',
-
+    CURLOPT_POST => true,
     CURLOPT_POSTFIELDS => $data,
-
   ));
-
   $response = json_decode(curl_exec($curl));
-
   curl_close($curl);
-
   return $response;
 }
 
-$fname = htmlspecialchars(stripslashes(trim($_POST['name'])));
-$company = htmlspecialchars(stripslashes(trim($_POST['company'])));
-$email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+// ================== INPUT (SECOND CODE FIELDS) ==================
+$name     = htmlspecialchars(trim($_POST['name']));
+$email    = htmlspecialchars(trim($_POST['email']));
+$message  = htmlspecialchars(trim($_POST['requirement']));
+$city     = htmlspecialchars(trim($_POST['city']));
+$phone    = htmlspecialchars(trim($_POST['phone']));
+$company     = htmlspecialchars(trim($_POST['company']));
+$country     = htmlspecialchars(trim($_POST['country']));
 
-$message = htmlspecialchars(stripslashes(trim($_POST['requirement'])));
+$logData = [
+  "time"     => date("Y-m-d H:i:s"),
+  "ip"       => $_SERVER['REMOTE_ADDR'],
+  "name"     => $name,
+  "email"    => $email,
+  "phone"    => $phone,
+  "company_name"  => $company,
+  "city"     => $city,
+  "message"  => $message,
+  "user_agent" => $_SERVER['HTTP_USER_AGENT']
+];
 
-$phone = htmlspecialchars(stripslashes(trim($_POST['phone'])));
+$logFile = fopen("inquiry-log.txt", "a+");
+fwrite($logFile, json_encode($logData) . PHP_EOL);
+fclose($logFile);
 
-$city = htmlspecialchars(stripslashes(trim($_POST['city'])));
-
-$country = htmlspecialchars(stripslashes(trim($_POST['country'])));
-
-
-
+// ================== API CHECK ==================
 $curlArr = array_merge($_POST, $_SERVER);
-
 $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-/*$curlArr['type'] = "catalogue";*/
-
 $curlArr['save'] = false;
 
 $response = send_request($curlArr);
 
 if ($response->result) {
-
-  $curlArr = array_merge($_POST, $_SERVER);
-
-  $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
   $curlArr['save'] = true;
-
-  $curlArr['bcoz'] = "API CONDITION FAIL";
-
+  $curlArr['bcoz'] = "API FAIL";
   $curlArr['status'] = "FAIL";
+  send_request($curlArr);
 
-  $response = send_request($curlArr);
+  echo json_encode(["success" => false]);
+  exit;
+}
 
-  echo json_encode(array("success" => false, "here" => 1));
+// ================== REQUIRED VALIDATION ==================
+if (
+  empty($name) ||
+  empty($email) ||
+  empty($phone)
+) {
+  echo json_encode(["success" => false]);
+  exit;
+}
+
+// ================== EMAIL VALIDATION ==================
+if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
+  echo json_encode(["success" => false]);
+  exit;
+}
+
+// ================== JUNK CHECK ==================
+preg_match_all('#\bhttps?://#', $message, $links);
+preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $emails);
+
+if (count($links[0]) > 0 || count($emails[0]) > 0) {
+  echo json_encode(["success" => false]);
+  exit;
+}
+
+
+$form_type = htmlspecialchars(trim($_POST['form_type']));
+
+$subject = "Lead From Jetco Industries Cable Tray Manufacturer Landing Page";
+
+  $message_body = '
+    <html>
+    <body>
+    <div style="font-family:arial;font-size:12px;border:10px solid #ccc;width:600px;padding:20px;margin:auto;">
+    <table border="1" cellpadding="5" style="width:100%;border-collapse:collapse;">
+    <tr><td colspan="2"><b>Enquiry Details</b></td></tr>
+
+    <tr><td>Name:</td><td><b>' . $name . '</b></td></tr>
+    <tr><td>Company Name:</td><td><b>' . $company . '</b></td></tr>
+    <tr><td>Email:</td><td><b>' . $email . '</b></td></tr>
+    <tr><td>Mobile:</td><td><b>' . $phone . '</b></td></tr>
+    <tr><td>City:</td><td><b>' . $city . '</b></td></tr>
+    <tr><td>Country :</td><td><b>' . $country . '</b></td></tr>
+    <tr><td>Message:</td><td><b>' . $message . '</b></td></tr>
+
+    </table>
+    </div>
+    </body>
+    </html>';
+
+// ================== SMTP2GO ==================
+$apiKey = "api-336F1C35E5E7462CBB33B544EA1D2B7F";
+
+$emailArr = array("dcbindia@dcbindia.in", "dcb@dcbindia.in");
+
+$toEmails = [];
+$bccEmails = [];
+
+if (in_array($email, $emailArr)) {
+  $toEmails[] = "dcbrainsinquiry@gmail.com";
 } else {
-
-  try {
-
-    if (isset($fname) && trim($fname) !== '' && isset($email) && trim($email) !== '' && isset($message) && trim($message) !== '' && isset($phone) && trim($phone) !== '' && isset($country) && trim($country) !== '') {
-
-      if (1) {
-
-        if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
-
-          //echo "ERROR junk email detact";
-
-          $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-          $curlArr['save'] = true;
-
-          $curlArr['bcoz'] = "JUNK DETACT";
-
-          $curlArr['status'] = "FAIL";
-
-          $response = send_request($curlArr);
-
-          echo json_encode(array("success" => false, "here" => 2));
-        } else {
-
-          preg_match_all('#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#', $message, $msg_match);
-
-          preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $msg_match_email);
-
-          $junk_word = "#\b(DarrellRomLL|MADARCHOD|fuck|Fuck|Hey|Body|Revolution|Medico|Postura|Posture|Corrector|50%|OFF|FREE|Worldwide|Shipping|Shipping|medicopostura|online|Thank|CAREDOGBEST|Website|Re-designing|SEO|optimization|promotion|marketing|Marketing|Search|Optimization|advertisements|advertisement|advertising|adversement|Advertisement|graphic|design|traffic|advertisers|advertise|Advertising|campaigns|Domain|Domains|cheap|dollar|poker|Websites|redesigning|WordPress|newspapers|Eric|sunglasses|Girls|masturbating|porn|Nude|Sex|Naked|Women|website|fantastic|sorry|Google|doc|ADELIAPUTRI|blog|Petr|Velkov|Moscow|Cryptaxbot|http|https|errors|Joe|Celine|Bhoshdiwalo|Bhoshdi|Bhoshd|Bhosh|Madarchod|Madar|madarchod|madar|bhoshdiwalo|bhoshdi|bhoshd|bhosh)\b#";
-
-          preg_match_all($junk_word, $message, $matches_words);
-
-          //print_r($msg_match_email[0]);
-
-          //echo count($msg_match_email[0]);exit;
-
-          if (count($msg_match[0]) > 0 || count($msg_match_email[0]) > 0 || count($matches_words[0]) > 0) {
-
-            //echo "ERROR junk msg";
-
-            $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-            $curlArr['save'] = true;
-
-            $curlArr['bcoz'] = "JUNK DETACT";
-
-            $curlArr['status'] = "FAIL";
-
-            $response = send_request($curlArr);
-
-            echo json_encode(array("success" => false, "here" => 3));
-          } else {
-
-            require_once('../phpmailer/class.phpmailer.php');
-
-            $message_body = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
-              <html>
-
-                <head>
-
-                  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
-
-                  <meta name="generator" content="PSPad editor, www.pspad.com">
-
-                  <title></title>
-
-                  <style type="text/css">span.go{display:none} .go{display:none}</style>
-
-                </head>
-
-                <body>
-
-                  <div style="font-family:arial;font-size:12px;font-weight:normal;color:#000000;background:#ffffff;border:10px solid #cccccc;width:600px;padding:20px;margin: 0px auto;">
-
-                    <table border="1" cellpadding="5" style="width:500px;font-family:arial;font-size:12px;font-weight:normal;color:#000000;border-collapse:collapse;border:1px solid #cccccc;border-color:#cccccc">
-
-                      <tbody>
-
-                        <tr>
-
-                          <td colspan="2" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000;border-bottom:3px solid #cccccc"><b>Enquiry Details</b></td>
-
-                        </tr>
-
-                        
-
-                        <tr>
-
-                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Name:</td>
-
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $fname . '</b></td>
-
-                        </tr>
-
-                        <tr>
-
-                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Company Name:</td>
-
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $company . '</b></td>
-
-                        </tr>
-
-
-                        
-
-                        <tr>
-
-                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Email:</td>
-
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $email . '</b></td>
-
-                        </tr>
-
-                        
-
-                        <tr>
-
-                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Mobile:</td>
-
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $phone . '</b></td>
-
-                        </tr>
-
-                        
-
-                        <tr>
-
-                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">City:</td>
-
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $city . '</b></td>
-
-                        </tr>
-
-                         <tr>
-
-                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Country:</td>
-
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $country . '</b></td>
-
-                        </tr>
-
-                        
-
-                        <tr>
-
-                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Message:</td>
-
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000;line-height:17px"><b>' . $message . '</b></td>
-
-                        </tr>
-
-                        <tr>
-
-                        </tr>
-
-                      </tbody>
-
-                    </table>
-
-                  </div>
-
-                </body>
-
-              </html>
-
-              ';
-
-            $mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
-
-            $mail->IsSMTP(); // telling the class to use SMTP
-
-            try {
-
-              $url = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
-                'name' => $fname,
-                'mobile' => $phone,
-                'email' => $email,
-                'brancharea' => $message,
-                'source' => '10',
-                'company' => '1'
-              ]);
-
-              $ch = curl_init();
-              curl_setopt($ch, CURLOPT_URL, $url);
-              curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-              $response = curl_exec($ch);
-              // if (curl_errno($ch)) {
-              //     echo 'Error: ' . curl_error($ch);
-              // } else {
-              //     echo 'Response: ' . $response;
-              // }
-
-              curl_close($ch);
-              //exit;
-              //                   $curl = curl_init();
-              // $resArr = array();
-              // $resArr["name"] = $fname;
-              // $resArr["phone"] = $phone;
-              // $resArr["email" ]= $email;
-              // $resArr["city" ]= $country;
-              // $resArr["requirement"] = $message;
-              // $resArr["source"] = 10;
-              // $resArr["company"] = 1;
-              // curl_setopt_array($curl, array(
-              // CURLOPT_URL => ' https://jetcotech.teknovatecrm.in/en_IN/lead',
-              // CURLOPT_RETURNTRANSFER => true, 
-              // CURLOPT_HTTPHEADER => array(
-              //             "Content-Type: application/json",
-              //         ),
-              // CURLOPT_ENCODING => '',
-              // CURLOPT_MAXREDIRS => 10,
-              // CURLOPT_TIMEOUT => 0,
-              // CURLOPT_FOLLOWLOCATION => true,
-              // CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-              // CURLOPT_CUSTOMREQUEST => 'POST',
-              // CURLOPT_POSTFIELDS => json_encode($resArr),
-              // ));
-              // $res = curl_exec($curl);
-
-              // $response = json_decode(curl_exec($curl));
-              // curl_close($curl);   
-
-
-              $mail->Host = "mail.smtp2go.com"; // SMTP server
-
-              $mail->SMTPDebug = 0;                     // enables SMTP debug information (for testing)
-
-              $emailArr = array("dcbindia@dcbindia.in", "dcb@dcbindia.in");
-
-              if (in_array($email, $emailArr)) {
-
-                $mail->AddAddress('dcbrainsinquiry@gmail.com', $subject_line);
-
-                $mail->SetFrom($from_email, $subject_line);
-
-                $mail->addReplyTo($email, $subject_line);
-              } else {
-
-                $mail->AddAddress($to_email, $subject_line);
-
-                $mail->SetFrom($from_email, $subject_line);
-
-                $mail->AddCC($to_email1, $subject_line);
-
-                $mail->AddBCC('dcbrainsinquiry@gmail.com', $subject_line);
-
-                $mail->addReplyTo($email, $subject_line);
-              }
-
-
-
-              //   $mail->SMTPOptions = array(
-              //     'ssl' => array(
-              //         'verify_peer' => false,
-              //         'verify_peer_name' => false,
-              //         'allow_self_signed' => true
-              //     )
-              // );
-
-              // $mail->Port = 8025;
-              $mail->Port = 465;
-
-              $mail->Subject = $subject_line;
-
-              $mail->SMTPAuth = true;
-
-              $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
-
-              $mail->Username = "jetcotech";
-
-              $mail->Password = "1X6JUN1HS5rTixGe";
-
-              $mail->MsgHTML($message_body);
-
-              //$mail->AddAttachment('images/phpmailer.gif');      // attachment
-
-              // $mail->AddAttachment('images/phpmailer_mini.gif'); // attachment
-
-              $mail->Send();
-
-              $cookie_name = "inquierymodel";
-
-              $cookie_value = "inquiryset";
-
-              setcookie($cookie_name, $cookie_value, time() + (86400 * 1), "/"); // 86400 = 1 day
-
-              $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-              $curlArr['save'] = true;
-
-              $curlArr['bcoz'] = "MAIL SEND SUCCUSS";
-
-              $curlArr['status'] = "SUCCESS";
-
-              $response = send_request($curlArr);
-
-              echo json_encode(array("success" => true));
-
-              //echo "Message Sent OK<p></p>\n";
-
-            } catch (phpmailerException $e) {
-
-              $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-              $curlArr['save'] = true;
-
-              $curlArr['bcoz'] = "MAIL SETTING NOT WORKING";
-
-              $curlArr['Exception'] = $e->errorMessage();
-
-              $curlArr['status'] = "FAIL";
-
-              $response = send_request($curlArr);
-
-              echo $e->errorMessage(); //Pretty error messages from PHPMailer
-
-
-
-            } catch (Exception $e) {
-
-              $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-              $curlArr['save'] = true;
-
-              $curlArr['bcoz'] = "MAIL SETTING NOT WORKING";
-
-              $curlArr['Exception'] = $e->getMessage();
-
-              $curlArr['status'] = "FAIL";
-
-              $response = send_request($curlArr);
-
-              echo $e->getMessage(); //Boring error messages from anything else!
-
-
-
-            }
-          }
-        }
-      } else {
-
-        $curlArr = array_merge($_POST, $_SERVER);
-
-        $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-        $curlArr['save'] = true;
-
-        $curlArr['bcoz'] = "CAPTCHA MISMATCH";
-
-        $curlArr['status'] = "FAIL";
-
-        $response = send_request($curlArr);
-
-        echo json_encode(array("success" => false, "here" => 9));
-      }
-    } else {
-
-      $curlArr = array_merge($_POST, $_SERVER);
-
-      $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-      $curlArr['save'] = true;
-
-      $curlArr['bcoz'] = "REQUIRED DETAIL MISSING";
-
-      $curlArr['status'] = "FAIL";
-
-      $response = send_request($curlArr);
-
-
-
-      echo json_encode(array("success" => false, "here" => 99));
-    }
-  } catch (Exception $e) {
-
-    $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-
-    $curlArr['save'] = true;
-
-    $curlArr['bcoz'] = "PHPMAILER NOT WORKING OR 500 INTERNAL ERROR";
-
-    $curlArr['Exception'] = $e->getMessage();
-
-    $curlArr['status'] = "FAIL";
-
-    $response = send_request($curlArr);
-
-    //echo $e->getMessage(); //Boring error messages from anything else!
-
-
-
-  }
+  $toEmails[] = "sales@jetcotech.in";
+  $bccEmails[] = "marketing@jetcotech.in";
+}
+
+$data = [
+  "api_key"   => $apiKey,
+  "to"        => $toEmails,
+  "sender"    => "support@jetcotech.in",
+  "subject"   => $subject,
+  "html_body" => $message_body,
+  "text_body" => strip_tags($message_body),
+  "reply_to"  => $email
+];
+
+if (!empty($bccEmails)) {
+  $data["bcc"] = $bccEmails;
+}
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://api.smtp2go.com/v3/email/send");
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$response = curl_exec($ch);
+$result = json_decode($response, true);
+
+$url = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
+  'name' => $name,
+  'mobile' => $phone,
+  'email' => $email,
+  'brancharea' => $message,
+  'source' => '10',
+  'company' => '1'
+]);
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$response = curl_exec($ch);
+// if (curl_errno($ch)) {
+//     echo 'Error: ' . curl_error($ch);
+// } else {
+//     echo 'Response: ' . $response;
+// }
+
+curl_close($ch);
+
+// ================== RESPONSE ==================
+if (isset($result['data']['succeeded']) && $result['data']['succeeded'] > 0) {
+  echo json_encode(["success" => true]);
+} else {
+  echo json_encode(["success" => false]);
 }
