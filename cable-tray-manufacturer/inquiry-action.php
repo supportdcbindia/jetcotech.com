@@ -60,9 +60,9 @@ $message = htmlspecialchars(stripslashes(trim($_POST['requirement'])));
 
 $phone = htmlspecialchars(stripslashes(trim($_POST['phone'])));
 
-$country = htmlspecialchars(stripslashes(trim($_POST['city'])));
+$city = htmlspecialchars(stripslashes(trim($_POST['city'])));
 
-
+$country = htmlspecialchars(stripslashes(trim($_POST['country'])));
 
 
 
@@ -222,11 +222,17 @@ if ($response->result) {
 
                           <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">City:</td>
 
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $country . '</b></td>
+                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $city . '</b></td>
 
                         </tr>
 
-                        
+                         <tr>
+
+                          <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Country:</td>
+
+                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $country . '</b></td>
+
+                        </tr>
 
                         
 
