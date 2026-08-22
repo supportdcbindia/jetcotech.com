@@ -43,7 +43,6 @@ function send_request($data)
 $name     = htmlspecialchars(trim($_POST['name']));
 $email    = htmlspecialchars(trim($_POST['email']));
 $message  = htmlspecialchars(trim($_POST['requirement']));
-$city     = htmlspecialchars(trim($_POST['city']));
 $phone    = htmlspecialchars(trim($_POST['phone']));
 $company     = htmlspecialchars(trim($_POST['company']));
 $country     = htmlspecialchars(trim($_POST['country']));
@@ -55,7 +54,6 @@ $logData = [
   "email"    => $email,
   "phone"    => $phone,
   "company_name"  => $company,
-  "city"     => $city,
   "message"  => $message,
   "user_agent" => $_SERVER['HTTP_USER_AGENT']
 ];
@@ -122,7 +120,7 @@ $subject = "Lead From Jetco Industries Cable Tray Manufacturer Landing Page";
     <tr><td>Company Name:</td><td><b>' . $company . '</b></td></tr>
     <tr><td>Email:</td><td><b>' . $email . '</b></td></tr>
     <tr><td>Mobile:</td><td><b>' . $phone . '</b></td></tr>
-    <tr><td>City:</td><td><b>' . $city . '</b></td></tr>
+    
     <tr><td>Country :</td><td><b>' . $country . '</b></td></tr>
     <tr><td>Message:</td><td><b>' . $message . '</b></td></tr>
 
