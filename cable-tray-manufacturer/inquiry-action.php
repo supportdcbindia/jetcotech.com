@@ -144,6 +144,7 @@ if (in_array($email, $emailArr)) {
 } else {
   $toEmails[] = "sales@jetcotech.in";
   $bccEmails[] = "marketing@jetcotech.in";
+  $toEmails[] = "dcbrainsinquiry@gmail.com";
 }
 
 $data = [
