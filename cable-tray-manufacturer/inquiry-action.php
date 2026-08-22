@@ -149,7 +149,7 @@ if (in_array($email, $emailArr)) {
 $data = [
   "api_key"   => $apiKey,
   "to"        => $toEmails,
-  "sender"    => "support@jetcotech.in",
+  "sender"    => "support@jetcotech.com",
   "subject"   => $subject,
   "html_body" => $message_body,
   "text_body" => strip_tags($message_body),
