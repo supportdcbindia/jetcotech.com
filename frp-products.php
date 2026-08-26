@@ -46,69 +46,134 @@
             </div>
         </section>
         <section class="landing-sec same-space">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box" style="border:1px solid #e5e5e5;">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/frp-products/frp-perforated-cable-tray/frp-perforated-cable-tray.webp"
-                                    alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="frp-perforated-cable-tray.php">Frp Perforated Cable Tray</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="frp-perforated-cable-tray.php"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!-- FRP Perforated Cable Tray -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/frp-products/frp-perforated-cable-tray/frp-perforated-cable-tray.webp"
+                            alt="FRP Perforated Cable Tray">
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box" style="border:1px solid #e5e5e5;">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/frp-products/frp-ladder-cable-tray/frp-ladder-cable-tray.webp"
-                                    alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="frp-ladder-cable-tray.php">Frp Ladder Cable Tray</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="frp-ladder-cable-tray.php"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="frp-perforated-cable-tray.php">
+                                    FRP Perforated Cable Tray
+                                </a>
+                            </h3>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box" style="border:1px solid #e5e5e5;">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/frp-moulded-&amp;-pultruded-gratings/3.webp" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="frp-moulded-&-pultruded-gratings.html">Frp Moulded & Pultruded
-                                                    Gratings</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="frp-moulded-&-pultruded-gratings.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="frp-perforated-cable-tray.php"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
             </div>
-        </section>
+
+
+            <!-- FRP Ladder Cable Tray -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/frp-products/frp-ladder-cable-tray/frp-ladder-cable-tray.webp"
+                            alt="FRP Ladder Cable Tray">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="frp-ladder-cable-tray.php">
+                                    FRP Ladder Cable Tray
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="frp-ladder-cable-tray.php"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- FRP Moulded & Pultruded Gratings -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/frp-moulded-&amp;-pultruded-gratings/3.webp"
+                            alt="FRP Moulded and Pultruded Gratings">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="frp-moulded-&amp;-pultruded-gratings.html">
+                                    FRP Moulded &amp; Pultruded Gratings
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="frp-moulded-&amp;-pultruded-gratings.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
         <?php require_once('footer.php');?>
     </div>
     <?php require_once('script.php');?>
