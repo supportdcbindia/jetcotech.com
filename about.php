@@ -54,7 +54,7 @@
                                 <div class="auto-container">
                                     <div class="content">
                                         <div class="row clearfix">
-                                            <div class="title-column col-lg-6 col-md-12 col-sm-12 mb-0">
+                                            <div class="title-column col-lg-12 col-md-12 col-sm-12 mb-0">
                                                 <div class="inner-column pt-0">
                                                     <div class="sec-title mb-25">
                                                         <h2>Performance beyond <br>Your expectations</h2>
@@ -95,7 +95,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="blocks-column col-lg-6 col-md-12 col-sm-12">
+                                            <div class="blocks-column col-lg-12 col-md-12 col-sm-12">
                                                 <div class="inner-column">
                                                     <div class="row clearfix">
                                                         <div class="column col-lg-6 col-md-6 col-sm-12">
