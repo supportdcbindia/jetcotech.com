@@ -50,35 +50,35 @@
     <div class="auto-container">
         <div class="row clearfix">
 
-            <!-- Cable Tray -->
-            <div class="col-md-6 col-lg-4">
+            <!-- =========================
+                 Cable Tray
+            ========================== -->
+            <div class="col-md-6 col-lg-4 mb-4">
                 <div class="case-study-single-box">
-                    
+
                     <div class="case-study-thumb">
                         <img src="images/pdr/cable-tray/perforated-cable-tray/01.jpg"
-                             alt="Cable Tray">
+                            alt="Cable Tray">
                     </div>
 
                     <div class="case-study-content">
 
                         <div class="case-study-title">
                             <h3>
-                                <a href="cable-tray.php">
-                                    Cable Tray
-                                </a>
+                                <a href="cable-tray.php">Cable Tray</a>
                             </h3>
                         </div>
 
                         <div class="product-card-actions">
 
                             <a href="cable-tray.php"
-                               class="product-view-btn">
+                                class="product-view-btn">
                                 View Details
                                 <i class="fa fa-arrow-right"></i>
                             </a>
 
                             <a href="javascript:;"
-                               class="product-quote-btn click1">
+                                class="product-quote-btn click1">
                                 Get a Quote
                                 <i class="fa fa-envelope"></i>
                             </a>
@@ -91,35 +91,35 @@
             </div>
 
 
-            <!-- Lighting Poles -->
-            <div class="col-md-6 col-lg-4">
+            <!-- =========================
+                 Lighting Poles
+            ========================== -->
+            <div class="col-md-6 col-lg-4 mb-4">
                 <div class="case-study-single-box">
 
                     <div class="case-study-thumb">
                         <img src="images/pdr/lighting-poles/polygonal-octagonal-lighting-poles/01.jpg"
-                             alt="Lighting Poles">
+                            alt="Lighting Poles">
                     </div>
 
                     <div class="case-study-content">
 
                         <div class="case-study-title">
                             <h3>
-                                <a href="lighting-poles.php">
-                                    Lighting Poles
-                                </a>
+                                <a href="lighting-poles.php">Lighting Poles</a>
                             </h3>
                         </div>
 
                         <div class="product-card-actions">
 
                             <a href="lighting-poles.php"
-                               class="product-view-btn">
+                                class="product-view-btn">
                                 View Details
                                 <i class="fa fa-arrow-right"></i>
                             </a>
 
                             <a href="javascript:;"
-                               class="product-quote-btn click1">
+                                class="product-quote-btn click1">
                                 Get a Quote
                                 <i class="fa fa-envelope"></i>
                             </a>
@@ -132,35 +132,35 @@
             </div>
 
 
-            <!-- Mast Poles -->
-            <div class="col-md-6 col-lg-4">
+            <!-- =========================
+                 Mast Poles
+            ========================== -->
+            <div class="col-md-6 col-lg-4 mb-4">
                 <div class="case-study-single-box">
 
                     <div class="case-study-thumb">
                         <img src="images/pdr/mast-poles/stadium-mast-poles/01.jpg"
-                             alt="Mast Poles">
+                            alt="Mast Poles">
                     </div>
 
                     <div class="case-study-content">
 
                         <div class="case-study-title">
                             <h3>
-                                <a href="mast-poles.php">
-                                    Mast Poles
-                                </a>
+                                <a href="mast-poles.php">Mast Poles</a>
                             </h3>
                         </div>
 
                         <div class="product-card-actions">
 
                             <a href="mast-poles.php"
-                               class="product-view-btn">
+                                class="product-view-btn">
                                 View Details
                                 <i class="fa fa-arrow-right"></i>
                             </a>
 
                             <a href="javascript:;"
-                               class="product-quote-btn click1">
+                                class="product-quote-btn click1">
                                 Get a Quote
                                 <i class="fa fa-envelope"></i>
                             </a>
@@ -173,35 +173,35 @@
             </div>
 
 
-            <!-- FRP Products -->
-            <div class="col-md-6 col-lg-4">
+            <!-- =========================
+                 FRP Products
+            ========================== -->
+            <div class="col-md-6 col-lg-4 mb-4">
                 <div class="case-study-single-box">
 
                     <div class="case-study-thumb">
                         <img src="images/pdr/frp-products/frp-perforated-cable-tray/frp-perforated-cable-tray.webp"
-                             alt="FRP Products">
+                            alt="FRP Products">
                     </div>
 
                     <div class="case-study-content">
 
                         <div class="case-study-title">
                             <h3>
-                                <a href="frp-products.html">
-                                    FRP Products
-                                </a>
+                                <a href="frp-products.html">FRP Products</a>
                             </h3>
                         </div>
 
                         <div class="product-card-actions">
 
                             <a href="frp-products.html"
-                               class="product-view-btn">
+                                class="product-view-btn">
                                 View Details
                                 <i class="fa fa-arrow-right"></i>
                             </a>
 
                             <a href="javascript:;"
-                               class="product-quote-btn click1">
+                                class="product-quote-btn click1">
                                 Get a Quote
                                 <i class="fa fa-envelope"></i>
                             </a>
