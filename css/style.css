@@ -11142,7 +11142,7 @@ ul.sub-list-link li a::before {
 
 .blog-single .inner-box .lower-content {
 	position: relative;
-	padding: 25px 25px;
+	padding: 0;
 }
 
 .blog-single .inner-box .lower-content .post-meta {
@@ -18250,7 +18250,7 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
 .content-side .sec-title {
     position: relative;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 20px !important;
 }
 
