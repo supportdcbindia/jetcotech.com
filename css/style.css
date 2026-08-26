@@ -4737,58 +4737,6 @@ img {
 
 /* List Link */
 
-.list-link {
-	position: relative;
-}
-
-.list-link li {
-	position: relative;
-	margin-bottom: 0px;
-}
-
-.list-link li a {
-	position: relative;
-	color: #000;
-	font-size: 14px;
-	padding-left: 15px;
-	-webkit-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-
-.list-link li a.first_link {
-	width: 100%;
-	float: left;
-	background: #f8f8f8;
-	padding: 5px 20px;
-}
-
-.list-link li {
-	width: 100%;
-	padding: 0;
-	float: left;
-}
-
-.list-link li a:hover {
-	color: #f58634;
-
-	text-decoration: underline;
-}
-
-.list-link li a:before {
-	position: absolute;
-	content: "\00BB \0020";
-	left: 5px;
-	top: -3px;
-	font-family: 'FontAwesome';
-
-}
-
-.list-link li a.first_link:before {
-	line-height: 36px;
-}
 
 .sub-list-link {
 	margin-left: 20px
