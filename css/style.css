@@ -15399,6 +15399,708 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     }
 }
 
+/* =========================================
+   MODERN CTA SECTION
+========================================= */
+
+.cta-modern-section {
+    position: relative;
+    padding: 70px 0;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f9fc 0%,
+            #ffffff 55%,
+            #f4f7fa 100%
+        );
+}
+
+
+/* =========================================
+   CTA BOX
+========================================= */
+
+.cta-modern-box {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 55px 60px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123d61 0%,
+            #164c74 55%,
+            #103553 100%
+        );
+
+    box-shadow:
+        0 22px 55px rgba(18, 61, 97, 0.20);
+}
+
+
+/* =========================================
+   DECORATIVE ELEMENTS
+========================================= */
+
+.cta-modern-box::before {
+    content: "";
+
+    position: absolute;
+
+    right: -80px;
+    top: -90px;
+
+    width: 270px;
+    height: 270px;
+
+    border: 42px solid rgba(255, 255, 255, 0.05);
+
+    border-radius: 50%;
+}
+
+.cta-modern-box::after {
+    content: "";
+
+    position: absolute;
+
+    left: -45px;
+    bottom: -45px;
+
+    width: 120px;
+    height: 120px;
+
+    border: 2px solid rgba(255, 109, 45, 0.35);
+
+    border-radius: 50%;
+}
+
+
+/* Dots */
+
+.cta-modern-pattern {
+    position: absolute;
+
+    right: 33%;
+    bottom: 20px;
+
+    width: 90px;
+    height: 45px;
+
+    opacity: 0.12;
+
+    background-image:
+        radial-gradient(#ffffff 2px, transparent 2px);
+
+    background-size: 15px 15px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.cta-modern-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 780px;
+}
+
+.cta-small-title {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #ff8a4c;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2.3px;
+}
+
+.cta-modern-content h3 {
+    margin: 0 0 14px;
+
+    color: #ffffff;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    line-height: 1.25;
+}
+
+.cta-modern-content p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   BUTTON AREA
+========================================= */
+
+.cta-modern-action {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* BUTTON */
+
+.cta-modern-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 54px;
+
+    padding: 0 28px;
+
+    border-radius: 8px;
+
+    background: #ff6d2d;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 12px 26px rgba(255, 109, 45, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+.cta-modern-btn:hover {
+    background: #ffffff;
+
+    color: #123d61;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 32px rgba(0,0,0,0.18);
+}
+
+.cta-modern-btn i {
+    font-size: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+.cta-modern-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   OPTIONAL LEFT ACCENT
+========================================= */
+
+.cta-modern-content::before {
+    content: "";
+
+    position: absolute;
+
+    left: -22px;
+    top: 4px;
+
+    width: 4px;
+    height: 72px;
+
+    border-radius: 4px;
+
+    background: #ff6d2d;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .cta-modern-section {
+        padding: 55px 0;
+    }
+
+    .cta-modern-box {
+        padding: 45px 35px;
+    }
+
+    .cta-modern-content h3 {
+        font-size: 29px;
+    }
+
+    .cta-modern-action {
+        justify-content: flex-start;
+
+        margin-top: 25px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .cta-modern-section {
+        padding: 45px 0;
+    }
+
+    .cta-modern-box {
+        padding: 35px 22px;
+
+        border-radius: 16px;
+    }
+
+    .cta-modern-content::before {
+        display: none;
+    }
+
+    .cta-small-title {
+        font-size: 10px;
+
+        letter-spacing: 1.7px;
+    }
+
+    .cta-modern-content h3 {
+        font-size: 25px;
+    }
+
+    .cta-modern-content p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .cta-modern-action {
+        margin-top: 24px;
+    }
+
+    .cta-modern-btn {
+        width: 100%;
+
+        min-height: 50px;
+    }
+
+    .cta-modern-box::before {
+        width: 180px;
+        height: 180px;
+
+        right: -80px;
+        top: -80px;
+    }
+
+}
+
+/* =========================================
+   TRUSTED COMPANIES
+========================================= */
+
+.trusted-companies-section {
+    position: relative;
+    padding: 90px 0 75px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 95% 10%,
+            rgba(18, 61, 97, 0.06),
+            transparent 18%
+        ),
+        radial-gradient(
+            circle at 5% 90%,
+            rgba(255, 109, 45, 0.05),
+            transparent 18%
+        ),
+        linear-gradient(
+            135deg,
+            #f7f9fc 0%,
+            #ffffff 55%,
+            #f4f7fa 100%
+        );
+}
+
+
+/* Decorative dots */
+
+.trusted-companies-section::before {
+    content: "";
+
+    position: absolute;
+    right: 6%;
+    top: 80px;
+
+    width: 95px;
+    height: 95px;
+
+    opacity: 0.12;
+
+    background-image:
+        radial-gradient(#123d61 2px, transparent 2px);
+
+    background-size: 15px 15px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.trusted-heading {
+    position: relative;
+    z-index: 2;
+
+    max-width: 760px;
+
+    margin: 0 auto 50px;
+}
+
+.trusted-heading span {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #ff6d2d;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+.trusted-heading h2 {
+    position: relative;
+
+    margin: 0 0 16px;
+    padding-bottom: 16px;
+
+    color: #123d61;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+.trusted-heading h2::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 70px;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    background: #ff6d2d;
+
+    border-radius: 10px;
+}
+
+.trusted-heading p {
+    max-width: 670px;
+
+    margin: 0 auto;
+
+    color: #687480;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   LOGO GRID
+========================================= */
+
+.trusted-logo-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   LOGO CARD
+========================================= */
+
+.trusted-logo-card {
+    position: relative;
+
+    min-height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 26px 20px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 24px rgba(18, 61, 97, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.trusted-logo-card:hover {
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(255, 109, 45, 0.28);
+
+    box-shadow:
+        0 18px 38px rgba(18, 61, 97, 0.11);
+}
+
+
+/* orange top accent */
+
+.trusted-logo-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 22px;
+    top: 0;
+
+    width: 42px;
+    height: 3px;
+
+    border-radius: 0 0 5px 5px;
+
+    background: #ff6d2d;
+
+    transition: width 0.3s ease;
+}
+
+.trusted-logo-card:hover::before {
+    width: 70px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.trusted-logo-image {
+    width: 100%;
+    min-height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trusted-logo-image img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 82%;
+    max-height: 75px;
+
+    object-fit: contain;
+
+    filter: grayscale(20%);
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.trusted-logo-card:hover
+.trusted-logo-image img {
+    transform: scale(1.055);
+
+    filter: grayscale(0%);
+}
+
+
+/* =========================================
+   SMALL NUMBER
+========================================= */
+
+.trusted-logo-number {
+    position: absolute;
+
+    top: 13px;
+    right: 14px;
+
+    color: #e0e6eb;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    transition: color 0.3s ease;
+}
+
+.trusted-logo-card:hover
+.trusted-logo-number {
+    color: rgba(255, 109, 45, 0.45);
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .trusted-logo-grid {
+        grid-template-columns:
+            repeat(6, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1199px) {
+
+    .trusted-logo-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .trusted-companies-section {
+        padding: 70px 0 55px;
+    }
+
+    .trusted-heading h2 {
+        font-size: 35px;
+    }
+
+    .trusted-logo-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .trusted-companies-section {
+        padding: 55px 0 40px;
+    }
+
+    .trusted-heading {
+        margin-bottom: 35px;
+    }
+
+    .trusted-heading h2 {
+        font-size: 29px;
+    }
+
+    .trusted-heading p {
+        font-size: 14px;
+    }
+
+    .trusted-logo-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .trusted-logo-card {
+        min-height: 120px;
+
+        padding: 20px 14px;
+
+        border-radius: 11px;
+    }
+
+    .trusted-logo-image {
+        min-height: 70px;
+    }
+
+    .trusted-logo-image img {
+        max-width: 85%;
+        max-height: 58px;
+    }
+
+    .trusted-logo-number {
+        font-size: 13px;
+    }
+
+    .trusted-companies-section::before {
+        display: none;
+    }
+
+}
+
+
+/* Very small mobile */
+
+@media (max-width: 420px) {
+
+    .trusted-logo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
 
 
 

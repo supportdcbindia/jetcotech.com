@@ -993,52 +993,116 @@
 
     </div>
 </section>
-        <section class="cta space-same">
-            <div class="container">
-                <div class="cta-inner">
-                    <div class="row align-items-center justify-content-around">
-                        <div class="col-lg-9 col-md-8">
-                            <div class="cta-text">
-                                <h3>100% Inhouse Facility Lighting Pole & Cable Tray</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-12 col-md-4">
-                            <div class="cta-iiner">
-                                <a href="javascript:;" class="theme-btn btn-style-one click1"><span
-                                        class="btn-title">Inquire
-                                        Now</span></a>
-                            </div>
-                        </div>
+        <section class="cta-modern-section">
+    <div class="container">
+
+        <div class="cta-modern-box">
+
+            <div class="cta-modern-pattern"></div>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8 col-md-8">
+
+                    <div class="cta-modern-content">
+
+                        <span class="cta-small-title">
+                            COMPLETE IN-HOUSE CAPABILITY
+                        </span>
+
+                        <h3>
+                            100% Inhouse Facility for
+                            Lighting Poles &amp; Cable Trays
+                        </h3>
+
+                        <p>
+                            From manufacturing to quality control, our integrated
+                            facility enables reliable production, consistent quality
+                            and dependable project execution.
+                        </p>
+
                     </div>
+
                 </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="cta-modern-action">
+
+                        <a href="javascript:;" class="cta-modern-btn click1">
+                            <span>Inquire Now</span>
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
-        </section>
-        <section class="logo-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="title-area">
-                            <h2 class="sec-title">Companies who Trust us</h2>
-                        </div>
+
+        </div>
+
+    </div>
+</section>
+        <section class="logo-sec trusted-companies-section">
+    <div class="container">
+
+        <div class="trusted-heading text-center">
+            <span>TRUSTED BY INDUSTRY</span>
+
+            <h2>Companies Who Trust Us</h2>
+
+            <p>
+                Proud to work with organizations across diverse industries
+                that rely on our engineering, manufacturing and project capabilities.
+            </p>
+        </div>
+
+
+        <div class="trusted-logo-grid">
+
+            <?php
+
+            $nb_elem_per_page = 200;
+
+            $page = isset($_GET['page'])
+                ? max(0, intval($_GET['page']) - 1)
+                : 0;
+
+            $data = glob("images/homepage/client-logo/*.*");
+
+            $logos = array_slice(
+                $data,
+                $page * $nb_elem_per_page,
+                $nb_elem_per_page
+            );
+
+            ?>
+
+            <?php foreach ($logos as $index => $p) { ?>
+
+                <div class="trusted-logo-card">
+
+                    <span class="trusted-logo-number">
+                        <?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?>
+                    </span>
+
+                    <div class="trusted-logo-image">
+                        <img
+                            src="<?php echo htmlspecialchars($p); ?>"
+                            alt="Trusted Client"
+                            loading="lazy"
+                        >
                     </div>
+
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="client owl-carousel owl-theme">
-                            <?php
-                            $nb_elem_per_page = 200;
-                            $page = isset($_GET['page']) ? intval($_GET['page'] - 1) : 0;
-                            $data = glob("images/homepage/client-logo/*.*");
-                            $number_of_pages = intval(count($data) / $nb_elem_per_page) + 1;
-                            ?>
-                            <?php foreach (array_slice($data, $page * $nb_elem_per_page, $nb_elem_per_page) as $p) { ?>
-                                <div class="item"><img src="<?php echo $p; ?>" class="img-responsive "></div>
-                            <?php } ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+            <?php } ?>
+
+        </div>
+
+    </div>
+</section>
     </div>
     <?php require_once('footer.php'); ?>
     <?php require_once('script.php'); ?>
