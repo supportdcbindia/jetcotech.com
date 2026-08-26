@@ -16224,10 +16224,16 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     border-radius: 20px;
 
     background:
+        radial-gradient(
+            circle at 8% 30%,
+            rgba(255,255,255,0.03),
+            transparent 20%
+        ),
         linear-gradient(
             135deg,
-            #174d74 0%,
-            #0f3856 100%
+            #2f2d2e 0%,
+            #2f2d2e 45%,
+            #2f2d2e 100%
         );
 
     border: 1px solid rgba(255,255,255,0.10);
