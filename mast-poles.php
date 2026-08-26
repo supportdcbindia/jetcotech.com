@@ -46,84 +46,176 @@
                 </div>
             </div>
         </section>
-        <section class="landing-sec same-space">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/mast-poles/high-mast-poles/08.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
+       <section class="landing-sec same-space">
+    <div class="auto-container">
+        <div class="row clearfix">
 
-                                        <div class="case-study-title">
-                                            <h3><a href="high-mast-poles.html">High Mast Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="high-mast-poles.html"> <i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- High Mast Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/mast-poles/high-mast-poles/08.jpg"
+                            alt="High Mast Poles">
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/mast-poles/flag-mast-poles/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="flag-mast-poles.html">Flag Mast Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="flag-mast-poles.html"><i class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="high-mast-poles.html">
+                                    High Mast Poles
+                                </a>
+                            </h3>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/mast-poles/stadium-mast-poles/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="stadium-mast-poles.html">Stadium Mast Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="stadium-mast-poles.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="high-mast-poles.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
                         </div>
+
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/mast-poles/signage-mast-pole/signage-mast-pole.webp" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="signage-mast-pole.html">Signage Mast Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="signage-mast-pole.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-        </section>
+
+
+            <!-- Flag Mast Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/mast-poles/flag-mast-poles/01.jpg"
+                            alt="Flag Mast Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="flag-mast-poles.html">
+                                    Flag Mast Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="flag-mast-poles.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Stadium Mast Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/mast-poles/stadium-mast-poles/01.jpg"
+                            alt="Stadium Mast Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="stadium-mast-poles.html">
+                                    Stadium Mast Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="stadium-mast-poles.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Signage Mast Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/mast-poles/signage-mast-pole/signage-mast-pole.webp"
+                            alt="Signage Mast Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="signage-mast-pole.html">
+                                    Signage Mast Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="signage-mast-pole.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
         <?php require_once('footer.php');?>
     </div>
     <?php require_once('script.php');?>
