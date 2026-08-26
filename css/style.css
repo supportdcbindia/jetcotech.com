@@ -16179,92 +16179,109 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 /* =========================================
-   MODERN FOOTER
+   MODERN FOOTER REDESIGN
 ========================================= */
 
 .footer-modern {
     position: relative;
-    overflow: hidden;
-    background: #0e2f49;
-    color: #fff;
+    margin-top: 90px;
+    overflow: visible;
+    background:
+        linear-gradient(
+            135deg,
+            #0b263b 0%,
+            #103754 45%,
+            #123f61 100%
+        );
+    color: #ffffff;
 }
 
 
 /* =========================================
-   TOP CTA
+   FLOATING CTA
 ========================================= */
 
 .footer-top-cta {
-    padding: 0 0 35px;
-    background: #f7f9fc;
+    position: relative;
+    z-index: 5;
+    margin-bottom: -45px;
+    background: transparent;
+    padding: 0;
 }
 
 .footer-top-cta-inner {
     position: relative;
+    overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
 
-    padding: 38px 42px;
+    min-height: 150px;
+    padding: 34px 42px;
 
-    overflow: hidden;
-
-    border-radius: 18px;
+    border-radius: 20px;
 
     background:
         linear-gradient(
             135deg,
-            #123d61 0%,
-            #174e76 100%
+            #174d74 0%,
+            #0f3856 100%
         );
 
+    border: 1px solid rgba(255,255,255,0.10);
+
     box-shadow:
-        0 20px 45px rgba(18, 61, 97, 0.18);
+        0 20px 55px rgba(6, 28, 45, 0.28);
 }
 
 .footer-top-cta-inner::before {
     content: "";
-
     position: absolute;
+    right: -80px;
+    top: -100px;
 
-    right: -70px;
-    top: -80px;
+    width: 260px;
+    height: 260px;
 
-    width: 220px;
-    height: 220px;
+    border: 40px solid rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
 
-    border: 34px solid rgba(255,255,255,0.05);
+.footer-top-cta-inner::after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    bottom: -35px;
+
+    width: 100px;
+    height: 100px;
 
     border-radius: 50%;
+    background: rgba(255,109,45,0.06);
 }
 
 .footer-top-cta-inner span {
     display: block;
+    margin-bottom: 8px;
 
-    margin-bottom: 7px;
-
-    color: #ff8a4b;
+    color: #ff8246;
 
     font-size: 11px;
     font-weight: 800;
-
-    letter-spacing: 2px;
+    letter-spacing: 2.3px;
 }
 
 .footer-top-cta-inner h3 {
-    max-width: 760px;
-
+    max-width: 720px;
     margin: 0;
 
-    color: #fff;
+    color: #ffffff;
 
-    font-size: 25px;
-    font-weight: 700;
-
-    line-height: 1.4;
+    font-size: 27px;
+    line-height: 1.35;
+    font-weight: 800;
 }
 
 .footer-cta-btn {
@@ -16275,70 +16292,67 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
     display: inline-flex;
     align-items: center;
-
+    justify-content: center;
     gap: 9px;
 
-    padding: 14px 24px;
+    min-height: 50px;
+    padding: 0 24px;
 
-    border-radius: 7px;
+    border-radius: 8px;
 
     background: #ff6d2d;
+    color: #ffffff;
 
-    color: #fff;
-
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
 
     text-decoration: none;
+
+    box-shadow:
+        0 10px 24px rgba(255,109,45,0.24);
 
     transition: all 0.3s ease;
 }
 
 .footer-cta-btn:hover {
-    background: #fff;
+    background: #ffffff;
     color: #123d61;
-
     transform: translateY(-3px);
-}
-
-.footer-cta-btn i {
-    transition: transform 0.3s ease;
-}
-
-.footer-cta-btn:hover i {
-    transform: translateX(4px);
 }
 
 
 /* =========================================
-   UPPER FOOTER
+   MAIN FOOTER AREA
 ========================================= */
 
 .footer-modern .upper-box {
     position: relative;
 
-    padding: 70px 0 55px;
+    padding: 115px 0 55px;
 
     background:
         radial-gradient(
-            circle at 92% 15%,
-            rgba(255,255,255,0.04),
+            circle at 8% 30%,
+            rgba(255,255,255,0.03),
             transparent 20%
         ),
         linear-gradient(
             135deg,
-            #0e2f49 0%,
-            #123d61 100%
+            #0b263b 0%,
+            #103754 60%,
+            #123f61 100%
         );
 }
+
+
+/* decorative dots */
 
 .footer-modern .upper-box::before {
     content: "";
 
     position: absolute;
-
     left: 5%;
-    top: 60px;
+    top: 80px;
 
     width: 90px;
     height: 90px;
@@ -16348,7 +16362,7 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     background-image:
         radial-gradient(#ffffff 2px, transparent 2px);
 
-    background-size: 15px 15px;
+    background-size: 14px 14px;
 }
 
 
@@ -16364,13 +16378,12 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 .footer-modern .widget_title {
     position: relative;
 
-    margin: 0 0 24px;
-
+    margin: 0 0 22px;
     padding-bottom: 12px;
 
-    color: #fff;
+    color: #ffffff;
 
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 700;
 }
 
@@ -16378,16 +16391,15 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     content: "";
 
     position: absolute;
-
     left: 0;
     bottom: 0;
 
-    width: 42px;
-    height: 3px;
-
-    border-radius: 5px;
+    width: 34px;
+    height: 2px;
 
     background: #ff6d2d;
+
+    border-radius: 3px;
 }
 
 
@@ -16396,28 +16408,26 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 ========================================= */
 
 .footer-modern .about-widget .text {
-    max-width: 360px;
+    max-width: 340px;
 
-    color: rgba(255,255,255,0.70);
+    color: rgba(255,255,255,0.66);
 
-    font-size: 14px;
-
+    font-size: 13px;
     line-height: 1.8;
 }
 
 .footer-social-title {
-    margin-top: 22px;
-    margin-bottom: 12px;
+    margin: 20px 0 10px;
 
-    color: #fff;
+    color: #ffffff;
 
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 
 /* =========================================
-   SOCIAL
+   SOCIAL ICONS
 ========================================= */
 
 .footer-modern .social-links {
@@ -16431,29 +16441,25 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 .footer-modern .social-links li a {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 8px;
+    border-radius: 9px;
 
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
 
-    border: 1px solid rgba(255,255,255,0.10);
-
-    color: #fff;
-
-    font-size: 14px;
+    color: #ffffff;
 
     transition: all 0.3s ease;
 }
 
 .footer-modern .social-links li a:hover {
     background: #ff6d2d;
-
     border-color: #ff6d2d;
 
     transform: translateY(-3px);
@@ -16472,7 +16478,7 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 .footer-modern .links-widget .list li {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .footer-modern .links-widget .list li a {
@@ -16480,11 +16486,11 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
     display: inline-block;
 
-    padding-left: 15px;
+    padding-left: 14px;
 
-    color: rgba(255,255,255,0.72);
+    color: rgba(255,255,255,0.66);
 
-    font-size: 14px;
+    font-size: 13px;
 
     text-decoration: none;
 
@@ -16495,12 +16501,11 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     content: "";
 
     position: absolute;
-
     left: 0;
     top: 8px;
 
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
 
     border-radius: 50%;
 
@@ -16508,48 +16513,63 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 .footer-modern .links-widget .list li a:hover {
-    color: #fff;
-
+    color: #ffffff;
     transform: translateX(4px);
 }
 
 
 /* =========================================
-   CONTACT
+   CONTACT LIST
 ========================================= */
 
 .footer-contact-list {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
 .footer-contact-list li {
     display: flex;
+    align-items: flex-start;
+    gap: 13px;
 
-    gap: 14px;
+    margin-bottom: 14px;
 
-    margin-bottom: 18px;
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.035);
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    transition: 0.3s ease;
+}
+
+.footer-contact-list li:hover {
+    background: rgba(255,255,255,0.06);
+
+    border-color: rgba(255,109,45,0.20);
 }
 
 .footer-contact-icon {
-    flex: 0 0 42px;
+    flex: 0 0 38px;
 
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 9px;
+    border-radius: 8px;
 
-    background: rgba(255,255,255,0.08);
+    background:
+        rgba(255,109,45,0.12);
 
-    color: #ff7a36;
+    color: #ff8246;
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .footer-contact-list li > div:last-child span {
@@ -16557,24 +16577,23 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
     margin-bottom: 3px;
 
-    color: #fff;
+    color: #ffffff;
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
 }
 
 .footer-contact-list p {
     margin: 0;
 
-    color: rgba(255,255,255,0.68);
+    color: rgba(255,255,255,0.62);
 
-    font-size: 13px;
-
-    line-height: 1.65;
+    font-size: 12px;
+    line-height: 1.6;
 }
 
 .footer-contact-list a {
-    color: rgba(255,255,255,0.72);
+    color: rgba(255,255,255,0.65);
 
     text-decoration: none;
 
@@ -16582,57 +16601,75 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 .footer-contact-list a:hover {
-    color: #ff7a36;
+    color: #ff8246;
 }
 
 
 /* =========================================
-   BOTTOM BAR
+   BOTTOM
 ========================================= */
 
 .footer-bottom {
-    border-top:
-        1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid rgba(255,255,255,0.07);
 
-    background: #0a263c;
+    background: #081f31;
 }
 
 .footer-bottom-inner {
+    min-height: 58px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     gap: 20px;
-
-    min-height: 70px;
 }
 
 .footer-bottom p {
     margin: 0;
 
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.45);
 
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .footer-bottom-links {
     display: flex;
-
+    align-items: center;
     gap: 18px;
 }
 
 .footer-bottom-links a {
-    color: rgba(255,255,255,0.55);
+    position: relative;
 
-    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+
+    font-size: 12px;
 
     text-decoration: none;
 
     transition: 0.3s ease;
 }
 
+.footer-bottom-links a + a::before {
+    content: "";
+
+    position: absolute;
+    left: -10px;
+    top: 50%;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    background: #ff6d2d;
+
+    transform: translateY(-50%);
+}
+
 .footer-bottom-links a:hover {
-    color: #ff6d2d;
+    color: #ffffff;
 }
 
 
@@ -16643,12 +16680,12 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 @media (max-width: 991px) {
 
     .footer-top-cta-inner {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .footer-modern .upper-box {
-        padding: 60px 0 40px;
+        padding-top: 105px;
     }
 
 }
@@ -16660,11 +16697,17 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
 @media (max-width: 767px) {
 
+    .footer-modern {
+        margin-top: 65px;
+    }
+
     .footer-top-cta {
-        padding-bottom: 25px;
+        margin-bottom: -35px;
     }
 
     .footer-top-cta-inner {
+        min-height: auto;
+
         padding: 28px 22px;
 
         border-radius: 14px;
@@ -16676,32 +16719,29 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
     .footer-cta-btn {
         width: 100%;
-
-        justify-content: center;
     }
 
     .footer-modern .upper-box {
-        padding: 50px 0 30px;
+        padding: 90px 0 35px;
     }
 
-    .footer-modern .widget_title {
-        margin-bottom: 18px;
+    .footer-contact-list li {
+        padding: 10px;
     }
 
     .footer-bottom-inner {
+        min-height: auto;
+
         flex-direction: column;
 
-        justify-content: center;
-
-        padding: 18px 0;
+        padding: 16px 0;
 
         text-align: center;
     }
 
     .footer-bottom-links {
-        justify-content: center;
-
         flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
