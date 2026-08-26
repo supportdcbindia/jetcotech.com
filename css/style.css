@@ -14277,6 +14277,394 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
 }
 
+/* ==========================================
+   COUNTER SECTION
+========================================== */
+
+.counter-one {
+    position: relative;
+    padding: 90px 0 70px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 95% 10%,
+            rgba(19, 61, 97, 0.07),
+            transparent 18%
+        ),
+        linear-gradient(
+            135deg,
+            #f7f9fc 0%,
+            #ffffff 55%,
+            #f5f8fb 100%
+        );
+}
+
+
+/* Decorative dots */
+
+.counter-one::before {
+    content: "";
+    position: absolute;
+
+    top: 80px;
+    left: 6%;
+
+    width: 90px;
+    height: 90px;
+
+    opacity: 0.14;
+
+    background-image:
+        radial-gradient(#123d61 2px, transparent 2px);
+
+    background-size: 16px 16px;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.counter-heading {
+    position: relative;
+    z-index: 2;
+
+    max-width: 760px;
+
+    margin: 0 auto 50px;
+}
+
+.counter-heading span {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #ff6d2d;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+.counter-heading h2 {
+    margin: 0 0 15px;
+
+    color: #123d61;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+.counter-heading p {
+    max-width: 690px;
+
+    margin: 0 auto;
+
+    color: #697581;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.counter-grid {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.counter-card {
+    position: relative;
+
+    height: 100%;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 35px rgba(18, 61, 97, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.counter-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 109, 45, 0.3);
+
+    box-shadow:
+        0 22px 45px rgba(18, 61, 97, 0.13);
+}
+
+
+/* Orange corner accent */
+
+.counter-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 30px;
+
+    width: 58px;
+    height: 4px;
+
+    background: #ff6d2d;
+
+    border-radius: 0 0 6px 6px;
+}
+
+
+/* ==========================================
+   TOP AREA
+========================================== */
+
+.counter-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.counter-icon {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123d61,
+            #1c527b
+        );
+
+    box-shadow:
+        0 9px 20px rgba(18, 61, 97, 0.18);
+}
+
+.counter-icon img {
+    max-width: 36px;
+    max-height: 36px;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+
+/* ==========================================
+   SMALL NUMBER
+========================================== */
+
+.counter-card-number {
+    color: #dce3e9;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+/* ==========================================
+   MAIN NUMBER
+========================================== */
+
+.counter-value {
+    display: flex;
+    align-items: baseline;
+
+    margin-bottom: 10px;
+
+    color: #123d61;
+
+    font-size: 46px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.counter-value > span:last-child {
+    margin-left: 4px;
+
+    color: #ff6d2d;
+
+    font-size: 28px;
+}
+
+
+/* Third counter has long number */
+
+.counter-card:nth-child(3) .counter-value {
+    font-size: 40px;
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.counter-card h3 {
+    margin: 0 0 12px;
+
+    color: #123d61;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.counter-card p {
+    margin: 0;
+
+    color: #687480;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* ==========================================
+   BOTTOM LINE
+========================================== */
+
+.counter-line {
+    width: 34px;
+    height: 3px;
+
+    margin-top: 22px;
+
+    background: #ff6d2d;
+
+    border-radius: 5px;
+
+    transition: width 0.35s ease;
+}
+
+.counter-card:hover .counter-line {
+    width: 70px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    .counter-one {
+        padding: 70px 0 50px;
+    }
+
+    .counter-heading h2 {
+        font-size: 35px;
+    }
+
+    .counter-card {
+        padding: 26px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .counter-one {
+        padding: 55px 0 35px;
+    }
+
+    .counter-heading {
+        margin-bottom: 35px;
+    }
+
+    .counter-heading h2 {
+        font-size: 29px;
+    }
+
+    .counter-heading p {
+        font-size: 14px;
+    }
+
+    .counter-card {
+        padding: 24px 20px;
+        border-radius: 13px;
+    }
+
+    .counter-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .counter-icon img {
+        max-width: 31px;
+        max-height: 31px;
+    }
+
+    .counter-card-number {
+        font-size: 30px;
+    }
+
+    .counter-value,
+    .counter-card:nth-child(3) .counter-value {
+        font-size: 36px;
+    }
+
+    .counter-value > span:last-child {
+        font-size: 23px;
+    }
+
+    .counter-card h3 {
+        font-size: 17px;
+    }
+
+    .counter-card p {
+        font-size: 13px;
+    }
+}
+
 
 
 

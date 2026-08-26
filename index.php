@@ -571,7 +571,7 @@
                 </div>
             </div>
         </section>
-        <section class="counter-one">
+        <!-- <section class="counter-one">
             <div class="container">
                 <div class="counter-one__inner">
                     <div class="counter-one__bg-shape" style="background-image:url(./images/counter-bg.png"></div>
@@ -618,7 +618,127 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+        <section class="counter-one">
+    <div class="container">
+
+        <div class="counter-heading text-center">
+            <span>OUR STRENGTH IN NUMBERS</span>
+
+            <h2>Experience, Infrastructure & Global Reach</h2>
+
+            <p>
+                Strong manufacturing capabilities, international presence and
+                years of engineering expertise make JETCOTECH a dependable
+                partner for industrial projects.
+            </p>
+        </div>
+
+
+        <div class="row counter-grid">
+
+            <!-- Item 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="counter-card">
+
+                    <div class="counter-card-top">
+                        <div class="counter-icon">
+                            <img
+                                src="images/homepage/icons/years-experiences.webp"
+                                alt="Years of Experience"
+                            >
+                        </div>
+
+                        <span class="counter-card-number">01</span>
+                    </div>
+
+                    <div class="counter-value">
+                        <span class="count-text" id="number1">15</span>
+                        <span>+</span>
+                    </div>
+
+                    <h3>Years of Experience</h3>
+
+                    <p>
+                        Proven engineering and manufacturing expertise across
+                        demanding industrial applications.
+                    </p>
+
+                    <div class="counter-line"></div>
+
+                </div>
+            </div>
+
+
+            <!-- Item 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="counter-card">
+
+                    <div class="counter-card-top">
+                        <div class="counter-icon">
+                            <img
+                                src="images/homepage/icons/export-country.webp"
+                                alt="Export Countries"
+                            >
+                        </div>
+
+                        <span class="counter-card-number">02</span>
+                    </div>
+
+                    <div class="counter-value">
+                        <span class="count-text" id="number2">17</span>
+                        <span>+</span>
+                    </div>
+
+                    <h3>Export Countries</h3>
+
+                    <p>
+                        Serving international markets with engineered products
+                        designed for quality and reliable performance.
+                    </p>
+
+                    <div class="counter-line"></div>
+
+                </div>
+            </div>
+
+
+            <!-- Item 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="counter-card">
+
+                    <div class="counter-card-top">
+                        <div class="counter-icon">
+                            <img
+                                src="images/homepage/icons/square-area.webp"
+                                alt="Manufacturing Facility"
+                            >
+                        </div>
+
+                        <span class="counter-card-number">03</span>
+                    </div>
+
+                    <div class="counter-value">
+                        <span class="count-text" id="number3">112170</span>
+                        <span>+</span>
+                    </div>
+
+                    <h3>Square Feet Facility</h3>
+
+                    <p>
+                        Large-scale in-house infrastructure supporting production,
+                        quality control and project execution.
+                    </p>
+
+                    <div class="counter-line"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
         <section class="projects-section space">
             <div class="container">
                 <div class="row">
