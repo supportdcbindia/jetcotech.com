@@ -47,87 +47,175 @@
             </div>
         </section>
         <section class="landing-sec same-space">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/lighting-poles/polygonal-octagonal-lighting-poles/02.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
+    <div class="auto-container">
+        <div class="row clearfix">
 
-                                        <div class="case-study-title">
-                                            <h3> <a href="polygonal-octagonal-lighting-poles.html">Polygonal / Octagonal
-                                                    Lighting Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="polygonal-octagonal-lighting-poles.html"> <i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/swaged-lighting-poles.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="swaged-lighting-poles.html">Swaged Lighting Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="swaged-lighting-poles.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/lighting-poles/conical-poles/03.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="conical-poles.html">Conical Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="conical-poles.html"><i class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Polygonal / Octagonal Lighting Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/lighting-poles/polygonal-octagonal-lighting-poles/02.jpg"
+                            alt="Polygonal Octagonal Lighting Poles">
                     </div>
 
+                    <div class="case-study-content">
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box img-solar" style="border:1px solid #e5e5e5;">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/decorative-poles/2.webp" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="decorative-poles.html">Decorative / Customised Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="decorative-poles.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="polygonal-octagonal-lighting-poles.html">
+                                    Polygonal / Octagonal Lighting Poles
+                                </a>
+                            </h3>
                         </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="polygonal-octagonal-lighting-poles.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
                     </div>
 
                 </div>
             </div>
-        </section>
+
+
+            <!-- Swaged Lighting Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/swaged-lighting-poles.jpg"
+                            alt="Swaged Lighting Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="swaged-lighting-poles.html">
+                                    Swaged Lighting Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="swaged-lighting-poles.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Conical Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/lighting-poles/conical-poles/03.jpg"
+                            alt="Conical Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="conical-poles.html">
+                                    Conical Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="conical-poles.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Decorative / Customised Poles -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="case-study-single-box img-solar">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/decorative-poles/2.webp"
+                            alt="Decorative Customised Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="decorative-poles.html">
+                                    Decorative / Customised Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="decorative-poles.html"
+                                class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                                class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
         <?php require_once('footer.php');?>
     </div>
     <?php require_once('script.php');?>
