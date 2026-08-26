@@ -189,7 +189,7 @@
 
                 <!-- Contact -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="contact-widget widget">
+                    <div class="widget">
 
                         <h4 class="widget_title">Get In Touch</h4>
 
