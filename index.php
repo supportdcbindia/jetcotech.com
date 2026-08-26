@@ -1056,7 +1056,7 @@
 
                     <?php
 
-                    $nb_elem_per_page = 200;
+                    $nb_elem_per_page = 24;
 
                     $page = isset($_GET['page'])
                         ? max(0, intval($_GET['page']) - 1)
@@ -1092,15 +1092,16 @@
                     <?php } ?>
 
                 </div>
-
-            </div>
-        </section>
-        <div class="text-center mt-4">
+                <div class="text-center mt-4">
             <a href="clients.php" class="product-all-btn">
                 View All Clients
                 <i class="fa fa-arrow-right"></i>
             </a>
         </div>
+
+            </div>
+        </section>
+        
     </div>
     <?php require_once('footer.php'); ?>
     <?php require_once('script.php'); ?>
