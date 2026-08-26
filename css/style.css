@@ -16178,6 +16178,534 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     }
 }
 
+/* =========================================
+   MODERN FOOTER
+========================================= */
+
+.footer-modern {
+    position: relative;
+    overflow: hidden;
+    background: #0e2f49;
+    color: #fff;
+}
+
+
+/* =========================================
+   TOP CTA
+========================================= */
+
+.footer-top-cta {
+    padding: 0 0 35px;
+    background: #f7f9fc;
+}
+
+.footer-top-cta-inner {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 38px 42px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123d61 0%,
+            #174e76 100%
+        );
+
+    box-shadow:
+        0 20px 45px rgba(18, 61, 97, 0.18);
+}
+
+.footer-top-cta-inner::before {
+    content: "";
+
+    position: absolute;
+
+    right: -70px;
+    top: -80px;
+
+    width: 220px;
+    height: 220px;
+
+    border: 34px solid rgba(255,255,255,0.05);
+
+    border-radius: 50%;
+}
+
+.footer-top-cta-inner span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #ff8a4b;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.footer-top-cta-inner h3 {
+    max-width: 760px;
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+.footer-cta-btn {
+    position: relative;
+    z-index: 2;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 14px 24px;
+
+    border-radius: 7px;
+
+    background: #ff6d2d;
+
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.footer-cta-btn:hover {
+    background: #fff;
+    color: #123d61;
+
+    transform: translateY(-3px);
+}
+
+.footer-cta-btn i {
+    transition: transform 0.3s ease;
+}
+
+.footer-cta-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   UPPER FOOTER
+========================================= */
+
+.footer-modern .upper-box {
+    position: relative;
+
+    padding: 70px 0 55px;
+
+    background:
+        radial-gradient(
+            circle at 92% 15%,
+            rgba(255,255,255,0.04),
+            transparent 20%
+        ),
+        linear-gradient(
+            135deg,
+            #0e2f49 0%,
+            #123d61 100%
+        );
+}
+
+.footer-modern .upper-box::before {
+    content: "";
+
+    position: absolute;
+
+    left: 5%;
+    top: 60px;
+
+    width: 90px;
+    height: 90px;
+
+    opacity: 0.08;
+
+    background-image:
+        radial-gradient(#ffffff 2px, transparent 2px);
+
+    background-size: 15px 15px;
+}
+
+
+/* =========================================
+   WIDGET
+========================================= */
+
+.footer-modern .widget {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-modern .widget_title {
+    position: relative;
+
+    margin: 0 0 24px;
+
+    padding-bottom: 12px;
+
+    color: #fff;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.footer-modern .widget_title::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 42px;
+    height: 3px;
+
+    border-radius: 5px;
+
+    background: #ff6d2d;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.footer-modern .about-widget .text {
+    max-width: 360px;
+
+    color: rgba(255,255,255,0.70);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.footer-social-title {
+    margin-top: 22px;
+    margin-bottom: 12px;
+
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.footer-modern .social-links {
+    display: flex;
+    gap: 9px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-modern .social-links li a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    color: #fff;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-modern .social-links li a:hover {
+    background: #ff6d2d;
+
+    border-color: #ff6d2d;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   QUICK LINKS
+========================================= */
+
+.footer-modern .links-widget .list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-modern .links-widget .list li {
+    margin-bottom: 12px;
+}
+
+.footer-modern .links-widget .list li a {
+    position: relative;
+
+    display: inline-block;
+
+    padding-left: 15px;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.footer-modern .links-widget .list li a::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 8px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #ff6d2d;
+}
+
+.footer-modern .links-widget .list li a:hover {
+    color: #fff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.footer-contact-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-contact-list li {
+    display: flex;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+.footer-contact-icon {
+    flex: 0 0 42px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,0.08);
+
+    color: #ff7a36;
+
+    font-size: 15px;
+}
+
+.footer-contact-list li > div:last-child span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.footer-contact-list p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.68);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+.footer-contact-list a {
+    color: rgba(255,255,255,0.72);
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-contact-list a:hover {
+    color: #ff7a36;
+}
+
+
+/* =========================================
+   BOTTOM BAR
+========================================= */
+
+.footer-bottom {
+    border-top:
+        1px solid rgba(255,255,255,0.08);
+
+    background: #0a263c;
+}
+
+.footer-bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    min-height: 70px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.55);
+
+    font-size: 13px;
+}
+
+.footer-bottom-links {
+    display: flex;
+
+    gap: 18px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255,255,255,0.55);
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #ff6d2d;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .footer-top-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-modern .upper-box {
+        padding: 60px 0 40px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .footer-top-cta {
+        padding-bottom: 25px;
+    }
+
+    .footer-top-cta-inner {
+        padding: 28px 22px;
+
+        border-radius: 14px;
+    }
+
+    .footer-top-cta-inner h3 {
+        font-size: 21px;
+    }
+
+    .footer-cta-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .footer-modern .upper-box {
+        padding: 50px 0 30px;
+    }
+
+    .footer-modern .widget_title {
+        margin-bottom: 18px;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 18px 0;
+
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+}
+
 
 
 
