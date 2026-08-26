@@ -18451,57 +18451,26 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 /* =========================================
-   COMPANY SECTION - MODERN
+   COMPANY SECTION - PREMIUM VERSION
 ========================================= */
 
 .companies-section {
     position: relative;
-    padding: 90px 0;
+    padding: 85px 0;
     overflow: hidden;
 
     background:
-        radial-gradient(circle at 92% 10%, rgba(18, 61, 97, 0.06), transparent 20%),
-        radial-gradient(circle at 7% 90%, rgba(255, 109, 45, 0.05), transparent 18%),
+        radial-gradient(circle at 92% 10%, rgba(18,61,97,.05), transparent 22%),
         linear-gradient(135deg, #f7f9fc 0%, #ffffff 55%, #f4f7fa 100%);
 }
 
-.companies-section::before {
-    content: "";
-    position: absolute;
-    right: 5%;
-    top: 80px;
-
-    width: 90px;
-    height: 90px;
-
-    opacity: 0.12;
-
-    background-image: radial-gradient(#123d61 2px, transparent 2px);
-    background-size: 15px 15px;
-}
-
 
 /* =========================================
-   MAIN CONTAINER
+   MAIN HEADING
 ========================================= */
-
-.companies-section .content {
-    position: relative;
-    z-index: 2;
-}
-
-
-/* =========================================
-   LEFT CONTENT
-========================================= */
-
-.companies-section .title-column .inner-column {
-    padding-right: 35px;
-}
 
 .companies-section .sec-title {
-    position: relative;
-    margin-bottom: 28px !important;
+    margin-bottom: 25px !important;
 }
 
 .companies-section .sec-title::before {
@@ -18509,28 +18478,26 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
     display: block;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     color: #ff6d2d;
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 800;
-
-    letter-spacing: 2.3px;
+    letter-spacing: 2.4px;
 }
 
 .companies-section .sec-title h2 {
     position: relative;
 
     margin: 0;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
 
     color: #123d61;
 
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 800;
-
-    line-height: 1.18;
+    line-height: 1.15;
 }
 
 .companies-section .sec-title h2::after {
@@ -18540,41 +18507,45 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     left: 0;
     bottom: 0;
 
-    width: 68px;
-    height: 4px;
-
-    border-radius: 10px;
+    width: 62px;
+    height: 3px;
 
     background: #ff6d2d;
+
+    border-radius: 10px;
 }
 
 
 /* =========================================
-   LEFT TEXT BOX
+   ABOUT CONTENT BOX
 ========================================= */
 
 .services-block-seven {
     position: relative;
 
-    padding: 30px;
+    padding: 28px 30px;
+
+    margin-bottom: 38px !important;
 
     background: #ffffff;
 
-    border: 1px solid #e4eaf0;
+    border: 1px solid #e4e9ef;
     border-radius: 16px;
 
-    box-shadow: 0 12px 32px rgba(18, 61, 97, 0.07);
+    box-shadow:
+        0 12px 32px rgba(18,61,97,.07);
 }
 
 .services-block-seven::before {
     content: "";
 
     position: absolute;
+
     left: 0;
-    top: 30px;
+    top: 20px;
 
     width: 4px;
-    height: 70px;
+    height: 48px;
 
     background: #ff6d2d;
 
@@ -18582,12 +18553,13 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 .services-block-seven p {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 
-    color: #5e6a75;
+    color: #5d6975;
 
-    font-size: 15px;
-    line-height: 1.82;
+    font-size: 14px;
+
+    line-height: 1.75;
 }
 
 .services-block-seven p:last-child {
@@ -18596,51 +18568,52 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
 
 /* =========================================
-   RIGHT GRID
+   CARD GRID
 ========================================= */
 
-.companies-section .blocks-column .inner-column {
-    padding-left: 20px;
-}
-
-.companies-section .blocks-column .row {
+.value-cards-row {
     margin-left: -10px;
     margin-right: -10px;
 }
 
-.companies-section .blocks-column .column {
+.value-cards-row > div {
     padding-left: 10px;
     padding-right: 10px;
+
+    margin-bottom: 20px;
 }
 
 
 /* =========================================
-   VALUE CARD
+   CARD
 ========================================= */
 
 .services-block-eight {
-    margin-bottom: 20px;
-}
+    height: 100%;
 
-.services-block-eight.margin-top {
-    margin-top: 35px;
+    margin: 0;
 }
 
 .services-block-eight .inner-box {
     position: relative;
 
-    min-height: 220px;
+    display: flex;
+    flex-direction: column;
 
-    padding: 28px 24px;
+    height: 100%;
+    min-height: 245px;
+
+    padding: 28px 24px 24px;
 
     overflow: hidden;
 
     background: #ffffff;
 
-    border: 1px solid #e4eaf0;
-    border-radius: 16px;
+    border: 1px solid #e3e9ef;
+    border-radius: 15px;
 
-    box-shadow: 0 10px 28px rgba(18, 61, 97, 0.07);
+    box-shadow:
+        0 9px 26px rgba(18,61,97,.06);
 
     transition: all .35s ease;
 }
@@ -18648,33 +18621,54 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 .services-block-eight .inner-box:hover {
     transform: translateY(-7px);
 
-    border-color: rgba(255, 109, 45, 0.28);
+    border-color: rgba(255,109,45,.28);
 
-    box-shadow: 0 20px 42px rgba(18, 61, 97, 0.14);
+    box-shadow:
+        0 18px 42px rgba(18,61,97,.13);
 }
 
 
-/* top accent */
+/* TOP ACCENT */
 
 .services-block-eight .inner-box::before {
     content: "";
 
     position: absolute;
+
     left: 24px;
     top: 0;
 
-    width: 50px;
-    height: 4px;
-
-    border-radius: 0 0 5px 5px;
+    width: 46px;
+    height: 3px;
 
     background: #ff6d2d;
+
+    border-radius: 0 0 5px 5px;
 
     transition: width .3s ease;
 }
 
 .services-block-eight .inner-box:hover::before {
-    width: 80px;
+    width: 76px;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.card-no {
+    position: absolute;
+
+    top: 15px;
+    right: 17px;
+
+    color: #e1e6eb;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    line-height: 1;
 }
 
 
@@ -18683,10 +18677,10 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 ========================================= */
 
 .services-block-eight .icon-box {
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 58px;
 
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
     display: flex;
     align-items: center;
@@ -18695,13 +18689,14 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     border-radius: 14px;
 
     background:
-        linear-gradient(135deg, #123d61, #1b5078);
+        linear-gradient(135deg, #123d61, #184d73);
 
     color: #ffffff;
 
-    font-size: 27px;
+    font-size: 25px;
 
-    box-shadow: 0 10px 22px rgba(18, 61, 97, 0.18);
+    box-shadow:
+        0 10px 20px rgba(18,61,97,.18);
 
     transition: all .3s ease;
 }
@@ -18709,41 +18704,39 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 .services-block-eight .inner-box:hover .icon-box {
     background: #ff6d2d;
 
-    transform: rotate(-5deg) scale(1.04);
+    transform: translateY(-3px);
 }
 
 
 /* =========================================
-   TITLE
+   CARD TITLE
 ========================================= */
 
 .services-block-eight h5 {
     margin: 0 0 10px;
 
-    font-size: 19px;
-    font-weight: 700;
+    color: #123d61;
+
+    font-size: 18px;
+    font-weight: 750;
 
     text-transform: capitalize;
 }
 
 .services-block-eight h5 a {
-    color: #123d61;
+    color: inherit;
 
     text-decoration: none;
-
-    transition: .3s ease;
-}
-
-.services-block-eight .inner-box:hover h5 a {
-    color: #ff6d2d;
 }
 
 
 /* =========================================
-   DESCRIPTION
+   CARD TEXT
 ========================================= */
 
 .services-block-eight .text {
+    margin: 0;
+
     color: #687480;
 
     font-size: 13px;
@@ -18752,46 +18745,41 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
 
 /* =========================================
-   DISABLE OLD OVERLAY STYLE
+   SMALL DECORATIVE LINE
 ========================================= */
+
+.services-block-eight .inner-box::after {
+    content: "";
+
+    position: absolute;
+
+    left: 24px;
+    bottom: 20px;
+
+    width: 27px;
+    height: 2px;
+
+    background: #ff6d2d;
+
+    transition: width .3s ease;
+}
+
+.services-block-eight .inner-box:hover::after {
+    width: 58px;
+}
+
+
+/* REMOVE OLD OVERLAY */
 
 .services-block-eight .overlay-box {
     display: none !important;
 }
 
 
-/* =========================================
-   OPTIONAL CARD NUMBER EFFECT
-========================================= */
+/* REMOVE OLD MARGIN */
 
-.services-block-eight .inner-box::after {
-    content: "01";
-
-    position: absolute;
-    right: 18px;
-    top: 16px;
-
-    color: #e2e7ec;
-
-    font-size: 28px;
-    font-weight: 800;
-
-    line-height: 1;
-}
-
-.companies-section .blocks-column .column:first-child
-.services-block-eight:nth-child(2) .inner-box::after {
-    content: "02";
-}
-
-.companies-section .blocks-column .column:nth-child(2)
-.services-block-eight:first-child .inner-box::after {
-    content: "03";
-}
-
-.companies-section .blocks-column .column:nth-child(2)
-.services-block-eight:nth-child(2) .inner-box::after {
-    content: "04";
+.services-block-eight.margin-top {
+    margin-top: 0 !important;
 }
 
 
@@ -18802,24 +18790,15 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 @media (max-width: 991px) {
 
     .companies-section {
-        padding: 70px 0;
-    }
-
-    .companies-section .title-column .inner-column {
-        padding-right: 0;
-        margin-bottom: 40px;
-    }
-
-    .companies-section .blocks-column .inner-column {
-        padding-left: 0;
+        padding: 65px 0;
     }
 
     .companies-section .sec-title h2 {
-        font-size: 35px;
+        font-size: 34px;
     }
 
-    .services-block-eight.margin-top {
-        margin-top: 0;
+    .services-block-eight .inner-box {
+        min-height: 220px;
     }
 
 }
@@ -18832,46 +18811,40 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 @media (max-width: 767px) {
 
     .companies-section {
-        padding: 55px 0;
+        padding: 50px 0;
     }
 
     .companies-section .sec-title h2 {
-        font-size: 29px;
+        font-size: 28px;
     }
 
     .services-block-seven {
         padding: 22px 18px;
+
+        margin-bottom: 28px !important;
     }
 
     .services-block-seven p {
-        font-size: 14px;
-        line-height: 1.75;
+        font-size: 13.5px;
+
+        line-height: 1.7;
     }
 
     .services-block-eight .inner-box {
         min-height: auto;
 
-        padding: 24px 20px;
-
-        border-radius: 13px;
+        padding: 23px 20px 42px;
     }
 
     .services-block-eight .icon-box {
-        width: 54px;
-        height: 54px;
+        width: 52px;
+        height: 52px;
 
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .services-block-eight h5 {
         font-size: 17px;
     }
 
-    .services-block-eight .text {
-        font-size: 13px;
-    }
-
-    .companies-section::before {
-        display: none;
-    }
 }

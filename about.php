@@ -96,100 +96,105 @@
                                                 </div>
                                             </div>
                                             <div class="blocks-column col-lg-12 col-md-12 col-sm-12">
-                                                <div class="inner-column">
-                                                    <div class="row clearfix">
-                                                        <div class="column col-lg-6 col-md-6 col-sm-12">
-                                                            <div class="services-block-eight margin-top">
-                                                                <div class="inner-box">
-                                                                    <div class="icon-box"><span
-                                                                            class="icon flaticon-help"></span></div>
-                                                                    <h5><a href="#">Innovation</a></h5>
-                                                                    <div class="text">The argument in favor of using
-                                                                        filler text goes some thing like this</div>
-                                                                    <div class="overlay-box">
-                                                                        <div class="overlay-inner">
-                                                                            <div class="content">
-                                                                                <h6><a href="#">Innovation</a></h6>
-                                                                                <div class="text">The argument in favor
-                                                                                    of using filler text goes some thing
-                                                                                    like this</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="services-block-eight">
-                                                                <div class="inner-box">
-                                                                    <div class="icon-box"><span
-                                                                            class="icon flaticon-comment-1"></span>
-                                                                    </div>
-                                                                    <h5><a href="#">creativity</a></h5>
-                                                                    <div class="text">The argument in favor of using
-                                                                        filler text goes some thing like this. The
-                                                                        argument in favor of using filler text goes some
-                                                                        thing like this</div>
-                                                                    <div class="overlay-box">
-                                                                        <div class="overlay-inner">
-                                                                            <div class="content">
-                                                                                <h6><a href="#">creativity</a></h6>
-                                                                                <div class="text">The argument in favor
-                                                                                    of using filler text goes some thing
-                                                                                    like this. The argument in favor of
-                                                                                    using filler text goes some thing
-                                                                                    like this</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="column col-lg-6 col-md-6 col-sm-12">
-                                                            <div class="services-block-eight">
-                                                                <div class="inner-box">
-                                                                    <div class="icon-box"><span
-                                                                            class="icon flaticon-research"></span></div>
-                                                                    <h5><a href="#">Values</a></h5>
-                                                                    <div class="text">The argument in favor of using
-                                                                        filler text goes some thing like this</div>
-                                                                    <div class="overlay-box">
-                                                                        <div class="overlay-inner">
-                                                                            <div class="content">
-                                                                                <h6><a href="#">Values</a></h6>
-                                                                                <div class="text">The argument in favor
-                                                                                    of using filler text goes some thing
-                                                                                    like this</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="services-block-eight">
-                                                                <div class="inner-box">
-                                                                    <div class="icon-box"><span
-                                                                            class="icon flaticon-help"></span></div>
-                                                                    <h5><a href="#">Fast Support</a></h5>
-                                                                    <div class="text">The argument in favor of using
-                                                                        filler text goes some thing like this. The
-                                                                        argument in favor of using filler text goes some
-                                                                        thing like this</div>
-                                                                    <div class="overlay-box">
-                                                                        <div class="overlay-inner">
-                                                                            <div class="content">
-                                                                                <h6><a href="#">Fast Support</a></h6>
-                                                                                <div class="text">The argument in favor
-                                                                                    of using filler text goes some thing
-                                                                                    like this. The argument in favor of
-                                                                                    using filler text goes some thing
-                                                                                    like this</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+    <div class="inner-column">
+
+        <div class="row value-cards-row">
+
+            <!-- Innovation -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="services-block-eight">
+                    <div class="inner-box">
+
+                        <span class="card-no">01</span>
+
+                        <div class="icon-box">
+                            <span class="icon flaticon-help"></span>
+                        </div>
+
+                        <h5>Innovation</h5>
+
+                        <div class="text">
+                            Continuously improving our engineering, products and
+                            manufacturing processes to deliver better solutions.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Creativity -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="services-block-eight">
+                    <div class="inner-box">
+
+                        <span class="card-no">02</span>
+
+                        <div class="icon-box">
+                            <span class="icon flaticon-comment-1"></span>
+                        </div>
+
+                        <h5>Creativity</h5>
+
+                        <div class="text">
+                            Developing practical and application-focused solutions
+                            for diverse industrial and infrastructure requirements.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Values -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="services-block-eight">
+                    <div class="inner-box">
+
+                        <span class="card-no">03</span>
+
+                        <div class="icon-box">
+                            <span class="icon flaticon-research"></span>
+                        </div>
+
+                        <h5>Values</h5>
+
+                        <div class="text">
+                            Built on quality, integrity, long-term relationships
+                            and a commitment to dependable performance.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Fast Support -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="services-block-eight">
+                    <div class="inner-box">
+
+                        <span class="card-no">04</span>
+
+                        <div class="icon-box">
+                            <span class="icon flaticon-help"></span>
+                        </div>
+
+                        <h5>Fast Support</h5>
+
+                        <div class="text">
+                            Responsive technical assistance and dependable support
+                            before, during and after project execution.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
                                         </div>
                                     </div>
                                 </div>
