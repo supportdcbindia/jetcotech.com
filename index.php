@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid">
+                <!-- <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div id="product-slider" class="owl-carousel area-carousel">
@@ -287,7 +287,287 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+
+                <div class="row product-grid">
+
+    <!-- Product 1 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="conical-poles.php" class="product-card-image">
+                <img src="images/homepage/product/conical-poles.webp" alt="Conical Poles">
+                <span class="product-number">01</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="conical-poles.php">Conical Poles</a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="conical-poles.php" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
                 </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="high-mast-poles.php" class="product-card-image">
+                <img src="images/homepage/product/high-mast-poles.webp" alt="High Mast Poles">
+                <span class="product-number">02</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="high-mast-poles.php">High Mast Poles</a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="high-mast-poles.php" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Product 3 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="ladder-cable-tray.php" class="product-card-image">
+                <img src="images/homepage/product/ladder-cable-tray.webp" alt="Ladder Cable Tray">
+                <span class="product-number">03</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="ladder-cable-tray.php">Ladder Cable Tray</a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="ladder-cable-tray.php" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Product 4 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="perforated-cable-tray.php" class="product-card-image">
+                <img src="images/homepage/product/perforated-cable-tray.webp" alt="Perforated Cable Tray">
+                <span class="product-number">04</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="perforated-cable-tray.php">
+                        Perforated Cable Tray
+                    </a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="perforated-cable-tray.php" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Product 5 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="polygonal-octagonal-lighting-poles.php" class="product-card-image">
+                <img src="images/homepage/product/polygonal-lighting-poles.webp" alt="Polygonal Lighting Poles">
+                <span class="product-number">05</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="polygonal-octagonal-lighting-poles.php">
+                        Polygonal Lighting Poles
+                    </a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="polygonal-octagonal-lighting-poles.php" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Product 6 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="stadium-mast-poles.php" class="product-card-image">
+                <img src="images/homepage/product/stadium-mast-poles.webp" alt="Stadium Mast Poles">
+                <span class="product-number">06</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="stadium-mast-poles.php">
+                        Stadium Mast Poles
+                    </a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="stadium-mast-poles.php" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Product 7 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="frp-moulded-&amp;-pultruded-gratings.php" class="product-card-image">
+                <img
+                    src="images/homepage/product/frp-moulded-&amp;-pultruded-gratings.webp"
+                    alt="FRP Moulded &amp; Pultruded Gratings"
+                >
+                <span class="product-number">07</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="frp-moulded-&amp;-pultruded-gratings.php">
+                        FRP Moulded &amp; Pultruded Gratings
+                    </a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="frp-moulded-&amp;-pultruded-gratings.php" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Product 8 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="product-card">
+
+            <a href="wire-mesh-cable-tray.html" class="product-card-image">
+                <img src="images/homepage/product/wiremesh-cable-tray.webp" alt="Wire Mesh Cable Tray">
+                <span class="product-number">08</span>
+            </a>
+
+            <div class="product-card-content">
+                <h3>
+                    <a href="wire-mesh-cable-tray.html">
+                        Wire Mesh Cable Tray
+                    </a>
+                </h3>
+
+                <div class="product-card-actions">
+
+                    <a href="wire-mesh-cable-tray.html" class="product-view-btn">
+                        View Details
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact-us.php" class="product-quote-btn">
+                        Get a Quote
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
             </section>
             <section class="counter-one">
                 <div class="container">
