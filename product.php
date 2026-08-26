@@ -47,81 +47,175 @@
             </div>
         </section>
         <section class="landing-sec same-space">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/cable-tray/perforated-cable-tray/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
+    <div class="auto-container">
+        <div class="row clearfix">
 
-                                        <div class="case-study-title">
-                                            <h3><a href="cable-tray.php">Cable Tray</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="cable-tray.php"> <i class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Cable Tray -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+                    
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/cable-tray/perforated-cable-tray/01.jpg"
+                             alt="Cable Tray">
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box" style="border:1px solid #e5e5e5;">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/lighting-poles/polygonal-octagonal-lighting-poles/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="lighting-poles.php">Lighting Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="lighting-poles.php"><i class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="cable-tray.php">
+                                    Cable Tray
+                                </a>
+                            </h3>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/mast-poles/stadium-mast-poles/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="mast-poles.php">Mast Poles</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="mast-poles.php"><i class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="cable-tray.php"
+                               class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                               class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
                         </div>
+
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box" style="border:1px solid #e5e5e5;">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/frp-products/frp-perforated-cable-tray/frp-perforated-cable-tray.webp"
-                                    alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="frp-products.html">Frp Products</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="frp-products.html"><i class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-        </section>
+
+
+            <!-- Lighting Poles -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/lighting-poles/polygonal-octagonal-lighting-poles/01.jpg"
+                             alt="Lighting Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="lighting-poles.php">
+                                    Lighting Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="lighting-poles.php"
+                               class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                               class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Mast Poles -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/mast-poles/stadium-mast-poles/01.jpg"
+                             alt="Mast Poles">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="mast-poles.php">
+                                    Mast Poles
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="mast-poles.php"
+                               class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                               class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- FRP Products -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/frp-products/frp-perforated-cable-tray/frp-perforated-cable-tray.webp"
+                             alt="FRP Products">
+                    </div>
+
+                    <div class="case-study-content">
+
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="frp-products.html">
+                                    FRP Products
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+
+                            <a href="frp-products.html"
+                               class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;"
+                               class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
         <?php require_once('footer.php');?>
     </div>
     <?php require_once('script.php');?>
