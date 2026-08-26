@@ -14666,6 +14666,740 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 
+/* =========================================
+   INDUSTRIES SECTION
+========================================= */
+
+.industries-modern-section {
+    position: relative;
+    padding: 90px 0 75px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 92% 8%, rgba(18, 61, 97, 0.06), transparent 18%),
+        linear-gradient(135deg, #f7f9fc 0%, #ffffff 55%, #f4f7fa 100%);
+}
+
+
+/* Decorative dots */
+
+.industries-modern-section::before {
+    content: "";
+    position: absolute;
+    left: 5%;
+    top: 110px;
+    width: 90px;
+    height: 90px;
+    opacity: .13;
+
+    background-image: radial-gradient(#123d61 2px, transparent 2px);
+    background-size: 15px 15px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.industries-heading {
+    max-width: 780px;
+    margin: 0 auto 50px;
+}
+
+.industries-heading span {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #ff6d2d;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.industries-heading h2 {
+    margin: 0 0 16px;
+
+    color: #123d61;
+
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.industries-heading p {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: #67737f;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.industry-card {
+    position: relative;
+
+    height: 360px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background: #123d61;
+
+    box-shadow: 0 14px 35px rgba(18, 61, 97, 0.10);
+
+    transition: all 0.4s ease;
+}
+
+.industry-card-wide {
+    height: 390px;
+}
+
+.industry-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 22px 48px rgba(18, 61, 97, 0.18);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.industry-image {
+    position: absolute;
+    inset: 0;
+}
+
+.industry-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.55s ease;
+}
+
+.industry-card:hover .industry-image img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.industry-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 28px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(9, 30, 47, 0.05) 20%,
+            rgba(9, 35, 55, 0.35) 48%,
+            rgba(8, 32, 51, 0.94) 100%
+        );
+
+    transition: background 0.35s ease;
+}
+
+.industry-card:hover .industry-overlay {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(9, 30, 47, 0.10) 10%,
+            rgba(9, 35, 55, 0.55) 48%,
+            rgba(8, 32, 51, 0.98) 100%
+        );
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.industry-number {
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,.94);
+
+    color: #123d61;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.industry-content {
+    max-width: 85%;
+}
+
+.industry-small {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #ff8b4d;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.industry-content h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+.industry-content p {
+    margin: 0;
+
+    color: rgba(255,255,255,.72);
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    max-height: 0;
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: all 0.35s ease;
+}
+
+.industry-card:hover .industry-content p {
+    max-height: 100px;
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.industry-arrow {
+    position: absolute;
+
+    right: 24px;
+    bottom: 24px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff6d2d;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.industry-arrow:hover {
+    background: #ffffff;
+    color: #123d61;
+
+    transform: rotate(-35deg);
+}
+
+
+/* =========================================
+   VIEW ALL BUTTON
+========================================= */
+
+.industries-footer {
+    margin-top: 15px;
+}
+
+.industries-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 14px 26px;
+
+    border-radius: 7px;
+
+    background: #123d61;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow: 0 10px 22px rgba(18,61,97,.16);
+
+    transition: all 0.3s ease;
+}
+
+.industries-view-btn:hover {
+    background: #ff6d2d;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+.industries-view-btn i {
+    transition: transform 0.3s ease;
+}
+
+.industries-view-btn:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .industries-modern-section {
+        padding: 70px 0 55px;
+    }
+
+    .industries-heading h2 {
+        font-size: 35px;
+    }
+
+    .industry-card,
+    .industry-card-wide {
+        height: 330px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .industries-modern-section {
+        padding: 55px 0 40px;
+    }
+
+    .industries-heading {
+        margin-bottom: 35px;
+    }
+
+    .industries-heading h2 {
+        font-size: 29px;
+    }
+
+    .industries-heading p {
+        font-size: 14px;
+    }
+
+    .industry-card,
+    .industry-card-wide {
+        height: 300px;
+    }
+
+    .industry-overlay {
+        padding: 22px;
+    }
+
+    .industry-content {
+        max-width: 88%;
+    }
+
+    .industry-content h3 {
+        font-size: 21px;
+    }
+
+    .industry-content p {
+        max-height: 100px;
+        opacity: 1;
+
+        transform: none;
+    }
+
+    .industry-arrow {
+        right: 18px;
+        bottom: 18px;
+
+        width: 42px;
+        height: 42px;
+    }
+
+    .industries-modern-section::before {
+        display: none;
+    }
+}
+
+/* =========================================
+   GROUP OF COMPANIES
+========================================= */
+
+.groupcompany-modern {
+    position: relative;
+    padding: 90px 0 70px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 8% 15%, rgba(255, 109, 45, 0.05), transparent 18%),
+        radial-gradient(circle at 92% 85%, rgba(18, 61, 97, 0.06), transparent 18%),
+        linear-gradient(135deg, #f7f9fc 0%, #ffffff 55%, #f4f7fa 100%);
+}
+
+
+/* Decorative dots */
+
+.groupcompany-modern::before {
+    content: "";
+    position: absolute;
+    right: 6%;
+    top: 70px;
+
+    width: 90px;
+    height: 90px;
+
+    opacity: 0.13;
+
+    background-image:
+        radial-gradient(#123d61 2px, transparent 2px);
+
+    background-size: 15px 15px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.groupcompany-heading {
+    max-width: 760px;
+    margin: 0 auto 48px;
+}
+
+.groupcompany-heading span {
+    display: inline-block;
+
+    margin-bottom: 9px;
+
+    color: #ff6d2d;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+.groupcompany-heading h2 {
+    position: relative;
+
+    margin: 0 0 16px;
+    padding-bottom: 15px;
+
+    color: #123d61;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    line-height: 1.2;
+}
+
+.groupcompany-heading h2::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 68px;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+
+    background: #ff6d2d;
+}
+
+.groupcompany-heading p {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: #687480;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.group-company-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 210px;
+
+    padding: 30px 25px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 32px rgba(18, 61, 97, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.group-company-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 109, 45, 0.28);
+
+    box-shadow:
+        0 20px 45px rgba(18, 61, 97, 0.13);
+}
+
+
+/* Orange top accent */
+
+.group-company-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 28px;
+
+    width: 55px;
+    height: 4px;
+
+    border-radius: 0 0 5px 5px;
+
+    background: #ff6d2d;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.group-company-logo {
+    width: 100%;
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-company-logo img {
+    display: block;
+
+    max-width: 85%;
+    max-height: 95px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.35s ease,
+        filter 0.35s ease;
+}
+
+.group-company-card:hover .group-company-logo img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.group-company-number {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    color: #dce3e9;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   BOTTOM LINE
+========================================= */
+
+.group-company-line {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    width: 28px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    border-radius: 5px;
+
+    background: #ff6d2d;
+
+    transition: width 0.35s ease;
+}
+
+.group-company-card:hover .group-company-line {
+    width: 65px;
+}
+
+
+/* =========================================
+   OPTIONAL NAVY HOVER BACKGROUND
+========================================= */
+
+.group-company-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: -1;
+
+    background: #123d61;
+
+    opacity: 0;
+
+    transition: opacity 0.35s ease;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .groupcompany-modern {
+        padding: 70px 0 50px;
+    }
+
+    .groupcompany-heading h2 {
+        font-size: 35px;
+    }
+
+    .group-company-card {
+        min-height: 190px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .groupcompany-modern {
+        padding: 55px 0 35px;
+    }
+
+    .groupcompany-heading {
+        margin-bottom: 35px;
+    }
+
+    .groupcompany-heading h2 {
+        font-size: 29px;
+    }
+
+    .groupcompany-heading p {
+        font-size: 14px;
+    }
+
+    .group-company-card {
+        min-height: 170px;
+
+        padding: 24px 20px;
+
+        border-radius: 13px;
+    }
+
+    .group-company-logo img {
+        max-width: 80%;
+        max-height: 80px;
+    }
+
+    .group-company-number {
+        font-size: 25px;
+    }
+
+    .groupcompany-modern::before {
+        display: none;
+    }
+}
+
+
 
 
 

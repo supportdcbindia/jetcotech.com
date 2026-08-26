@@ -739,167 +739,260 @@
 
     </div>
 </section>
-        <section class="projects-section space">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="title-area">
-                            <h2 class="sec-title">Industries We Serve</h2>
+        <section class="projects-section industries-modern-section">
+    <div class="container">
+
+        <div class="industries-heading text-center">
+            <span>INDUSTRIES WE SERVE</span>
+            <h2>Engineered Solutions Across Diverse Industries</h2>
+            <p>
+                Supporting critical infrastructure and industrial applications with
+                dependable products, engineered performance and application-focused solutions.
+            </p>
+        </div>
+
+        <div class="row industries-grid">
+
+            <!-- 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <img src="images/homepage/industry-we-serve/automobile-industry.webp" alt="Automobile Industry">
+                    </div>
+
+                    <div class="industry-overlay">
+                        <span class="industry-number">01</span>
+
+                        <div class="industry-content">
+                            <span class="industry-small">INDUSTRY</span>
+                            <h3>Automobile</h3>
+                            <p>Solutions supporting modern automotive and manufacturing infrastructure.</p>
                         </div>
+
+                        <a href="javascript:;" class="industry-arrow">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid text-center">
-                <div class="row text-right-rtl">
-                    <!--Start Single project Item-->
-                    <div class="col-xl-3 col-lg-6 col-md-12 p-0">
-                        <div class="single-project-item">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img class="w-100" src="images/homepage/industry-we-serve/automobile-industry.webp"
-                                        alt="Awesome Image">
-                                </div>
-                                <div class="info-box">
-                                    <h6 class="title"><a href="javascript:;">Automobile</a>
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
+
+
+            <!-- 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <img src="images/homepage/industry-we-serve/commercial-industry.webp" alt="Chemical Industry">
                     </div>
-                    <!--End Single project Item-->
-                    <!--Start Single project Item-->
-                    <div class="col-xl-3 col-lg-6 col-md-12 p-0">
-                        <div class="single-project-item">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img class="w-100" src="images/homepage/industry-we-serve/commercial-industry.webp"
-                                        alt="Awesome Image">
-                                </div>
-                                <div class="info-box">
-                                    <h6 class="title"><a href="javascript:;">Chemical</a>
-                                    </h6>
-                                </div>
-                            </div>
+
+                    <div class="industry-overlay">
+                        <span class="industry-number">02</span>
+
+                        <div class="industry-content">
+                            <span class="industry-small">INDUSTRY</span>
+                            <h3>Chemical</h3>
+                            <p>Reliable engineering support for demanding chemical process environments.</p>
                         </div>
-                    </div>
-                    <!--End Single project Item-->
-                    <!--Start Single project Item-->
-                    <div class="col-xl-6 col-lg-6 col-md-12 p-0">
-                        <div class="single-project-item min_height300">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img class="w-100" src="images/homepage/industry-we-serve/pharma-industry.webp"
-                                        alt="Awesome Image">
-                                </div>
-                                <div class="info-box">
-                                    <h6 class="title"><a href="javascript:;">Pharma</a>
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single project Item-->
-                    <!--Start Single project Item-->
-                    <div class="col-xl-6 col-lg-6 col-md-12 p-0">
-                        <div class="single-project-item min_height300">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img class="w-100"
-                                        src="images/homepage/industry-we-serve/lighting-pole.webp"
-                                        alt="Awesome Image">
-                                </div>
-                                <div class="info-box">
-                                    <h6 class="title"><a href="javascript:;">Road & Highway</a>
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single project Item-->
-                    <!--Start Single project Item-->
-                    <div class="col-xl-3 col-lg-6 col-md-12 p-0">
-                        <div class="single-project-item">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img class="w-100"
-                                        src="images/homepage/industry-we-serve/construction-industry.webp"
-                                        alt="Awesome Image">
-                                </div>
-                                <div class="info-box">
-                                    <h6 class="title"><a href="javascript:;">Construction</a>
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single project Item-->
-                    <!--Start Single project Item-->
-                    <div class="col-xl-3 col-lg-6 col-md-12 p-0">
-                        <div class="single-project-item">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img class="w-100" src="images/homepage/industry-we-serve/telecom-industry.webp"
-                                        alt="Awesome Image">
-                                </div>
-                                <div class="info-box">
-                                    <h6 class="title"><a href="javascript:;">Telecom</a>
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single project Item-->
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12">
-                        <div class="btn-box">
-                            <a href="javascript:;" class="theme-btn btn-style-one"><span class="btn-title">All
-                                    Industry</span></a>
-                        </div>
+
+                        <a href="javascript:;" class="industry-arrow">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="groupcompany text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="title-area">
-                            <h2 class="sec-title">Group of companies</h2>
+
+
+            <!-- 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <img src="images/homepage/industry-we-serve/pharma-industry.webp" alt="Pharma Industry">
+                    </div>
+
+                    <div class="industry-overlay">
+                        <span class="industry-number">03</span>
+
+                        <div class="industry-content">
+                            <span class="industry-small">INDUSTRY</span>
+                            <h3>Pharma</h3>
+                            <p>Solutions designed for controlled, quality-focused pharmaceutical facilities.</p>
                         </div>
+
+                        <a href="javascript:;" class="industry-arrow">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="container text-center">
-                <div class="row text-right-rtl">
-                    <!--Start Single project Item-->
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="group-item">
-                            <img class="w-100" src="images/homepage/group-of-companies/jetco-industries.webp"
-                                alt="Awesome Image">
-                        </div>
+
+
+            <!-- 4 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="industry-card industry-card-wide">
+                    <div class="industry-image">
+                        <img src="images/homepage/industry-we-serve/lighting-pole.webp" alt="Road and Highway">
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="group-item">
-                            <img class="w-100" src="images/homepage/group-of-companies/jetco-overseas.webp"
-                                alt="Awesome Image">
+
+                    <div class="industry-overlay">
+                        <span class="industry-number">04</span>
+
+                        <div class="industry-content">
+                            <span class="industry-small">INFRASTRUCTURE</span>
+                            <h3>Road &amp; Highway</h3>
+                            <p>Supporting roadways, public infrastructure and large outdoor lighting projects.</p>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="group-item">
-                            <img class="w-100" src="images/homepage/group-of-companies/jetco-tech.webp"
-                                alt="Awesome Image">
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="group-item">
-                            <img class="w-100" src="images/homepage/group-of-companies/jteco-busbar.webp"
-                                alt="Awesome Image">
-                        </div>
+
+                        <a href="javascript:;" class="industry-arrow">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+
+
+            <!-- 5 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <img src="images/homepage/industry-we-serve/construction-industry.webp" alt="Construction Industry">
+                    </div>
+
+                    <div class="industry-overlay">
+                        <span class="industry-number">05</span>
+
+                        <div class="industry-content">
+                            <span class="industry-small">INDUSTRY</span>
+                            <h3>Construction</h3>
+                            <p>Solutions for commercial, industrial and infrastructure projects.</p>
+                        </div>
+
+                        <a href="javascript:;" class="industry-arrow">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 6 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="industry-card">
+                    <div class="industry-image">
+                        <img src="images/homepage/industry-we-serve/telecom-industry.webp" alt="Telecom Industry">
+                    </div>
+
+                    <div class="industry-overlay">
+                        <span class="industry-number">06</span>
+
+                        <div class="industry-content">
+                            <span class="industry-small">INDUSTRY</span>
+                            <h3>Telecom</h3>
+                            <p>Dependable infrastructure solutions for telecom networks and installations.</p>
+                        </div>
+
+                        <a href="javascript:;" class="industry-arrow">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="industries-footer text-center">
+            <a href="javascript:;" class="industries-view-btn">
+                View All Industries
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+        <section class="groupcompany groupcompany-modern">
+    <div class="container">
+
+        <div class="groupcompany-heading text-center">
+            <span>OUR GROUP</span>
+            <h2>Group of Companies</h2>
+            <p>
+                A diversified group built on engineering expertise, manufacturing strength
+                and a shared commitment to quality, reliability and long-term growth.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <!-- Company 1 -->
+            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                <div class="group-company-card">
+                    <span class="group-company-number">01</span>
+
+                    <div class="group-company-logo">
+                        <img
+                            src="images/homepage/group-of-companies/jetco-industries.webp"
+                            alt="Jetco Industries"
+                        >
+                    </div>
+
+                    <div class="group-company-line"></div>
+                </div>
+            </div>
+
+
+            <!-- Company 2 -->
+            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                <div class="group-company-card">
+                    <span class="group-company-number">02</span>
+
+                    <div class="group-company-logo">
+                        <img
+                            src="images/homepage/group-of-companies/jetco-overseas.webp"
+                            alt="Jetco Overseas"
+                        >
+                    </div>
+
+                    <div class="group-company-line"></div>
+                </div>
+            </div>
+
+
+            <!-- Company 3 -->
+            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                <div class="group-company-card">
+                    <span class="group-company-number">03</span>
+
+                    <div class="group-company-logo">
+                        <img
+                            src="images/homepage/group-of-companies/jetco-tech.webp"
+                            alt="Jetco Tech"
+                        >
+                    </div>
+
+                    <div class="group-company-line"></div>
+                </div>
+            </div>
+
+
+            <!-- Company 4 -->
+            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                <div class="group-company-card">
+                    <span class="group-company-number">04</span>
+
+                    <div class="group-company-logo">
+                        <img
+                            src="images/homepage/group-of-companies/jteco-busbar.webp"
+                            alt="JETCO Busbar"
+                        >
+                    </div>
+
+                    <div class="group-company-line"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
         <section class="cta space-same">
             <div class="container">
                 <div class="cta-inner">
