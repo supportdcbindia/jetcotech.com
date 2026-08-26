@@ -17689,160 +17689,35 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 }
 
 /* =========================================
-   CABLE TRAY PRODUCT LISTING
-========================================= */
-
-.landing-sec {
-    position: relative;
-    padding: 80px 0 60px;
-    overflow: hidden;
-
-    background:
-        radial-gradient(circle at 92% 10%, rgba(18, 61, 97, 0.05), transparent 20%),
-        linear-gradient(135deg, #f7f9fc 0%, #ffffff 55%, #f4f7fa 100%);
-}
-
-
-/* =========================================
-   GRID SPACING
-========================================= */
-
-.landing-sec .row {
-    margin-left: -12px;
-    margin-right: -12px;
-}
-
-.landing-sec .row > [class*="col-"] {
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-bottom: 24px;
-}
-
-
-/* =========================================
-   CARD
-========================================= */
-
-.landing-sec .case-study-single-box {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-
-    background: #ffffff;
-
-    border: 1px solid #e4eaf0;
-    border-radius: 16px;
-
-    box-shadow:
-        0 10px 30px rgba(18, 61, 97, 0.07);
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease,
-        border-color 0.35s ease;
-}
-
-.landing-sec .case-study-single-box:hover {
-    transform: translateY(-7px);
-
-    border-color: rgba(255, 109, 45, 0.30);
-
-    box-shadow:
-        0 20px 45px rgba(18, 61, 97, 0.14);
-}
-
-
-/* =========================================
-   IMAGE AREA
-========================================= */
-
-.landing-sec .case-study-thumb {
-    position: relative;
-    overflow: hidden;
-
-    background: #eef2f5;
-}
-
-
-/* IMPORTANT:
-   keeps all cards equal height */
-.landing-sec .case-study-thumb > img {
-    display: block;
-
-    width: 100%;
-    height: 275px;
-
-    object-fit: cover;
-
-    transition: transform 0.55s ease;
-}
-
-.landing-sec .case-study-single-box:hover
-.case-study-thumb > img {
-    transform: scale(1.055);
-}
-
-
-/* subtle image overlay */
-
-.landing-sec .case-study-thumb::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    z-index: 1;
-
-    background:
-        linear-gradient(
-            180deg,
-            transparent 58%,
-            rgba(10, 40, 62, 0.13) 100%
-        );
-
-    pointer-events: none;
-}
-
-
-/* =========================================
-   CONTENT BAR
+   PRODUCT CONTENT
 ========================================= */
 
 .landing-sec .case-study-content {
     position: relative !important;
-
     left: auto !important;
     right: auto !important;
     bottom: auto !important;
 
-    z-index: 3;
+    display: block;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    min-height: 145px;
+    padding: 20px;
 
-    gap: 15px;
-
-    min-height: 92px;
-
-    padding: 19px 18px 19px 23px;
-
-    background: #ffffff;
+    background: #fff;
 }
 
 
-/* orange side accent */
+/* Orange Accent */
 
 .landing-sec .case-study-content::before {
     content: "";
 
     position: absolute;
-
     left: 0;
-    top: 24px;
+    top: 23px;
 
     width: 4px;
-    height: 38px;
+    height: 34px;
 
     background: #ff6d2d;
 
@@ -17851,32 +17726,31 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
 
 /* =========================================
-   TITLE
+   PRODUCT TITLE
 ========================================= */
 
-.landing-sec .case-text {
-    flex: 1;
-}
-
 .landing-sec .case-study-title {
-    margin: 0;
+    margin: 0 0 17px;
 }
 
 .landing-sec .case-study-title h3 {
+    display: flex;
+    align-items: center;
+
+    min-height: 48px;
+
     margin: 0;
 
     font-size: 18px;
     font-weight: 700;
-
     line-height: 1.35;
 }
 
 .landing-sec .case-study-title h3 a {
     color: #123d61;
-
     text-decoration: none;
 
-    transition: color 0.3s ease;
+    transition: color .3s ease;
 }
 
 .landing-sec .case-study-single-box:hover
@@ -17886,99 +17760,168 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
 
 
 /* =========================================
-   ARROW BUTTON
+   TWO BUTTONS
 ========================================= */
 
-.landing-sec .case-right-btn {
-    flex: 0 0 44px;
+.product-card-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
 }
 
-.landing-sec .case-right-btn a {
-    width: 44px;
-    height: 44px;
 
-    display: flex;
+/* Common */
+
+.product-card-actions > a {
+    flex: 1;
+
+    min-height: 44px;
+
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 50%;
+    gap: 8px;
 
-    background: #eef3f6;
+    padding: 10px 13px;
 
-    color: #123d61;
+    border-radius: 7px;
 
-    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
 
-    transition: all 0.3s ease;
-}
+    text-decoration: none !important;
 
-.landing-sec .case-right-btn a i {
-    font-size: 12px;
-}
-
-.landing-sec .case-study-single-box:hover
-.case-right-btn a {
-    background: #123d61;
-
-    color: #ffffff;
-
-    transform: rotate(-35deg);
+    transition: all .3s ease;
 }
 
 
 /* =========================================
-   BOTTOM HOVER LINE
+   VIEW DETAILS
 ========================================= */
 
-.landing-sec .case-study-single-box::after {
-    content: "";
+.product-view-btn {
+    color: #123d61 !important;
 
-    position: absolute;
+    background: #ffffff;
 
-    left: 50%;
-    bottom: 0;
+    border: 1px solid #123d61;
+}
 
-    width: 0;
-    height: 3px;
+.product-view-btn:hover {
+    color: #ffffff !important;
+
+    background: #123d61;
+
+    transform: translateY(-2px);
+}
+
+.product-view-btn i {
+    font-size: 11px;
+
+    transition: transform .3s ease;
+}
+
+.product-view-btn:hover i {
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   GET QUOTE
+========================================= */
+
+.product-quote-btn {
+    color: #ffffff !important;
 
     background: #ff6d2d;
 
-    transform: translateX(-50%);
+    border: 1px solid #ff6d2d;
 
-    transition: width 0.35s ease;
+    box-shadow:
+        0 7px 18px rgba(255, 109, 45, .20);
 }
 
-.landing-sec .case-study-single-box:hover::after {
+.product-quote-btn:hover {
+    color: #ffffff !important;
+
+    background: #123d61;
+
+    border-color: #123d61;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 22px rgba(18, 61, 97, .20);
+}
+
+.product-quote-btn i {
+    font-size: 11px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.landing-sec .case-study-single-box {
+    height: 100%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e4eaf0;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 30px rgba(18, 61, 97, .07);
+
+    transition: all .35s ease;
+}
+
+.landing-sec .case-study-single-box:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 45px rgba(18, 61, 97, .14);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.landing-sec .case-study-thumb {
+    overflow: hidden;
+}
+
+.landing-sec .case-study-thumb > img {
+    display: block;
+
     width: 100%;
+    height: 265px;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.landing-sec .case-study-single-box:hover
+.case-study-thumb > img {
+    transform: scale(1.04);
 }
 
 
 /* =========================================
-   LONG PRODUCT TITLES
+   COLUMN SPACING
 ========================================= */
 
-.landing-sec .case-study-title h3 {
-    min-height: 48px;
-
-    display: flex;
-    align-items: center;
-}
-
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 991px) {
-
-    .landing-sec {
-        padding: 65px 0 45px;
-    }
-
-    .landing-sec .case-study-thumb > img {
-        height: 245px;
-    }
-
+.landing-sec .row > [class*="col-"] {
+    margin-bottom: 25px;
 }
 
 
@@ -17986,43 +17929,37 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
    MOBILE
 ========================================= */
 
-@media (max-width: 767px) {
-
-    .landing-sec {
-        padding: 50px 0 32px;
-    }
-
-    .landing-sec .row > [class*="col-"] {
-        margin-bottom: 18px;
-    }
-
-    .landing-sec .case-study-single-box {
-        border-radius: 13px;
-    }
+@media (max-width: 575px) {
 
     .landing-sec .case-study-thumb > img {
         height: 225px;
     }
 
     .landing-sec .case-study-content {
-        min-height: 80px;
+        min-height: auto;
 
-        padding: 16px 15px 16px 20px;
+        padding: 18px;
+    }
+
+    .landing-sec .case-study-title {
+        margin-bottom: 14px;
     }
 
     .landing-sec .case-study-title h3 {
         min-height: auto;
 
-        font-size: 16px;
+        font-size: 17px;
     }
 
-    .landing-sec .case-right-btn {
-        flex-basis: 40px;
+    .product-card-actions {
+        gap: 7px;
     }
 
-    .landing-sec .case-right-btn a {
-        width: 40px;
-        height: 40px;
-    }
+    .product-card-actions > a {
+        min-height: 42px;
 
+        padding: 9px 8px;
+
+        font-size: 12px;
+    }
 }

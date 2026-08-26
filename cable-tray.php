@@ -47,122 +47,209 @@
             </div>
         </section>
         <section class="landing-sec same-space">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/cable-tray/perforated-cable-tray/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
+    <div class="auto-container">
+        <div class="row clearfix">
 
-                                        <div class="case-study-title">
-                                            <h3> <a href="perforated-cable-tray.html">Perforated Cable Tray</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="perforated-cable-tray.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Product 01 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/cable-tray/perforated-cable-tray/01.jpg"
+                             alt="Perforated Cable Tray">
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/cable-tray/ladder-cable-tray/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="ladder-cable-tray.html">Ladder Cable Tray</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="ladder-cable-tray.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="perforated-cable-tray.html">
+                                    Perforated Cable Tray
+                                </a>
+                            </h3>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/cable-tray/wire-mesh-cable-tray/04.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="wire-mesh-cable-tray.html">Wire Mesh Cable Tray</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="wire-mesh-cable-tray.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/cable-tray/raceway-cable-tray/02.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="raceway-cable-tray.html"> Raceway Cable Tray</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="raceway-cable-tray.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/cable-tray/embossed-perforated-cable-tray/01.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="embossed-perforated-cable-tray.html"> Embossed Perforated
-                                                    Cable</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="embossed-perforated-cable-tray.html"><i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="case-study-single-box ">
-                            <div class="case-study-thumb">
-                                <img src="images/pdr/cable-tray/heavy-duty-ladder-cable-tray/02.jpg" alt="">
-                                <div class="case-study-content">
-                                    <div class="case-text">
-                                        <div class="case-study-title">
-                                            <h3><a href="heavy-duty-ladder-cable-tray.html"> Heavy Duty Ladder Cable
-                                                    Tray</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="case-right-btn">
-                                        <a href="heavy-duty-ladder-cable-tray.html"> <i
-                                                class="flaticon flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+
+                        <div class="product-card-actions">
+                            <a href="perforated-cable-tray.html" class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;" class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+
+            <!-- Product 02 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/cable-tray/ladder-cable-tray/01.jpg"
+                             alt="Ladder Cable Tray">
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="ladder-cable-tray.html">
+                                    Ladder Cable Tray
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+                            <a href="ladder-cable-tray.html" class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;" class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 03 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/cable-tray/wire-mesh-cable-tray/04.jpg"
+                             alt="Wire Mesh Cable Tray">
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="wire-mesh-cable-tray.html">
+                                    Wire Mesh Cable Tray
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+                            <a href="wire-mesh-cable-tray.html" class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;" class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 04 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/cable-tray/raceway-cable-tray/02.jpg"
+                             alt="Raceway Cable Tray">
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="raceway-cable-tray.html">
+                                    Raceway Cable Tray
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+                            <a href="raceway-cable-tray.html" class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;" class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 05 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/cable-tray/embossed-perforated-cable-tray/01.jpg"
+                             alt="Embossed Perforated Cable Tray">
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="embossed-perforated-cable-tray.html">
+                                    Embossed Perforated Cable Tray
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+                            <a href="embossed-perforated-cable-tray.html" class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;" class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 06 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="case-study-single-box">
+                    <div class="case-study-thumb">
+                        <img src="images/pdr/cable-tray/heavy-duty-ladder-cable-tray/02.jpg"
+                             alt="Heavy Duty Ladder Cable Tray">
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-title">
+                            <h3>
+                                <a href="heavy-duty-ladder-cable-tray.html">
+                                    Heavy Duty Ladder Cable Tray
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="product-card-actions">
+                            <a href="heavy-duty-ladder-cable-tray.html" class="product-view-btn">
+                                View Details
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="javascript:;" class="product-quote-btn click1">
+                                Get a Quote
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
         <?php require_once('footer.php');?>
     </div>
     <?php require_once('script.php');?>
