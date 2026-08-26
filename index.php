@@ -620,489 +620,487 @@
             </div>
         </section> -->
         <section class="counter-one">
-    <div class="container">
+            <div class="container">
 
-        <div class="counter-heading text-center">
-            <span>OUR STRENGTH IN NUMBERS</span>
+                <div class="counter-heading text-center">
+                    <span>OUR STRENGTH IN NUMBERS</span>
 
-            <h2>Experience, Infrastructure & Global Reach</h2>
-
-            <p>
-                Strong manufacturing capabilities, international presence and
-                years of engineering expertise make JETCOTECH a dependable
-                partner for industrial projects.
-            </p>
-        </div>
-
-
-        <div class="row counter-grid">
-
-            <!-- Item 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="counter-card">
-
-                    <div class="counter-card-top">
-                        <div class="counter-icon">
-                            <img
-                                src="images/homepage/icons/years-experiences.webp"
-                                alt="Years of Experience"
-                            >
-                        </div>
-
-                        <span class="counter-card-number">01</span>
-                    </div>
-
-                    <div class="counter-value">
-                        <span class="count-text" id="number1">15</span>
-                        <span>+</span>
-                    </div>
-
-                    <h3>Years of Experience</h3>
+                    <h2>Experience, Infrastructure & Global Reach</h2>
 
                     <p>
-                        Proven engineering and manufacturing expertise across
-                        demanding industrial applications.
+                        Strong manufacturing capabilities, international presence and
+                        years of engineering expertise make JETCOTECH a dependable
+                        partner for industrial projects.
                     </p>
-
-                    <div class="counter-line"></div>
-
                 </div>
-            </div>
 
 
-            <!-- Item 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="counter-card">
+                <div class="row counter-grid">
 
-                    <div class="counter-card-top">
-                        <div class="counter-icon">
-                            <img
-                                src="images/homepage/icons/export-country.webp"
-                                alt="Export Countries"
-                            >
+                    <!-- Item 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="counter-card">
+
+                            <div class="counter-card-top">
+                                <div class="counter-icon">
+                                    <img
+                                        src="images/homepage/icons/years-experiences.webp"
+                                        alt="Years of Experience">
+                                </div>
+
+                                <span class="counter-card-number">01</span>
+                            </div>
+
+                            <div class="counter-value">
+                                <span class="count-text" id="number1">15</span>
+                                <span>+</span>
+                            </div>
+
+                            <h3>Years of Experience</h3>
+
+                            <p>
+                                Proven engineering and manufacturing expertise across
+                                demanding industrial applications.
+                            </p>
+
+                            <div class="counter-line"></div>
+
                         </div>
-
-                        <span class="counter-card-number">02</span>
                     </div>
 
-                    <div class="counter-value">
-                        <span class="count-text" id="number2">17</span>
-                        <span>+</span>
-                    </div>
 
-                    <h3>Export Countries</h3>
+                    <!-- Item 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="counter-card">
 
-                    <p>
-                        Serving international markets with engineered products
-                        designed for quality and reliable performance.
-                    </p>
+                            <div class="counter-card-top">
+                                <div class="counter-icon">
+                                    <img
+                                        src="images/homepage/icons/export-country.webp"
+                                        alt="Export Countries">
+                                </div>
 
-                    <div class="counter-line"></div>
+                                <span class="counter-card-number">02</span>
+                            </div>
 
-                </div>
-            </div>
+                            <div class="counter-value">
+                                <span class="count-text" id="number2">17</span>
+                                <span>+</span>
+                            </div>
 
+                            <h3>Export Countries</h3>
 
-            <!-- Item 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="counter-card">
+                            <p>
+                                Serving international markets with engineered products
+                                designed for quality and reliable performance.
+                            </p>
 
-                    <div class="counter-card-top">
-                        <div class="counter-icon">
-                            <img
-                                src="images/homepage/icons/square-area.webp"
-                                alt="Manufacturing Facility"
-                            >
+                            <div class="counter-line"></div>
+
                         </div>
-
-                        <span class="counter-card-number">03</span>
                     </div>
 
-                    <div class="counter-value">
-                        <span class="count-text" id="number3">112170</span>
-                        <span>+</span>
+
+                    <!-- Item 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="counter-card">
+
+                            <div class="counter-card-top">
+                                <div class="counter-icon">
+                                    <img
+                                        src="images/homepage/icons/square-area.webp"
+                                        alt="Manufacturing Facility">
+                                </div>
+
+                                <span class="counter-card-number">03</span>
+                            </div>
+
+                            <div class="counter-value">
+                                <span class="count-text" id="number3">112170</span>
+                                <span>+</span>
+                            </div>
+
+                            <h3>Square Feet Facility</h3>
+
+                            <p>
+                                Large-scale in-house infrastructure supporting production,
+                                quality control and project execution.
+                            </p>
+
+                            <div class="counter-line"></div>
+
+                        </div>
                     </div>
-
-                    <h3>Square Feet Facility</h3>
-
-                    <p>
-                        Large-scale in-house infrastructure supporting production,
-                        quality control and project execution.
-                    </p>
-
-                    <div class="counter-line"></div>
 
                 </div>
+
             </div>
-
-        </div>
-
-    </div>
-</section>
+        </section>
         <section class="projects-section industries-modern-section">
-    <div class="container">
+            <div class="container">
 
-        <div class="industries-heading text-center">
-            <span>INDUSTRIES WE SERVE</span>
-            <h2>Engineered Solutions Across Diverse Industries</h2>
-            <p>
-                Supporting critical infrastructure and industrial applications with
-                dependable products, engineered performance and application-focused solutions.
-            </p>
-        </div>
+                <div class="industries-heading text-center">
+                    <span>INDUSTRIES WE SERVE</span>
+                    <h2>Engineered Solutions Across Diverse Industries</h2>
+                    <p>
+                        Supporting critical infrastructure and industrial applications with
+                        dependable products, engineered performance and application-focused solutions.
+                    </p>
+                </div>
 
-        <div class="row industries-grid">
+                <div class="row industries-grid">
 
-            <!-- 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="industry-card">
-                    <div class="industry-image">
-                        <img src="images/homepage/industry-we-serve/automobile-industry.webp" alt="Automobile Industry">
+                    <!-- 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img src="images/homepage/industry-we-serve/automobile-industry.webp" alt="Automobile Industry">
+                            </div>
+
+                            <div class="industry-overlay">
+                                <span class="industry-number">01</span>
+
+                                <div class="industry-content">
+                                    <span class="industry-small">INDUSTRY</span>
+                                    <h3>Automobile</h3>
+                                    <p>Solutions supporting modern automotive and manufacturing infrastructure.</p>
+                                </div>
+
+                                <a href="javascript:;" class="industry-arrow">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="industry-overlay">
-                        <span class="industry-number">01</span>
 
-                        <div class="industry-content">
-                            <span class="industry-small">INDUSTRY</span>
-                            <h3>Automobile</h3>
-                            <p>Solutions supporting modern automotive and manufacturing infrastructure.</p>
+                    <!-- 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img src="images/homepage/industry-we-serve/commercial-industry.webp" alt="Chemical Industry">
+                            </div>
+
+                            <div class="industry-overlay">
+                                <span class="industry-number">02</span>
+
+                                <div class="industry-content">
+                                    <span class="industry-small">INDUSTRY</span>
+                                    <h3>Chemical</h3>
+                                    <p>Reliable engineering support for demanding chemical process environments.</p>
+                                </div>
+
+                                <a href="javascript:;" class="industry-arrow">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img src="images/homepage/industry-we-serve/pharma-industry.webp" alt="Pharma Industry">
+                            </div>
+
+                            <div class="industry-overlay">
+                                <span class="industry-number">03</span>
+
+                                <div class="industry-content">
+                                    <span class="industry-small">INDUSTRY</span>
+                                    <h3>Pharma</h3>
+                                    <p>Solutions designed for controlled, quality-focused pharmaceutical facilities.</p>
+                                </div>
+
+                                <a href="javascript:;" class="industry-arrow">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 4 -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="industry-card industry-card-wide">
+                            <div class="industry-image">
+                                <img src="images/homepage/industry-we-serve/lighting-pole.webp" alt="Road and Highway">
+                            </div>
+
+                            <div class="industry-overlay">
+                                <span class="industry-number">04</span>
+
+                                <div class="industry-content">
+                                    <span class="industry-small">INFRASTRUCTURE</span>
+                                    <h3>Road &amp; Highway</h3>
+                                    <p>Supporting roadways, public infrastructure and large outdoor lighting projects.</p>
+                                </div>
+
+                                <a href="javascript:;" class="industry-arrow">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 5 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img src="images/homepage/industry-we-serve/construction-industry.webp" alt="Construction Industry">
+                            </div>
+
+                            <div class="industry-overlay">
+                                <span class="industry-number">05</span>
+
+                                <div class="industry-content">
+                                    <span class="industry-small">INDUSTRY</span>
+                                    <h3>Construction</h3>
+                                    <p>Solutions for commercial, industrial and infrastructure projects.</p>
+                                </div>
+
+                                <a href="javascript:;" class="industry-arrow">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 6 -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img src="images/homepage/industry-we-serve/telecom-industry.webp" alt="Telecom Industry">
+                            </div>
+
+                            <div class="industry-overlay">
+                                <span class="industry-number">06</span>
+
+                                <div class="industry-content">
+                                    <span class="industry-small">INDUSTRY</span>
+                                    <h3>Telecom</h3>
+                                    <p>Dependable infrastructure solutions for telecom networks and installations.</p>
+                                </div>
+
+                                <a href="javascript:;" class="industry-arrow">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="industries-footer text-center">
+                    <a href="javascript:;" class="industries-view-btn">
+                        View All Industries
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section class="groupcompany groupcompany-modern">
+            <div class="container">
+
+                <div class="groupcompany-heading text-center">
+                    <span>OUR GROUP</span>
+                    <h2>Group of Companies</h2>
+                    <p>
+                        A diversified group built on engineering expertise, manufacturing strength
+                        and a shared commitment to quality, reliability and long-term growth.
+                    </p>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <!-- Company 1 -->
+                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                        <div class="group-company-card">
+                            <span class="group-company-number">01</span>
+
+                            <div class="group-company-logo">
+                                <img
+                                    src="images/homepage/group-of-companies/jetco-industries.webp"
+                                    alt="Jetco Industries">
+                            </div>
+
+                            <div class="group-company-line"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- Company 2 -->
+                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                        <div class="group-company-card">
+                            <span class="group-company-number">02</span>
+
+                            <div class="group-company-logo">
+                                <img
+                                    src="images/homepage/group-of-companies/jetco-overseas.webp"
+                                    alt="Jetco Overseas">
+                            </div>
+
+                            <div class="group-company-line"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- Company 3 -->
+                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                        <div class="group-company-card">
+                            <span class="group-company-number">03</span>
+
+                            <div class="group-company-logo">
+                                <img
+                                    src="images/homepage/group-of-companies/jetco-tech.webp"
+                                    alt="Jetco Tech">
+                            </div>
+
+                            <div class="group-company-line"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- Company 4 -->
+                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+                        <div class="group-company-card">
+                            <span class="group-company-number">04</span>
+
+                            <div class="group-company-logo">
+                                <img
+                                    src="images/homepage/group-of-companies/jteco-busbar.webp"
+                                    alt="JETCO Busbar">
+                            </div>
+
+                            <div class="group-company-line"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="cta-modern-section">
+            <div class="container">
+
+                <div class="cta-modern-box">
+
+                    <div class="cta-modern-pattern"></div>
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-8 col-md-8">
+
+                            <div class="cta-modern-content">
+
+                                <span class="cta-small-title">
+                                    COMPLETE IN-HOUSE CAPABILITY
+                                </span>
+
+                                <h3>
+                                    100% Inhouse Facility for
+                                    Lighting Poles &amp; Cable Trays
+                                </h3>
+
+                                <p>
+                                    From manufacturing to quality control, our integrated
+                                    facility enables reliable production, consistent quality
+                                    and dependable project execution.
+                                </p>
+
+                            </div>
+
                         </div>
 
-                        <a href="javascript:;" class="industry-arrow">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                        <div class="col-lg-4 col-md-4">
 
+                            <div class="cta-modern-action">
 
-            <!-- 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="industry-card">
-                    <div class="industry-image">
-                        <img src="images/homepage/industry-we-serve/commercial-industry.webp" alt="Chemical Industry">
-                    </div>
+                                <a href="javascript:;" class="cta-modern-btn click1">
+                                    <span>Inquire Now</span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
 
-                    <div class="industry-overlay">
-                        <span class="industry-number">02</span>
+                            </div>
 
-                        <div class="industry-content">
-                            <span class="industry-small">INDUSTRY</span>
-                            <h3>Chemical</h3>
-                            <p>Reliable engineering support for demanding chemical process environments.</p>
                         </div>
 
-                        <a href="javascript:;" class="industry-arrow">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
                     </div>
+
                 </div>
+
             </div>
+        </section>
+        <section class="logo-sec trusted-companies-section">
+            <div class="container">
+
+                <div class="trusted-heading text-center">
+                    <span>TRUSTED BY INDUSTRY</span>
+
+                    <h2>Companies Who Trust Us</h2>
+
+                    <p>
+                        Proud to work with organizations across diverse industries
+                        that rely on our engineering, manufacturing and project capabilities.
+                    </p>
+                </div>
 
 
-            <!-- 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="industry-card">
-                    <div class="industry-image">
-                        <img src="images/homepage/industry-we-serve/pharma-industry.webp" alt="Pharma Industry">
-                    </div>
+                <div class="trusted-logo-grid">
 
-                    <div class="industry-overlay">
-                        <span class="industry-number">03</span>
+                    <?php
 
-                        <div class="industry-content">
-                            <span class="industry-small">INDUSTRY</span>
-                            <h3>Pharma</h3>
-                            <p>Solutions designed for controlled, quality-focused pharmaceutical facilities.</p>
+                    $nb_elem_per_page = 200;
+
+                    $page = isset($_GET['page'])
+                        ? max(0, intval($_GET['page']) - 1)
+                        : 0;
+
+                    $data = glob("images/homepage/client-logo/*.*");
+
+                    $logos = array_slice(
+                        $data,
+                        $page * $nb_elem_per_page,
+                        $nb_elem_per_page
+                    );
+
+                    ?>
+
+                    <?php foreach ($logos as $index => $p) { ?>
+
+                        <div class="trusted-logo-card">
+
+                            <span class="trusted-logo-number">
+                                <?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?>
+                            </span>
+
+                            <div class="trusted-logo-image">
+                                <img
+                                    src="<?php echo htmlspecialchars($p); ?>"
+                                    alt="Trusted Client"
+                                    loading="lazy">
+                            </div>
+
                         </div>
 
-                        <a href="javascript:;" class="industry-arrow">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
+                    <?php } ?>
+
                 </div>
+
             </div>
-
-
-            <!-- 4 -->
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="industry-card industry-card-wide">
-                    <div class="industry-image">
-                        <img src="images/homepage/industry-we-serve/lighting-pole.webp" alt="Road and Highway">
-                    </div>
-
-                    <div class="industry-overlay">
-                        <span class="industry-number">04</span>
-
-                        <div class="industry-content">
-                            <span class="industry-small">INFRASTRUCTURE</span>
-                            <h3>Road &amp; Highway</h3>
-                            <p>Supporting roadways, public infrastructure and large outdoor lighting projects.</p>
-                        </div>
-
-                        <a href="javascript:;" class="industry-arrow">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- 5 -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="industry-card">
-                    <div class="industry-image">
-                        <img src="images/homepage/industry-we-serve/construction-industry.webp" alt="Construction Industry">
-                    </div>
-
-                    <div class="industry-overlay">
-                        <span class="industry-number">05</span>
-
-                        <div class="industry-content">
-                            <span class="industry-small">INDUSTRY</span>
-                            <h3>Construction</h3>
-                            <p>Solutions for commercial, industrial and infrastructure projects.</p>
-                        </div>
-
-                        <a href="javascript:;" class="industry-arrow">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- 6 -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="industry-card">
-                    <div class="industry-image">
-                        <img src="images/homepage/industry-we-serve/telecom-industry.webp" alt="Telecom Industry">
-                    </div>
-
-                    <div class="industry-overlay">
-                        <span class="industry-number">06</span>
-
-                        <div class="industry-content">
-                            <span class="industry-small">INDUSTRY</span>
-                            <h3>Telecom</h3>
-                            <p>Dependable infrastructure solutions for telecom networks and installations.</p>
-                        </div>
-
-                        <a href="javascript:;" class="industry-arrow">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="industries-footer text-center">
-            <a href="javascript:;" class="industries-view-btn">
-                View All Industries
+        </section>
+        <div class="text-center mt-4">
+            <a href="clients.php" class="product-all-btn">
+                View All Clients
                 <i class="fa fa-arrow-right"></i>
             </a>
         </div>
-
-    </div>
-</section>
-        <section class="groupcompany groupcompany-modern">
-    <div class="container">
-
-        <div class="groupcompany-heading text-center">
-            <span>OUR GROUP</span>
-            <h2>Group of Companies</h2>
-            <p>
-                A diversified group built on engineering expertise, manufacturing strength
-                and a shared commitment to quality, reliability and long-term growth.
-            </p>
-        </div>
-
-        <div class="row justify-content-center">
-
-            <!-- Company 1 -->
-            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                <div class="group-company-card">
-                    <span class="group-company-number">01</span>
-
-                    <div class="group-company-logo">
-                        <img
-                            src="images/homepage/group-of-companies/jetco-industries.webp"
-                            alt="Jetco Industries"
-                        >
-                    </div>
-
-                    <div class="group-company-line"></div>
-                </div>
-            </div>
-
-
-            <!-- Company 2 -->
-            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                <div class="group-company-card">
-                    <span class="group-company-number">02</span>
-
-                    <div class="group-company-logo">
-                        <img
-                            src="images/homepage/group-of-companies/jetco-overseas.webp"
-                            alt="Jetco Overseas"
-                        >
-                    </div>
-
-                    <div class="group-company-line"></div>
-                </div>
-            </div>
-
-
-            <!-- Company 3 -->
-            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                <div class="group-company-card">
-                    <span class="group-company-number">03</span>
-
-                    <div class="group-company-logo">
-                        <img
-                            src="images/homepage/group-of-companies/jetco-tech.webp"
-                            alt="Jetco Tech"
-                        >
-                    </div>
-
-                    <div class="group-company-line"></div>
-                </div>
-            </div>
-
-
-            <!-- Company 4 -->
-            <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                <div class="group-company-card">
-                    <span class="group-company-number">04</span>
-
-                    <div class="group-company-logo">
-                        <img
-                            src="images/homepage/group-of-companies/jteco-busbar.webp"
-                            alt="JETCO Busbar"
-                        >
-                    </div>
-
-                    <div class="group-company-line"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-        <section class="cta-modern-section">
-    <div class="container">
-
-        <div class="cta-modern-box">
-
-            <div class="cta-modern-pattern"></div>
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-8 col-md-8">
-
-                    <div class="cta-modern-content">
-
-                        <span class="cta-small-title">
-                            COMPLETE IN-HOUSE CAPABILITY
-                        </span>
-
-                        <h3>
-                            100% Inhouse Facility for
-                            Lighting Poles &amp; Cable Trays
-                        </h3>
-
-                        <p>
-                            From manufacturing to quality control, our integrated
-                            facility enables reliable production, consistent quality
-                            and dependable project execution.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-4 col-md-4">
-
-                    <div class="cta-modern-action">
-
-                        <a href="javascript:;" class="cta-modern-btn click1">
-                            <span>Inquire Now</span>
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-        <section class="logo-sec trusted-companies-section">
-    <div class="container">
-
-        <div class="trusted-heading text-center">
-            <span>TRUSTED BY INDUSTRY</span>
-
-            <h2>Companies Who Trust Us</h2>
-
-            <p>
-                Proud to work with organizations across diverse industries
-                that rely on our engineering, manufacturing and project capabilities.
-            </p>
-        </div>
-
-
-        <div class="trusted-logo-grid">
-
-            <?php
-
-            $nb_elem_per_page = 200;
-
-            $page = isset($_GET['page'])
-                ? max(0, intval($_GET['page']) - 1)
-                : 0;
-
-            $data = glob("images/homepage/client-logo/*.*");
-
-            $logos = array_slice(
-                $data,
-                $page * $nb_elem_per_page,
-                $nb_elem_per_page
-            );
-
-            ?>
-
-            <?php foreach ($logos as $index => $p) { ?>
-
-                <div class="trusted-logo-card">
-
-                    <span class="trusted-logo-number">
-                        <?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?>
-                    </span>
-
-                    <div class="trusted-logo-image">
-                        <img
-                            src="<?php echo htmlspecialchars($p); ?>"
-                            alt="Trusted Client"
-                            loading="lazy"
-                        >
-                    </div>
-
-                </div>
-
-            <?php } ?>
-
-        </div>
-
-    </div>
-</section>
     </div>
     <?php require_once('footer.php'); ?>
     <?php require_once('script.php'); ?>

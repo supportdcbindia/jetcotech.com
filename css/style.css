@@ -16100,6 +16100,83 @@ label.custom-file-upload{border-color:#e1e6eb;background:#fff;border-radius:0px;
     }
 
 }
+.trusted-companies-section {
+    padding: 60px 0 50px;
+}
+
+.trusted-heading {
+    margin-bottom: 30px;
+}
+
+.trusted-heading h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.trusted-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.trusted-logo-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+}
+
+.trusted-logo-card {
+    min-height: 115px;
+    padding: 18px 14px;
+    border-radius: 12px;
+}
+
+.trusted-logo-image {
+    min-height: 65px;
+}
+
+.trusted-logo-image img {
+    max-width: 78%;
+    max-height: 55px;
+}
+
+.trusted-logo-number {
+    top: 10px;
+    right: 11px;
+    font-size: 13px;
+}
+
+.trusted-logo-card::before {
+    left: 18px;
+    width: 38px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1199px) {
+    .trusted-logo-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .trusted-companies-section {
+        padding: 45px 0 35px;
+    }
+
+    .trusted-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .trusted-logo-card {
+        min-height: 105px;
+        padding: 15px 10px;
+    }
+
+    .trusted-logo-image img {
+        max-height: 48px;
+    }
+}
 
 
 
