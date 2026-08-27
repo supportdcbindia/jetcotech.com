@@ -235,7 +235,7 @@
                                     <span>Email Us</span>
                                     <p>
                                         <a href="mailto:sales@jetcotech.in">sales@jetcotech.in</a><br>
-                                        <a href="mailto:marketing@jetcotech.in">marketing@jetcotech.in</a>
+                                        <a href="mailto:marketing@jetcotech.in">marketing@jetcotech.in</a><br>
                                         <a href="mailto:exports@jetcotech.in">exports@jetcotech.in</a>
                                     </p>
                                 </div>
