@@ -905,87 +905,194 @@
 
             </div>
         </section>
+        <style>
+            .group-company-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 35px 30px;
+    position: relative;
+    height:100%;
+    text-align:center;
+    transition:0.3s ease;
+    overflow:hidden;
+}
+
+
+.group-company-card:hover {
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+
+.group-company-card:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#ff6b35;
+}
+
+
+.group-company-number {
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:50px;
+    font-weight:800;
+    color:#eef1f5;
+}
+
+
+.group-company-logo {
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+
+.group-company-logo img {
+    max-width:220px;
+    max-height:90px;
+    object-fit:contain;
+}
+
+
+.group-company-content h3 {
+    font-size:22px;
+    color:#12365b;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+
+.group-company-content p {
+    color:#555;
+    font-size:15px;
+    line-height:1.7;
+    min-height:55px;
+}
+
+
+.company-link {
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:15px;
+    color:#ff6333;
+    font-weight:600;
+    text-decoration:none;
+}
+
+
+.company-link:hover {
+    color:#12365b;
+}
+
+
+@media(max-width:767px){
+
+    .group-company-card{
+        padding:25px 20px;
+    }
+
+    .group-company-content h3{
+        font-size:20px;
+    }
+
+}
+        </style>
         <section class="groupcompany groupcompany-modern">
-            <div class="container">
+    <div class="container">
 
-                <div class="groupcompany-heading text-center">
-                    <span>OUR GROUP</span>
-                    <h2>Group of Companies</h2>
-                    <p>
-                        A diversified group built on engineering expertise, manufacturing strength
-                        and a shared commitment to quality, reliability and long-term growth.
-                    </p>
-                </div>
+        <div class="groupcompany-heading text-center">
+            <span>OUR GROUP</span>
+            <h2>Group of Companies</h2>
+            <p>
+                A diversified group built on engineering expertise, manufacturing strength
+                and a shared commitment to quality, reliability and long-term growth.
+            </p>
+        </div>
 
-                <div class="row justify-content-center">
 
-                    <!-- Company 1 -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="group-company-card">
-                            <span class="group-company-number">01</span>
+        <div class="row justify-content-center">
 
-                            <div class="group-company-logo">
-                                <img
-                                    src="images/homepage/group-of-companies/jetco-industries.webp"
-                                    alt="Jetco Industries">
-                            </div>
 
-                            <div class="group-company-line"></div>
-                        </div>
+            <!-- Jetco Industries -->
+            <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                <div class="group-company-card">
+
+                    <span class="group-company-number">01</span>
+
+                    <div class="group-company-logo">
+                        <img src="images/homepage/group-of-companies/jetco-industries.webp"
+                            alt="Jetco Industries">
                     </div>
 
+                    <div class="group-company-content">
 
-                    <!-- Company 2 -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="group-company-card">
-                            <span class="group-company-number">02</span>
+                        <h3>Jetco Industries</h3>
 
-                            <div class="group-company-logo">
-                                <img
-                                    src="images/homepage/group-of-companies/jetco-overseas.webp"
-                                    alt="Jetco Overseas">
-                            </div>
+                        <p>
+                            Total Electrical Panel Solution For Any Application
+                        </p>
 
-                            <div class="group-company-line"></div>
-                        </div>
-                    </div>
+                        <a href="https://www.jetcoindustries.in/"
+                           target="_blank"
+                           class="company-link">
+                            Visit Website
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
 
-
-                    <!-- Company 3 -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="group-company-card">
-                            <span class="group-company-number">03</span>
-
-                            <div class="group-company-logo">
-                                <img
-                                    src="images/homepage/group-of-companies/jetco-tech.webp"
-                                    alt="Jetco Tech">
-                            </div>
-
-                            <div class="group-company-line"></div>
-                        </div>
-                    </div>
-
-
-                    <!-- Company 4 -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="group-company-card">
-                            <span class="group-company-number">04</span>
-
-                            <div class="group-company-logo">
-                                <img
-                                    src="images/homepage/group-of-companies/jteco-busbar.webp"
-                                    alt="JETCO Busbar">
-                            </div>
-
-                            <div class="group-company-line"></div>
-                        </div>
                     </div>
 
                 </div>
-
             </div>
-        </section>
+
+
+
+            <!-- Jetco Busbar -->
+            <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                <div class="group-company-card">
+
+                    <span class="group-company-number">02</span>
+
+                    <div class="group-company-logo">
+                        <img src="images/homepage/group-of-companies/jteco-busbar.webp"
+                            alt="Jetco Busbar">
+                    </div>
+
+
+                    <div class="group-company-content">
+
+                        <h3>JETCO Busbar Trunking System</h3>
+
+                        <p>
+                            Manufacturer of Sandwich Type Busbar Trunking Systems,
+                            Rising Mains, Tap-off Boxes and Accessories.
+                        </p>
+
+                        <a href="https://www.jetcobbt.com/"
+                           target="_blank"
+                           class="company-link">
+                            Visit Website
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
         <section class="cta-modern-section">
             <div class="container">
 
