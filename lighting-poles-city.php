@@ -1164,6 +1164,105 @@
                 </div>
             </div>
         </section>
+        <section class="products-intro-section">
+    <div class="auto-container">
+
+        <div class="products-intro-content">
+
+            <span class="section-tag">
+                INDUSTRIAL LIGHTING SOLUTIONS
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                JETCOTECH is a trusted
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, offering engineered
+                lighting pole solutions for roads, highways, industrial
+                premises, commercial developments and other outdoor
+                lighting applications.
+            </p>
+
+            <p>
+                Our lighting pole range includes Polygonal / Octagonal
+                Lighting Poles, Swaged Lighting Poles, Conical Poles and
+                Decorative / Customised Poles, providing different options
+                for diverse project and installation requirements.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<section class="products-seo-content">
+    <div class="auto-container">
+
+        <div class="products-seo-inner">
+
+            <span class="section-tag">
+                JETCOTECH LIGHTING POLES
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?> for Diverse Applications
+            </h2>
+
+            <p>
+                Looking for a reliable
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>? JETCOTECH provides
+                lighting pole solutions for different outdoor lighting and
+                infrastructure requirements. Our products are developed for
+                applications where dependable lighting support and suitable
+                pole configurations are required.
+            </p>
+
+            <p>
+                The JETCOTECH lighting pole range includes Polygonal /
+                Octagonal Lighting Poles, Swaged Lighting Poles, Conical
+                Poles and Decorative / Customised Poles. These options can
+                cater to different project requirements across roads,
+                highways, industrial facilities, commercial areas and other
+                outdoor installations.
+            </p>
+
+            <p>
+                Depending on the project requirement, lighting poles can be
+                selected according to the required design, dimensions,
+                mounting arrangement and application. Customised solutions
+                can also be considered for projects requiring specific
+                lighting pole configurations.
+            </p>
+
+            <p>
+                With its manufacturing capabilities and focus on engineering
+                and product quality, JETCOTECH serves customers looking for
+                lighting pole solutions in <?= htmlspecialchars($cityName); ?>
+                and across India.
+            </p>
+
+            <p>
+                If you are looking for a
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, explore the
+                JETCOTECH lighting pole range and contact our team for
+                product specifications, project requirements and quotations.
+            </p>
+
+        </div>
+
+    </div>
+</section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>
