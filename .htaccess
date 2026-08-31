@@ -28,6 +28,7 @@
     # ==================================================
     RewriteRule ^product/(manufacturer|supplier|exporter)/([a-zA-Z0-9-]+)/?$ product-city.php?type=$1&city=$2 [L,QSA]
 
+        RewriteRule ^cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ cable-tray-city.php?product=$1&type=$2&city=$3 [L,QSA]
 
     # ==================================================
     # EXISTING FILES
