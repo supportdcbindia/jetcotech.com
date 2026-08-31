@@ -1164,6 +1164,111 @@
                 </div>
             </div>
         </section>
+        <section class="products-intro-section">
+    <div class="auto-container">
+
+        <div class="products-intro-content">
+
+            <span class="section-tag">
+                HIGH-LEVEL LIGHTING SOLUTIONS
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                JETCOTECH is a trusted
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, providing engineered
+                mast pole solutions for stadiums, highways, industrial
+                facilities, outdoor areas and other large-scale lighting
+                applications.
+            </p>
+
+            <p>
+                Our Mast Pole range includes High Mast Poles, Flag Mast Poles,
+                Stadium Mast Poles and Signage Mast Poles, offering different
+                solutions for lighting, flag display and large-area signage
+                requirements.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<section class="products-seo-content">
+    <div class="auto-container">
+
+        <div class="products-seo-inner">
+
+            <span class="section-tag">
+                JETCOTECH MAST POLES
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?> for Diverse Applications
+            </h2>
+
+            <p>
+                Looking for a reliable
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>? JETCOTECH offers mast
+                pole solutions designed for large-area lighting,
+                infrastructure and specialized outdoor applications.
+            </p>
+
+            <p>
+                The JETCOTECH Mast Pole range includes High Mast Poles,
+                Flag Mast Poles, Stadium Mast Poles and Signage Mast Poles.
+                These solutions are suitable for different applications
+                including highways, stadiums, industrial premises, outdoor
+                areas, flag installations and large signage requirements.
+            </p>
+
+            <p>
+                High Mast Poles are suitable for applications requiring
+                lighting over large areas, while Stadium Mast Poles are
+                designed for stadium lighting and can be supplied with ladder
+                and platform arrangements or R&amp;L trolley systems for
+                maintenance purposes. JETCOTECH also offers customized
+                specifications based on client requirements. :contentReference[oaicite:1]{index=1}
+            </p>
+
+            <p>
+                Flag Mast Poles are offered for National Flag, Holy Flag and
+                organization flag applications. Standard sizes are available,
+                while tailor-made sizes can also be manufactured according to
+                project requirements. :contentReference[oaicite:2]{index=2}
+            </p>
+
+            <p>
+                With its manufacturing capabilities and application-focused
+                approach, JETCOTECH serves customers looking for
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                solutions in <?= htmlspecialchars($cityName); ?> and across
+                India.
+            </p>
+
+            <p>
+                If you are looking for a
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, explore the JETCOTECH
+                Mast Pole range and contact our team for product
+                specifications, project requirements and quotations.
+            </p>
+
+        </div>
+
+    </div>
+</section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>
