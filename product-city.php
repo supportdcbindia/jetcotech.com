@@ -47,7 +47,7 @@
    Dynamic City + Type Meta
 --------------------------------------------- */
 
-    if ($isCityTypePage) {
+    if (1) {
 
         // Clean values
         $cityName = ucwords(str_replace("-", " ", trim($cityName)));
