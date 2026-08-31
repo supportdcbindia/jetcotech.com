@@ -1336,7 +1336,7 @@
                     </span>
 
                     <h2>
-                        <?= htmlspecialchars($productName); ?>
+                        Industrial Products
                         <?= htmlspecialchars($typeLabel); ?>
                         in <?= htmlspecialchars($city); ?>
                     </h2>
@@ -1344,7 +1344,7 @@
                     <p>
                         JETCOTECH is a trusted
                         <?= htmlspecialchars($type); ?>
-                        of <?= htmlspecialchars($productName); ?>
+                        of Industrial Products
                         in <?= htmlspecialchars($city); ?>, offering engineered solutions
                         for cable management, industrial lighting and specialized
                         infrastructure requirements.
@@ -1352,7 +1352,7 @@
 
                     <p>
                         Our range of
-                        <?= htmlspecialchars($productName); ?>
+                        Industrial Products
                         is designed for diverse industrial and commercial applications,
                         with a focus on dependable manufacturing, consistent quality
                         and application-specific requirements.
@@ -1373,7 +1373,7 @@
                     </span>
 
                     <h2>
-                        <?= htmlspecialchars($productName); ?>
+                        Industrial Products
                         <?= htmlspecialchars($typeLabel); ?>
                         in <?= htmlspecialchars($city); ?> for Industrial Applications
                     </h2>
@@ -1381,7 +1381,7 @@
                     <p>
                         JETCOTECH is a leading
                         <?= htmlspecialchars($type); ?>
-                        of <?= htmlspecialchars($productName); ?>
+                        of Industrial Products
                         in <?= htmlspecialchars($city); ?>. Our product range is developed
                         to meet different cable management, lighting and infrastructure
                         requirements across industrial and commercial projects.
@@ -1390,7 +1390,7 @@
                     <p>
                         With a focus on dependable manufacturing, product quality and
                         application-oriented engineering, JETCOTECH provides
-                        <?= htmlspecialchars($productName); ?>
+                        Industrial Products
                         solutions for projects requiring reliable industrial
                         infrastructure. Customers in <?= htmlspecialchars($city); ?>
                         can choose from standard as well as application-specific
@@ -1399,7 +1399,7 @@
 
                     <p>
                         Explore our range of
-                        <?= htmlspecialchars($productName); ?>
+                        Industrial Products
                         in <?= htmlspecialchars($city); ?> and find a suitable solution
                         for your project requirements.
                     </p>
