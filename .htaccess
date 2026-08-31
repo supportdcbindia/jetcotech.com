@@ -32,6 +32,8 @@
 RewriteRule ^lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ lighting-poles-city.php?type=$1&city=$2 [L,QSA]
 RewriteRule ^mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ mast-poles-city.php?type=$1&city=$2 [L,QSA]
 RewriteRule ^frp-products-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-products-city.php?type=$1&city=$2 [L,QSA]
+
+RewriteRule ^high-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ high-mast-poles-city.php?type=$1&city=$2 [L,QSA]
     # ==================================================
     # EXISTING FILES
     # ==================================================
