@@ -18,7 +18,7 @@
     $siteUrl = "https://www.jetcotech.com";
     $companyName = "Jetcotech";
     $brandName = "Jetcotech";
-    $logoUrl = $siteUrl . "/./images/logo-2.png"; // update logo path if needed
+    $logoUrl = $siteUrl . "/images/logo-2.png"; // update logo path if needed
     $phone = "+91 75750 07163"; // update phone
     $email = "info@jetcotech.in"; // update email
 
@@ -533,7 +533,7 @@
 <body>
     <div class="page-wrapper product">
         <?php require_once('header.php'); ?>
-        <section class="page-title" style="background-image:url(./images/background/perforatted-cable-tray-bg.jpg)">
+        <section class="page-title" style="background-image:url(/images/background/perforatted-cable-tray-bg.jpg)">
             <div class="auto-container">
                 <div class="content">
                     <h1>Industrial Cable Management & Lighting Solutions</h1>
@@ -556,7 +556,7 @@
                         <div class="case-study-single-box">
 
                             <div class="case-study-thumb">
-                                <img src="./images/pdr/cable-tray/perforated-cable-tray/01.jpg"
+                                <img src="/images/pdr/cable-tray/perforated-cable-tray/01.jpg"
                                     alt="Cable Tray">
                             </div>
 
@@ -597,7 +597,7 @@
                         <div class="case-study-single-box">
 
                             <div class="case-study-thumb">
-                                <img src="./images/pdr/lighting-poles/polygonal-octagonal-lighting-poles/01.jpg"
+                                <img src="/images/pdr/lighting-poles/polygonal-octagonal-lighting-poles/01.jpg"
                                     alt="Lighting Poles">
                             </div>
 
@@ -638,7 +638,7 @@
                         <div class="case-study-single-box">
 
                             <div class="case-study-thumb">
-                                <img src="./images/pdr/mast-poles/stadium-mast-poles/01.jpg"
+                                <img src="/images/pdr/mast-poles/stadium-mast-poles/01.jpg"
                                     alt="Mast Poles">
                             </div>
 
@@ -679,7 +679,7 @@
                         <div class="case-study-single-box">
 
                             <div class="case-study-thumb">
-                                <img src="./images/pdr/frp-products/frp-perforated-cable-tray/frp-perforated-cable-tray.webp"
+                                <img src="/images/pdr/frp-products/frp-perforated-cable-tray/frp-perforated-cable-tray.webp"
                                     alt="FRP Products">
                             </div>
 
@@ -1058,8 +1058,8 @@
 
         <div id="help-button">
             <a href="https://api.whatsapp.com/send?phone=917575007163" target="_blank">
-                <img src="./images/whatsup.png" class="img-responsive mhide">
-                <img src="./images/whatsup.png" class="dhide">
+                <img src="/images/whatsup.png" class="img-responsive mhide">
+                <img src="/images/whatsup.png" class="dhide">
             </a>
         </div>
         <style>
