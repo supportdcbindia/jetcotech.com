@@ -1270,7 +1270,7 @@
                 the product, standard and tailor-made sizes can be considered
                 to meet specific project requirements. For example, JETCOTECH
                 states that tailor-made sizes can be manufactured for its
-                Embossed Perforated Cable Tray range. :contentReference[oaicite:1]{index=1}
+                Embossed Perforated Cable Tray range.
             </p>
 
             <p>
