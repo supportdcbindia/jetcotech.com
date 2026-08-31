@@ -1121,7 +1121,7 @@
 <script src="/js/wow.js"></script>
 <script src="/js/jquery-ui.js"></script>
 <script src="/js/main.js"></script>
-<link href="js/slider/ubislider.css" rel="stylesheet" type="text/css">
+<link href="/js/slider/ubislider.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="/js/slider/jqueryElevateZoom.js"></script>
 <script src="/js/slider/ubislider.js"></script>
