@@ -1025,7 +1025,8 @@
                             <div class="inner-box">
                                 <div class="lower-content">
                                     <div class="text text-justify">
-                                        <p>Signage Mast Poles</p>
+                                        <p>Signage Mast Poles are engineered structural poles designed to support large outdoor signage and display boards at elevated heights. JETCOTECH offers signage mast pole solutions for infrastructure, highways, roads, commercial areas and other outdoor applications where stable and visible signage support is required.</p>
+
                                     </div>
                                 </div>
                             </div>
