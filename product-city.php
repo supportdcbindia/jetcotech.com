@@ -459,15 +459,15 @@
         ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
     </script>
 
-    <link src="/css/bootstrap.css" rel="stylesheet">
-    <link src="/js/slider/ubislider.css" rel="stylesheet" type="text/css">
-    <link src="/css/style.css" rel="stylesheet">
-    <link src="/css/responsive.css" rel="stylesheet">
-    <link src="/css/model-custom.css" rel="stylesheet">
-    <link src="/css/sidebar-btn.css" rel="stylesheet">
+    <link src="<?=$siteUrl;?>/css/bootstrap.css" rel="stylesheet">
+    <link src="<?=$siteUrl;?>/js/slider/ubislider.css" rel="stylesheet" type="text/css">
+    <link src="<?=$siteUrl;?>/css/style.css" rel="stylesheet">
+    <link src="<?=$siteUrl;?>/css/responsive.css" rel="stylesheet">
+    <link src="<?=$siteUrl;?>/css/model-custom.css" rel="stylesheet">
+    <link src="<?=$siteUrl;?>/css/sidebar-btn.css" rel="stylesheet">
 
-    <link rel="shortcut icon" src="/images/favicon.png" type="image/x-icon">
-    <link rel="icon" src="/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" src="<?=$siteUrl;?>/images/favicon.png" type="image/x-icon">
+    <link rel="icon" src="<?=$siteUrl;?>/images/favicon.png" type="image/x-icon">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
