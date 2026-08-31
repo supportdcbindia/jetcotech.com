@@ -543,7 +543,7 @@
                 <div class="auto-container">
                     <div class="upper-inner clearfix">
                         <div class="pull-left logo-box">
-                            <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
+                            <div class="logo"><a href="index.html"><img src="/images/logo-2.png" alt="" title=""></a></div>
                         </div>
                         <div class="upper-right clearfix">
                             <div class="upper-column info-box">
