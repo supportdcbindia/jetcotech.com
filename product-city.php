@@ -15,6 +15,18 @@
 <?php */ ?>
     <?php
 
+    $type = strtolower(trim($_GET['type'] ?? 'manufacturer'));
+    $city = ucwords(str_replace('-', ' ', trim($_GET['city'] ?? 'India')));
+
+    /* Product name can come dynamically from your existing product/category variable */
+    $productName = $productName ?? 'Industrial Products';
+
+    /* Make type grammatically clean */
+    $typeLabel = ucwords($type);
+
+    ?>
+    <?php
+
     $siteUrl = "https://www.jetcotech.com";
     $companyName = "Jetcotech";
     $brandName = "Jetcotech";
@@ -533,326 +545,326 @@
    PRODUCTS INTRO SECTION
 ========================================================= */
 
-.products-intro-section {
-    position: relative;
-    padding: 90px 0 80px;
-    background: #f7f9fb;
-    overflow: hidden;
-}
+        .products-intro-section {
+            position: relative;
+            padding: 90px 0 80px;
+            background: #f7f9fb;
+            overflow: hidden;
+        }
 
-.products-intro-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 150px;
-    background: #ff7043;
-}
+        .products-intro-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 150px;
+            background: #ff7043;
+        }
 
-.products-intro-section::after {
-    content: "";
-    position: absolute;
-    right: -100px;
-    top: -100px;
-    width: 300px;
-    height: 300px;
-    border: 1px solid rgba(18, 57, 88, 0.08);
-    border-radius: 50%;
-}
+        .products-intro-section::after {
+            content: "";
+            position: absolute;
+            right: -100px;
+            top: -100px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(18, 57, 88, 0.08);
+            border-radius: 50%;
+        }
 
-.products-intro-content {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 1;
-}
+        .products-intro-content {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            z-index: 1;
+        }
 
-/* Small Label */
+        /* Small Label */
 
-.products-intro-content .section-tag,
-.products-seo-inner .section-tag {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 14px;
-    padding-left: 18px;
+        .products-intro-content .section-tag,
+        .products-seo-inner .section-tag {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 14px;
+            padding-left: 18px;
 
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ff7043;
-}
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ff7043;
+        }
 
-.products-intro-content .section-tag::before,
-.products-seo-inner .section-tag::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 8px;
-    height: 8px;
-    background: #ff7043;
-    border-radius: 50%;
-    transform: translateY(-50%);
-}
+        .products-intro-content .section-tag::before,
+        .products-seo-inner .section-tag::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            background: #ff7043;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
 
-/* Heading */
+        /* Heading */
 
-.products-intro-content h2 {
-    position: relative;
-    max-width: 850px;
-    margin: 0 auto 28px;
+        .products-intro-content h2 {
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto 28px;
 
-    font-size: 42px;
-    line-height: 1.18;
-    font-weight: 700;
-    color: #123957;
-    letter-spacing: -0.5px;
-}
+            font-size: 42px;
+            line-height: 1.18;
+            font-weight: 700;
+            color: #123957;
+            letter-spacing: -0.5px;
+        }
 
-.products-intro-content h2::after {
-    content: "";
-    display: block;
-    width: 58px;
-    height: 4px;
-    margin: 20px auto 0;
-    border-radius: 10px;
-    background: #ff7043;
-}
+        .products-intro-content h2::after {
+            content: "";
+            display: block;
+            width: 58px;
+            height: 4px;
+            margin: 20px auto 0;
+            border-radius: 10px;
+            background: #ff7043;
+        }
 
-/* Paragraph */
+        /* Paragraph */
 
-.products-intro-content p {
-    max-width: 900px;
-    margin: 0 auto 17px;
+        .products-intro-content p {
+            max-width: 900px;
+            margin: 0 auto 17px;
 
-    font-size: 16px;
-    line-height: 1.85;
-    color: #607286;
-}
+            font-size: 16px;
+            line-height: 1.85;
+            color: #607286;
+        }
 
-.products-intro-content p:last-child {
-    margin-bottom: 0;
-}
+        .products-intro-content p:last-child {
+            margin-bottom: 0;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    SEO CONTENT SECTION
 ========================================================= */
 
-.products-seo-content {
-    position: relative;
-    padding: 85px 0 95px;
-    background: #ffffff;
-    overflow: hidden;
-}
+        .products-seo-content {
+            position: relative;
+            padding: 85px 0 95px;
+            background: #ffffff;
+            overflow: hidden;
+        }
 
-.products-seo-content::before {
-    content: "JETCOTECH";
-    position: absolute;
-    right: -30px;
-    top: 35px;
+        .products-seo-content::before {
+            content: "JETCOTECH";
+            position: absolute;
+            right: -30px;
+            top: 35px;
 
-    font-size: 90px;
-    font-weight: 800;
-    letter-spacing: 4px;
-    color: rgba(18, 57, 88, 0.025);
-    pointer-events: none;
-}
+            font-size: 90px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: rgba(18, 57, 88, 0.025);
+            pointer-events: none;
+        }
 
-.products-seo-inner {
-    position: relative;
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 48px 55px;
+        .products-seo-inner {
+            position: relative;
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 48px 55px;
 
-    background: #f7f9fb;
-    border: 1px solid #e4eaf0;
-    border-radius: 18px;
+            background: #f7f9fb;
+            border: 1px solid #e4eaf0;
+            border-radius: 18px;
 
-    box-shadow: 0 15px 45px rgba(18, 57, 88, 0.06);
-    z-index: 1;
-}
+            box-shadow: 0 15px 45px rgba(18, 57, 88, 0.06);
+            z-index: 1;
+        }
 
-/* Orange top accent */
+        /* Orange top accent */
 
-.products-seo-inner::before {
-    content: "";
-    position: absolute;
-    left: 55px;
-    top: 0;
+        .products-seo-inner::before {
+            content: "";
+            position: absolute;
+            left: 55px;
+            top: 0;
 
-    width: 65px;
-    height: 4px;
+            width: 65px;
+            height: 4px;
 
-    background: #ff7043;
-    border-radius: 0 0 5px 5px;
-}
+            background: #ff7043;
+            border-radius: 0 0 5px 5px;
+        }
 
-/* SEO Heading */
+        /* SEO Heading */
 
-.products-seo-inner h2 {
-    margin: 0 0 25px;
+        .products-seo-inner h2 {
+            margin: 0 0 25px;
 
-    font-size: 34px;
-    line-height: 1.25;
-    font-weight: 700;
-    color: #123957;
-}
+            font-size: 34px;
+            line-height: 1.25;
+            font-weight: 700;
+            color: #123957;
+        }
 
-/* SEO Paragraph */
+        /* SEO Paragraph */
 
-.products-seo-inner p {
-    margin: 0 0 18px;
+        .products-seo-inner p {
+            margin: 0 0 18px;
 
-    font-size: 15.5px;
-    line-height: 1.85;
-    color: #5e7184;
-}
+            font-size: 15.5px;
+            line-height: 1.85;
+            color: #5e7184;
+        }
 
-.products-seo-inner p:last-child {
-    margin-bottom: 0;
-}
+        .products-seo-inner p:last-child {
+            margin-bottom: 0;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    HOVER / VISUAL DETAIL
 ========================================================= */
 
-.products-intro-content,
-.products-seo-inner {
-    transition: all 0.35s ease;
-}
+        .products-intro-content,
+        .products-seo-inner {
+            transition: all 0.35s ease;
+        }
 
-.products-seo-inner:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 55px rgba(18, 57, 88, 0.09);
-}
+        .products-seo-inner:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 55px rgba(18, 57, 88, 0.09);
+        }
 
 
-/* =========================================================
+        /* =========================================================
    RESPONSIVE
 ========================================================= */
 
-@media (max-width: 991px) {
+        @media (max-width: 991px) {
 
-    .products-intro-section {
-        padding: 70px 0 65px;
-    }
+            .products-intro-section {
+                padding: 70px 0 65px;
+            }
 
-    .products-intro-content h2 {
-        font-size: 36px;
-    }
+            .products-intro-content h2 {
+                font-size: 36px;
+            }
 
-    .products-seo-content {
-        padding: 70px 0;
-    }
+            .products-seo-content {
+                padding: 70px 0;
+            }
 
-    .products-seo-inner {
-        padding: 40px;
-    }
+            .products-seo-inner {
+                padding: 40px;
+            }
 
-    .products-seo-inner::before {
-        left: 40px;
-    }
+            .products-seo-inner::before {
+                left: 40px;
+            }
 
-    .products-seo-inner h2 {
-        font-size: 30px;
-    }
-}
-
-
-@media (max-width: 767px) {
-
-    .products-intro-section {
-        padding: 55px 0 50px;
-    }
-
-    .products-intro-section::before {
-        width: 4px;
-        height: 100px;
-    }
-
-    .products-intro-content {
-        padding: 0 15px;
-    }
-
-    .products-intro-content h2 {
-        font-size: 29px;
-        line-height: 1.25;
-        margin-bottom: 22px;
-    }
-
-    .products-intro-content h2::after {
-        width: 48px;
-        height: 3px;
-        margin-top: 16px;
-    }
-
-    .products-intro-content p {
-        font-size: 14px;
-        line-height: 1.75;
-    }
-
-    .products-seo-content {
-        padding: 50px 0 60px;
-    }
-
-    .products-seo-inner {
-        padding: 32px 25px;
-        border-radius: 14px;
-    }
-
-    .products-seo-inner::before {
-        left: 25px;
-        width: 50px;
-    }
-
-    .products-seo-inner h2 {
-        font-size: 26px;
-        line-height: 1.3;
-        margin-bottom: 20px;
-    }
-
-    .products-seo-inner p {
-        font-size: 14px;
-        line-height: 1.75;
-    }
-
-    .products-seo-content::before {
-        font-size: 55px;
-        right: -20px;
-    }
-
-}
+            .products-seo-inner h2 {
+                font-size: 30px;
+            }
+        }
 
 
-@media (max-width: 480px) {
+        @media (max-width: 767px) {
 
-    .products-intro-content h2 {
-        font-size: 25px;
-    }
+            .products-intro-section {
+                padding: 55px 0 50px;
+            }
 
-    .products-intro-content .section-tag,
-    .products-seo-inner .section-tag {
-        font-size: 10px;
-        letter-spacing: 1.5px;
-    }
+            .products-intro-section::before {
+                width: 4px;
+                height: 100px;
+            }
 
-    .products-seo-inner {
-        padding: 28px 20px;
-    }
+            .products-intro-content {
+                padding: 0 15px;
+            }
 
-    .products-seo-inner::before {
-        left: 20px;
-    }
+            .products-intro-content h2 {
+                font-size: 29px;
+                line-height: 1.25;
+                margin-bottom: 22px;
+            }
 
-    .products-seo-inner h2 {
-        font-size: 23px;
-    }
-}
+            .products-intro-content h2::after {
+                width: 48px;
+                height: 3px;
+                margin-top: 16px;
+            }
+
+            .products-intro-content p {
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .products-seo-content {
+                padding: 50px 0 60px;
+            }
+
+            .products-seo-inner {
+                padding: 32px 25px;
+                border-radius: 14px;
+            }
+
+            .products-seo-inner::before {
+                left: 25px;
+                width: 50px;
+            }
+
+            .products-seo-inner h2 {
+                font-size: 26px;
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+
+            .products-seo-inner p {
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .products-seo-content::before {
+                font-size: 55px;
+                right: -20px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .products-intro-content h2 {
+                font-size: 25px;
+            }
+
+            .products-intro-content .section-tag,
+            .products-seo-inner .section-tag {
+                font-size: 10px;
+                letter-spacing: 1.5px;
+            }
+
+            .products-seo-inner {
+                padding: 28px 20px;
+            }
+
+            .products-seo-inner::before {
+                left: 20px;
+            }
+
+            .products-seo-inner h2 {
+                font-size: 23px;
+            }
+        }
     </style>
 </head>
 
@@ -1319,150 +1331,83 @@
             <div class="auto-container">
                 <div class="products-intro-content">
 
-                    <span class="section-tag">ENGINEERED FOR PERFORMANCE</span>
+                    <span class="section-tag">
+                        ENGINEERED FOR PERFORMANCE
+                    </span>
 
                     <h2>
-                        Industrial Cable Management & Lighting Solutions
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeLabel); ?>
+                        in <?= htmlspecialchars($city); ?>
                     </h2>
 
                     <p>
-                        JETCOTECH offers a comprehensive range of engineered products for
-                        cable management, industrial lighting and specialized infrastructure
-                        requirements. Our product portfolio includes Cable Trays, Lighting
-                        Poles, Mast Poles and FRP Products designed for diverse industrial
-                        and commercial applications.
+                        JETCOTECH is a trusted
+                        <?= htmlspecialchars($type); ?>
+                        of <?= htmlspecialchars($productName); ?>
+                        in <?= htmlspecialchars($city); ?>, offering engineered solutions
+                        for cable management, industrial lighting and specialized
+                        infrastructure requirements.
                     </p>
 
                     <p>
-                        With a focus on manufacturing capabilities, product quality and
-                        application-specific requirements, JETCOTECH provides reliable
-                        solutions for projects requiring efficient cable management,
-                        lighting pole systems and high-performance FRP products.
+                        Our range of
+                        <?= htmlspecialchars($productName); ?>
+                        is designed for diverse industrial and commercial applications,
+                        with a focus on dependable manufacturing, consistent quality
+                        and application-specific requirements.
                     </p>
 
                 </div>
             </div>
         </section>
+
+
         <section class="products-seo-content">
             <div class="auto-container">
 
                 <div class="products-seo-inner">
 
-                    <span class="section-tag">WHY JETCOTECH</span>
+                    <span class="section-tag">
+                        WHY JETCOTECH
+                    </span>
 
                     <h2>
-                        Engineered Products for Industrial Applications
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeLabel); ?>
+                        in <?= htmlspecialchars($city); ?> for Industrial Applications
                     </h2>
 
                     <p>
-                        JETCOTECH is a manufacturer, supplier and exporter of industrial
-                        products including cable trays, lighting poles, mast poles and FRP
-                        products. Our portfolio is developed to address different cable
-                        management, lighting and infrastructure requirements across
-                        industrial and commercial projects.
+                        JETCOTECH is a leading
+                        <?= htmlspecialchars($type); ?>
+                        of <?= htmlspecialchars($productName); ?>
+                        in <?= htmlspecialchars($city); ?>. Our product range is developed
+                        to meet different cable management, lighting and infrastructure
+                        requirements across industrial and commercial projects.
                     </p>
 
                     <p>
-                        From standard product requirements to tailor-made solutions,
-                        JETCOTECH focuses on dependable manufacturing, consistent quality
-                        and application-oriented engineering. Our products are suitable
-                        for a wide range of project requirements where reliable industrial
-                        infrastructure solutions are essential.
+                        With a focus on dependable manufacturing, product quality and
+                        application-oriented engineering, JETCOTECH provides
+                        <?= htmlspecialchars($productName); ?>
+                        solutions for projects requiring reliable industrial
+                        infrastructure. Customers in <?= htmlspecialchars($city); ?>
+                        can choose from standard as well as application-specific
+                        product requirements.
                     </p>
 
                     <p>
-                        Explore our complete product range to find the right cable
-                        management, lighting pole, mast pole or FRP solution for your
-                        application.
+                        Explore our range of
+                        <?= htmlspecialchars($productName); ?>
+                        in <?= htmlspecialchars($city); ?> and find a suitable solution
+                        for your project requirements.
                     </p>
 
                 </div>
 
             </div>
         </section>
-        <!-- <footer class="main-footer footer">
-    <div class="upper-box">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="widget about-widget">
-                        <h4 class="widget_title">About</h4>
-                        <div class="text">JETCOTECH is a Manufacturer, Supplier & Exporter with a dominant
-                            presence in Cable Trays, Lighting Poles, High mast Pole, Earthing Solutions, Solar
-                            Structures & Hot Dip Galvanizing.
-                        </div>
-                        <ul class="social-links">
-                            <li><a href="https://www.facebook.com/JetcotechEngineeringLLP"><i
-                                        class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.instagram.com/jetcotechengineering/"><i
-                                        class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/jetcotech-engineering"><i
-                                        class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://www.youtube.com/@jetcotechengineering2226"><i
-                                        class="fa fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="widget links-widget">
-                        <h4 class="widget_title">Quick Links</h4>
-                        <div class="widget-content">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul class="list">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="product.php">Products</a></li>
-                                        <li><a href="catalogue.html">Catalogue</a></li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="list">
-                                        <li><a href="clients.html">Clients</a></li>
-                                        <li><a href="facility.html">Facilities</a></li>
-                                        <li><a href="contact-us.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-widget widget">
-                        <h4 class="widget_title">Get In Touch</h4>
-                        <ul>
-                            <li><i class="fa fa-map-marker"></i> Opp. Old Pipli Bus-Station,<br> Jetpar
-                                Road, Morbi-363642, <br>Gujarat, India
-                            </li>
-                            <li><i class="fa fa-phone"></i><a href="tel:+917575007163">+91 75750 07163</a><br><a
-                                    href="tel:+916351897900">+91 63518 97900</a>
-                            </li>
-                            <li><i class="fa fa-envelope"></i>
-                                <a href="mailto:sales@jetcotech.in">sales@jetcotech.in</a><br>
-                                <a href="mailto:marketing@jetcotech.in">marketing@jetcotech.in</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</footer>
-<div class="footer-bottom">
-    <div class="auto-container">
-        <div class="wrapper-box">
-            <div class="row m-0 align-items-center justify-content-center">
-                <div class="copyright-text">Copyright ©<?php echo date("Y"); ?> Jetcotech. All
-                    Rights Reserved.
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div> -->
         <footer class="main-footer footer footer-modern">
 
             <!-- Top CTA -->
