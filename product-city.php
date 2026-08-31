@@ -528,6 +528,332 @@
             dataLayer.push(arguments);
         }
     </script>
+    <style>
+        /* =========================================================
+   PRODUCTS INTRO SECTION
+========================================================= */
+
+.products-intro-section {
+    position: relative;
+    padding: 90px 0 80px;
+    background: #f7f9fb;
+    overflow: hidden;
+}
+
+.products-intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 150px;
+    background: #ff7043;
+}
+
+.products-intro-section::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(18, 57, 88, 0.08);
+    border-radius: 50%;
+}
+
+.products-intro-content {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Small Label */
+
+.products-intro-content .section-tag,
+.products-seo-inner .section-tag {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 14px;
+    padding-left: 18px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ff7043;
+}
+
+.products-intro-content .section-tag::before,
+.products-seo-inner .section-tag::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background: #ff7043;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* Heading */
+
+.products-intro-content h2 {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto 28px;
+
+    font-size: 42px;
+    line-height: 1.18;
+    font-weight: 700;
+    color: #123957;
+    letter-spacing: -0.5px;
+}
+
+.products-intro-content h2::after {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 4px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    background: #ff7043;
+}
+
+/* Paragraph */
+
+.products-intro-content p {
+    max-width: 900px;
+    margin: 0 auto 17px;
+
+    font-size: 16px;
+    line-height: 1.85;
+    color: #607286;
+}
+
+.products-intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SEO CONTENT SECTION
+========================================================= */
+
+.products-seo-content {
+    position: relative;
+    padding: 85px 0 95px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.products-seo-content::before {
+    content: "JETCOTECH";
+    position: absolute;
+    right: -30px;
+    top: 35px;
+
+    font-size: 90px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: rgba(18, 57, 88, 0.025);
+    pointer-events: none;
+}
+
+.products-seo-inner {
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 48px 55px;
+
+    background: #f7f9fb;
+    border: 1px solid #e4eaf0;
+    border-radius: 18px;
+
+    box-shadow: 0 15px 45px rgba(18, 57, 88, 0.06);
+    z-index: 1;
+}
+
+/* Orange top accent */
+
+.products-seo-inner::before {
+    content: "";
+    position: absolute;
+    left: 55px;
+    top: 0;
+
+    width: 65px;
+    height: 4px;
+
+    background: #ff7043;
+    border-radius: 0 0 5px 5px;
+}
+
+/* SEO Heading */
+
+.products-seo-inner h2 {
+    margin: 0 0 25px;
+
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #123957;
+}
+
+/* SEO Paragraph */
+
+.products-seo-inner p {
+    margin: 0 0 18px;
+
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: #5e7184;
+}
+
+.products-seo-inner p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   HOVER / VISUAL DETAIL
+========================================================= */
+
+.products-intro-content,
+.products-seo-inner {
+    transition: all 0.35s ease;
+}
+
+.products-seo-inner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 55px rgba(18, 57, 88, 0.09);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .products-intro-section {
+        padding: 70px 0 65px;
+    }
+
+    .products-intro-content h2 {
+        font-size: 36px;
+    }
+
+    .products-seo-content {
+        padding: 70px 0;
+    }
+
+    .products-seo-inner {
+        padding: 40px;
+    }
+
+    .products-seo-inner::before {
+        left: 40px;
+    }
+
+    .products-seo-inner h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .products-intro-section {
+        padding: 55px 0 50px;
+    }
+
+    .products-intro-section::before {
+        width: 4px;
+        height: 100px;
+    }
+
+    .products-intro-content {
+        padding: 0 15px;
+    }
+
+    .products-intro-content h2 {
+        font-size: 29px;
+        line-height: 1.25;
+        margin-bottom: 22px;
+    }
+
+    .products-intro-content h2::after {
+        width: 48px;
+        height: 3px;
+        margin-top: 16px;
+    }
+
+    .products-intro-content p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .products-seo-content {
+        padding: 50px 0 60px;
+    }
+
+    .products-seo-inner {
+        padding: 32px 25px;
+        border-radius: 14px;
+    }
+
+    .products-seo-inner::before {
+        left: 25px;
+        width: 50px;
+    }
+
+    .products-seo-inner h2 {
+        font-size: 26px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    .products-seo-inner p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .products-seo-content::before {
+        font-size: 55px;
+        right: -20px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .products-intro-content h2 {
+        font-size: 25px;
+    }
+
+    .products-intro-content .section-tag,
+    .products-seo-inner .section-tag {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .products-seo-inner {
+        padding: 28px 20px;
+    }
+
+    .products-seo-inner::before {
+        left: 20px;
+    }
+
+    .products-seo-inner h2 {
+        font-size: 23px;
+    }
+}
+    </style>
 </head>
 
 <body>
