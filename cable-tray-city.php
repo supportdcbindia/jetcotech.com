@@ -48,7 +48,7 @@
 --------------------------------------------- */
 
     if (1) {
-
+        $productName = "Cable Tray";
         // Clean values
         $cityName = ucwords(str_replace("-", " ", trim($cityName)));
         $typeName = ucwords(str_replace("-", " ", trim($typeName)));
@@ -1009,14 +1009,14 @@
                             <div class="case-study-content">
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="perforated-cable-tray.html">
+                                        <a href="perforated-cable-tray-<?= $type ?>-in-<?= $city ?>.html">
                                             Perforated Cable Tray
                                         </a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
-                                    <a href="perforated-cable-tray.html" class="product-view-btn">
+                                    <a href="perforated-cable-tray-<?= $type ?>-in-<?= $city ?>.html" class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
                                     </a>
@@ -1042,14 +1042,14 @@
                             <div class="case-study-content">
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="ladder-cable-tray.html">
+                                        <a href="ladder-cable-tray-<?= $type ?>-in-<?= $city ?>.html">
                                             Ladder Cable Tray
                                         </a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
-                                    <a href="ladder-cable-tray.html" class="product-view-btn">
+                                    <a href="ladder-cable-tray-<?= $type ?>-in-<?= $city ?>.html" class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
                                     </a>
@@ -1075,14 +1075,14 @@
                             <div class="case-study-content">
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="wire-mesh-cable-tray.html">
+                                        <a href="wire-mesh-cable-tray-<?= $type ?>-in-<?= $city ?>.html">
                                             Wire Mesh Cable Tray
                                         </a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
-                                    <a href="wire-mesh-cable-tray.html" class="product-view-btn">
+                                    <a href="wire-mesh-cable-tray-<?= $type ?>-in-<?= $city ?>.html" class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
                                     </a>
@@ -1108,14 +1108,14 @@
                             <div class="case-study-content">
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="raceway-cable-tray.html">
+                                        <a href="raceway-cable-tray-<?= $type ?>-in-<?= $city ?>.html">
                                             Raceway Cable Tray
                                         </a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
-                                    <a href="raceway-cable-tray.html" class="product-view-btn">
+                                    <a href="raceway-cable-tray-<?= $type ?>-in-<?= $city ?>.html" class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
                                     </a>
@@ -1141,14 +1141,14 @@
                             <div class="case-study-content">
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="embossed-perforated-cable-tray.html">
+                                        <a href="embossed-perforated-cable-tray-<?= $type ?>-in-<?= $city ?>.html">
                                             Embossed Perforated Cable Tray
                                         </a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
-                                    <a href="embossed-perforated-cable-tray.html" class="product-view-btn">
+                                    <a href="embossed-perforated-cable-tray-<?= $type ?>-in-<?= $city ?>.html" class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
                                     </a>
@@ -1174,14 +1174,14 @@
                             <div class="case-study-content">
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="heavy-duty-ladder-cable-tray.html">
+                                        <a href="heavy-duty-ladder-cable-tray-<?= $type ?>-in-<?= $city ?>.html">
                                             Heavy Duty Ladder Cable Tray
                                         </a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
-                                    <a href="heavy-duty-ladder-cable-tray.html" class="product-view-btn">
+                                    <a href="heavy-duty-ladder-cable-tray-<?= $type ?>-in-<?= $city ?>.html" class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
                                     </a>
