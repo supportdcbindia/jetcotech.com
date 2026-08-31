@@ -16,7 +16,7 @@
     <?php
 
     $typeName = $type = strtolower(trim($_GET['type'] ?? 'manufacturer'));
-    $cityName = $city = ucwords(str_replace('-', ' ', trim($_GET['city'] ?? 'India')));
+    $cityName = $city = str_replace('-', ' ', trim($_GET['city'] ?? 'India'));
 
     /* Product name can come dynamically from your existing product/category variable */
     $productName = $productName ?? 'Industrial Products';
