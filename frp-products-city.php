@@ -1122,6 +1122,110 @@
                 </div>
             </div>
         </section>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        FRP INDUSTRIAL SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering FRP solutions
+                        for cable management and industrial infrastructure
+                        applications.
+                    </p>
+
+                    <p>
+                        Our FRP product range includes FRP Perforated Cable Trays,
+                        FRP Ladder Cable Trays and FRP Moulded &amp; Pultruded
+                        Gratings, providing different solutions for project-specific
+                        cable management and industrial requirements.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH FRP PRODUCTS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?> for Industrial Applications
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH provides
+                        FRP product solutions for industrial, electrical and
+                        infrastructure requirements where suitable cable management
+                        and industrial support systems are required.
+                    </p>
+
+                    <p>
+                        The JETCOTECH FRP range includes FRP Perforated Cable Trays,
+                        FRP Ladder Cable Trays and FRP Moulded &amp; Pultruded
+                        Gratings. These products provide different configurations
+                        for cable routing, support and industrial access requirements.
+                    </p>
+
+                    <p>
+                        FRP Perforated Cable Trays and FRP Ladder Cable Trays are
+                        suitable for cable management applications, while FRP
+                        Moulded &amp; Pultruded Gratings can be used for industrial
+                        flooring, walkways, platforms and other applications where
+                        FRP grating solutions are required.
+                    </p>
+
+                    <p>
+                        JETCOTECH focuses on application-oriented manufacturing and
+                        provides FRP products for different project requirements.
+                        Customers in <?= htmlspecialchars($cityName); ?> can explore
+                        the available FRP range and select a suitable solution based
+                        on their installation and project requirements.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and product range,
+                        JETCOTECH serves customers looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, explore the JETCOTECH
+                        FRP product range and contact our team for product
+                        specifications, project requirements and quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>
