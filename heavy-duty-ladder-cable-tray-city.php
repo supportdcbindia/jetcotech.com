@@ -1106,6 +1106,118 @@
                 </div>
             </div>
         </div>
+        <section class="products-intro-section">
+    <div class="auto-container">
+
+        <div class="products-intro-content">
+
+            <span class="section-tag">
+                HEAVY-DUTY CABLE MANAGEMENT
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                JETCOTECH is a trusted
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, offering high-strength
+                cable management solutions for industrial and electrical
+                installations.
+            </p>
+
+            <p>
+                Our Heavy Duty Ladder Cable Trays are designed with heavy-duty
+                rungs and runners to achieve high strength and are suitable
+                for straight runs of heavy cables. The trays are available
+                with Hot Dip Galvanized finishing for demanding applications.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<section class="products-seo-content">
+    <div class="auto-container">
+
+        <div class="products-seo-inner">
+
+            <span class="section-tag">
+                JETCOTECH HEAVY DUTY LADDER CABLE TRAY
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                Looking for a reliable
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                and supplies Heavy Duty Ladder Cable Trays for industrial,
+                electrical and infrastructure cable management applications.
+            </p>
+
+            <p>
+                Heavy Duty Ladder Cable Tray is designed for applications
+                involving heavy cables and long straight cable runs. Its
+                heavy-duty rung and runner construction provides a
+                high-strength cable support arrangement for demanding
+                installations.
+            </p>
+
+            <p>
+                JETCOTECH Heavy Duty Ladder Cable Trays are available with
+                Hot Dip Galvanized finishing and are manufactured to meet
+                different cable management requirements. The product is
+                designed specifically for applications where a stronger
+                ladder-type cable support system is required.
+            </p>
+
+            <p>
+                Available widths include 300 mm, 450 mm, 600 mm, 750 mm,
+                800 mm, 900 mm, 1000 mm and 1200 mm. The standard height
+                listed is 175 mm, with thickness options of 2.5 mm and
+                3 mm. Available lengths include 5000 mm, 6000 mm, 8000 mm
+                and 10000 mm. Customized requirements can be discussed
+                according to the project. :contentReference[oaicite:1]{index=1}
+            </p>
+
+            <p>
+                Heavy Duty Ladder Cable Trays are suitable for industrial
+                plants, electrical installations, infrastructure projects
+                and other applications where heavy cables need reliable
+                support and organized routing.
+            </p>
+
+            <p>
+                With its cable management manufacturing capabilities,
+                JETCOTECH serves customers looking for
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                solutions in <?= htmlspecialchars($cityName); ?> and across
+                India.
+            </p>
+
+            <p>
+                If you are looking for a
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                for product specifications, customized requirements and
+                project quotations.
+            </p>
+
+        </div>
+
+    </div>
+</section>
         <?php require_once('footer.php');?>
     </div>
     <?php require_once('script.php');?>

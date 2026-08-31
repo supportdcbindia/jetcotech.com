@@ -1127,6 +1127,114 @@
                 </div>
             </div>
         </div>
+        <section class="products-intro-section">
+    <div class="auto-container">
+
+        <div class="products-intro-content">
+
+            <span class="section-tag">
+                INDUSTRIAL CABLE MANAGEMENT
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                JETCOTECH is a trusted
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, offering practical
+                cable management solutions for industrial, commercial and
+                infrastructure applications.
+            </p>
+
+            <p>
+                Raceway Cable Trays are designed to provide an organized
+                pathway for electrical cables and wiring systems. They are
+                suitable for projects where systematic cable routing,
+                protection and installation convenience are important.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<section class="products-seo-content">
+    <div class="auto-container">
+
+        <div class="products-seo-inner">
+
+            <span class="section-tag">
+                JETCOTECH RACEWAY CABLE TRAY
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                Looking for a reliable
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                and supplies cable management solutions for electrical,
+                industrial, commercial and infrastructure projects.
+            </p>
+
+            <p>
+                Raceway Cable Tray provides a structured route for electrical
+                cables and wiring systems. Its enclosed or channel-style
+                configuration can help organize cables while providing a
+                neat and systematic cable management arrangement.
+            </p>
+
+            <p>
+                JETCOTECH offers cable management products for different
+                project requirements, with product specifications selected
+                according to application, cable quantity, installation
+                conditions and project requirements.
+            </p>
+
+            <p>
+                Raceway Cable Trays can be considered for electrical
+                installations in industrial facilities, commercial
+                buildings, infrastructure projects and other locations where
+                organized cable routing is required.
+            </p>
+
+            <p>
+                Depending on the application, suitable dimensions, material
+                specifications and surface finish can be selected according
+                to project requirements. Customized requirements can also be
+                discussed for specific installations.
+            </p>
+
+            <p>
+                With its manufacturing capabilities and cable management
+                product range, JETCOTECH serves customers looking for
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                solutions in <?= htmlspecialchars($cityName); ?> and across
+                India.
+            </p>
+
+            <p>
+                If you are looking for a
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                for product specifications, customized requirements and
+                project quotations.
+            </p>
+
+        </div>
+
+    </div>
+</section>
         <?php require_once('footer.php');?>
     </div>
     <?php require_once('script.php');?>

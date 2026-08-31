@@ -175,11 +175,11 @@
     <meta name="geo.region" content="IN-GJ" />
     <meta name="geo.placename" content="Morbi, Gujarat, India" />
     <meta name="document-type" content="Public" />
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Add your Google verification code here -->
     <meta name="google-site-verification" content="ADD_GOOGLE_SITE_VERIFICATION_CODE_HERE" />
 
@@ -1021,7 +1021,7 @@
                                 </div>
                             </div>
 
-                            <?php include('get-quote.php');?>
+                            <?php include('get-quote.php'); ?>
                             <!--                           
                             <div class="sidebar-widget sidebar-blog-category">
                                 <div class="sidebar-title-two">
@@ -1110,14 +1110,128 @@
                 </div>
             </div>
         </div>
-        <?php require_once('footer.php');?>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        ADVANCED CABLE MANAGEMENT
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering engineered
+                        cable management solutions for electrical, industrial and
+                        infrastructure applications.
+                    </p>
+
+                    <p>
+                        Our Embossed Perforated Cable Trays are designed with a
+                        heavy-duty return flange and are available in different
+                        sizes, thicknesses and finishes to meet diverse cable and
+                        electrical wire installation requirements.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH EMBOSSED PERFORATED CABLE TRAY
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies Embossed Perforated Cable Trays for cable and
+                        electrical wire installation requirements across industrial,
+                        commercial and infrastructure projects.
+                    </p>
+
+                    <p>
+                        Embossed Perforated Cable Tray is designed to provide an
+                        organized pathway and support system for electrical cables.
+                        The tray is offered with a heavy-duty return flange and is
+                        manufactured to meet different cable management requirements.
+                    </p>
+
+                    <p>
+                        JETCOTECH manufactures Embossed Perforated Cable Trays using
+                        Mild Steel and Pre-Galvanized material. Available finishes
+                        include Pre-Galvanized, Hot Dip Galvanized and Powder Coated
+                        options, allowing the product specification to be selected
+                        according to the application and project requirements.
+                        :contentReference[oaicite:1]{index=1}
+                    </p>
+
+                    <p>
+                        Standard tray widths include 100 mm, 150 mm, 200 mm, 300 mm,
+                        400 mm and 500 mm, with available heights and thicknesses
+                        depending on the selected configuration. The standard
+                        length is 3000 mm, while tailor-made sizes can also be
+                        manufactured according to specific project requirements.
+                        :contentReference[oaicite:2]{index=2}
+                    </p>
+
+                    <p>
+                        Embossed Perforated Cable Trays can be considered for
+                        electrical cable management in industrial plants,
+                        commercial buildings, infrastructure projects and other
+                        installations where organized cable routing and support are
+                        required.
+                    </p>
+
+                    <p>
+                        With its cable management manufacturing capabilities,
+                        JETCOTECH serves customers looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized sizes and project
+                        quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <script>
-$('.product').addClass(' current ');
-$('.CableTray').addClass(' current ');
-$('.EmbossedPerforatedCableTray').addClass(' current ');
+    $('.product').addClass(' current ');
+    $('.CableTray').addClass(' current ');
+    $('.EmbossedPerforatedCableTray').addClass(' current ');
 </script>
