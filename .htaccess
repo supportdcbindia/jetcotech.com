@@ -37,6 +37,14 @@ RewriteRule ^high-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)
 RewriteRule ^flag-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ flag-mast-poles-city.php?type=$1&city=$2 [L,QSA]
 RewriteRule ^stadium-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ stadium-mast-poles-city.php?type=$1&city=$2 [L,QSA]
 RewriteRule ^signage-mast-pole-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ signage-mast-pole-city.php?type=$1&city=$2 [L,QSA]
+
+
+RewriteRule ^perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+RewriteRule ^ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+RewriteRule ^wire-mesh-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ wire-mesh-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+RewriteRule ^raceway-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ raceway-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+RewriteRule ^embossed-perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ embossed-perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+RewriteRule ^heavy-duty-ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ heavy-duty-ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
     # ==================================================
     # EXISTING FILES
     # ==================================================
