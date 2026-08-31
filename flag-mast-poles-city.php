@@ -1156,6 +1156,113 @@
                 </div>
             </div>
         </div>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        FLAG MAST POLE SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering engineered
+                        flag mast pole solutions for national flags, organization
+                        flags, holy flags and other large-scale outdoor flag
+                        installations.
+                    </p>
+
+                    <p>
+                        Our flag mast poles are suitable for institutional,
+                        commercial, industrial, public and infrastructure
+                        installations where a prominent and reliable flag display
+                        solution is required.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH FLAG MAST POLES
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?> for Flag Installations
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH provides
+                        flag mast pole solutions for different outdoor flag display
+                        requirements. These poles are suitable for locations where
+                        flags need to be displayed prominently and securely.
+                    </p>
+
+                    <p>
+                        JETCOTECH Flag Mast Poles can be used for National Flag,
+                        Holy Flag and organization flag applications. They are
+                        suitable for a range of locations including corporate
+                        premises, institutions, commercial developments, public
+                        spaces and other outdoor installations.
+                    </p>
+
+                    <p>
+                        Flag mast poles can be supplied according to the required
+                        application and project specifications. Standard as well as
+                        tailor-made sizes can be considered depending on the project
+                        requirements, installation location and required flag
+                        display arrangement.
+                    </p>
+
+                    <p>
+                        The appropriate flag mast configuration can be selected based
+                        on factors such as pole height, installation requirements,
+                        flag dimensions and site conditions. Customers in
+                        <?= htmlspecialchars($cityName); ?>
+                        can discuss their requirements with JETCOTECH to determine a
+                        suitable solution.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and focus on engineered
+                        infrastructure solutions, JETCOTECH serves customers looking
+                        for <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>
