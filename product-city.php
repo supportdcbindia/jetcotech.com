@@ -459,13 +459,13 @@
         ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
     </script>
 
-    <link src="<?=$siteUrl;?>/css/bootstrap.css"  type="text/css">
-    <link src="<?=$siteUrl;?>/js/slider/ubislider.css" type="text/css">
-    <link src="<?=$siteUrl;?>/css/style.css"  type="text/css">
-    <link src="<?=$siteUrl;?>/css/responsive.css"  type="text/css">
-    <link src="<?=$siteUrl;?>/css/model-custom.css"  type="text/css">
-    <link src="<?=$siteUrl;?>/css/sidebar-btn.css"  type="text/css">
-
+    <link rel="stylesheet" href="<?=$siteUrl;?>/css/bootstrap.css">
+<link rel="stylesheet" href="<?=$siteUrl;?>/js/slider/ubislider.css">
+<link rel="stylesheet" href="<?=$siteUrl;?>/css/style.css">
+<link rel="stylesheet" href="<?=$siteUrl;?>/css/responsive.css">
+<link rel="stylesheet" href="<?=$siteUrl;?>/css/model-custom.css">
+<link rel="stylesheet" href="<?=$siteUrl;?>/css/sidebar-btn.css">
+    
     <link rel="shortcut icon" src="<?=$siteUrl;?>/images/favicon.png" type="image/x-icon">
     <link rel="icon" src="<?=$siteUrl;?>/images/favicon.png" type="image/x-icon">
 
