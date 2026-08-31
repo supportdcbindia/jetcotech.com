@@ -3,7 +3,18 @@
 
 <head>
     <meta charset="utf-8">
+<?php
 
+    $siteUrl = "https://www.jetcotech.com";
+    $companyName = "Jetcotech";
+    $brandName = "Jetcotech";
+    $logoUrl = $siteUrl . "/images/logo-2.png"; // update logo path if needed
+    $phone = "+91 75750 07163"; // update phone
+    $email = "info@jetcotech.in"; // update email
+
+    $requestPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $currentPage = basename($requestPath);
+    ?>
     <link src="<?=$siteUrl;?>/css/bootstrap.css"  type="text/css">
     <link src="<?=$siteUrl;?>/js/slider/ubislider.css" type="text/css">
     <link src="<?=$siteUrl;?>/css/style.css"  type="text/css">
