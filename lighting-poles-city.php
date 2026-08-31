@@ -1015,7 +1015,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="polygonal-octagonal-lighting-poles.html">
+                                        <a href="polygonal-octagonal-lighting-poles-<?= $type ?>-in-<?= $city ?>.php">
                                             Polygonal / Octagonal Lighting Poles
                                         </a>
                                     </h3>
@@ -1023,7 +1023,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="polygonal-octagonal-lighting-poles.html"
+                                    <a href="polygonal-octagonal-lighting-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1056,7 +1056,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="swaged-lighting-poles.html">
+                                        <a href="swaged-lighting-poles-<?= $type ?>-in-<?= $city ?>.php">
                                             Swaged Lighting Poles
                                         </a>
                                     </h3>
@@ -1064,7 +1064,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="swaged-lighting-poles.html"
+                                    <a href="swaged-lighting-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1097,7 +1097,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="conical-poles.html">
+                                        <a href="conical-poles-<?= $type ?>-in-<?= $city ?>.php">
                                             Conical Poles
                                         </a>
                                     </h3>
@@ -1105,7 +1105,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="conical-poles.html"
+                                    <a href="conical-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1138,7 +1138,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="decorative-poles.html">
+                                        <a href="decorative-poles-<?= $type ?>-in-<?= $city ?>.php">
                                             Decorative / Customised Poles
                                         </a>
                                     </h3>
@@ -1146,7 +1146,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="decorative-poles.html"
+                                    <a href="decorative-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
