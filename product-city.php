@@ -1176,13 +1176,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/cable-tray.php">Cable Tray</a>
+                                        <a href="/cable-tray-<?=$type?>-in-<?=$city?>.php">Cable Tray</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/cable-tray.php"
+                                    <a href="/cable-tray-<?=$type?>-in-<?=$city?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1217,13 +1217,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/lighting-poles.php">Lighting Poles</a>
+                                        <a href="/lighting-poles-<?=$type?>-in-<?=$city?>.php">Lighting Poles</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/lighting-poles.php"
+                                    <a href="/lighting-poles-<?=$type?>-in-<?=$city?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1258,13 +1258,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/mast-poles.php">Mast Poles</a>
+                                        <a href="/mast-poles-<?=$type?>-in-<?=$city?>.php">Mast Poles</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/mast-poles.php"
+                                    <a href="/mast-poles-<?=$type?>-in-<?=$city?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1299,13 +1299,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/frp-products.html">FRP Products</a>
+                                        <a href="/frp-products-<?=$type?>-in-<?=$city?>.php">FRP Products</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/frp-products.html"
+                                    <a href="/frp-products-<?=$type?>-in-<?=$city?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
