@@ -1199,6 +1199,118 @@
                 </div>
             </div>
         </div>
+
+        <section class="products-intro-section">
+    <div class="auto-container">
+
+        <div class="products-intro-content">
+
+            <span class="section-tag">
+                INDUSTRIAL CABLE MANAGEMENT
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                JETCOTECH is a trusted
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, offering engineered
+                cable management solutions for industrial, commercial and
+                infrastructure applications.
+            </p>
+
+            <p>
+                Ladder Cable Trays provide an organized and practical system
+                for routing and supporting electrical cables. JETCOTECH
+                offers cable tray solutions for different project
+                requirements, including standard as well as customized
+                configurations.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<section class="products-seo-content">
+    <div class="auto-container">
+
+        <div class="products-seo-inner">
+
+            <span class="section-tag">
+                JETCOTECH LADDER CABLE TRAY
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                Looking for a reliable
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                and supplies Ladder Cable Trays for organized routing and
+                support of electrical cables across industrial, commercial
+                and infrastructure projects.
+            </p>
+
+            <p>
+                Ladder Cable Tray is designed with longitudinal side rails
+                connected by horizontal rungs, providing a practical cable
+                support arrangement for electrical installations. The open
+                ladder configuration can also provide convenient access to
+                cables during installation and maintenance.
+            </p>
+
+            <p>
+                JETCOTECH offers Ladder Cable Trays in different widths,
+                heights, thicknesses and lengths to suit various project
+                requirements. Standard configurations are available, while
+                tailor-made sizes can also be manufactured according to
+                specific requirements.
+            </p>
+
+            <p>
+                Ladder Cable Trays can be used for cable management in
+                industrial plants, commercial buildings, electrical
+                installations, infrastructure projects and other
+                applications requiring organized cable routing and support.
+            </p>
+
+            <p>
+                Depending on the application and installation environment,
+                the appropriate cable tray specification and finish can be
+                selected according to project requirements.
+            </p>
+
+            <p>
+                With its manufacturing capabilities and cable management
+                product range, JETCOTECH serves customers looking for
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                solutions in <?= htmlspecialchars($cityName); ?> and across
+                India.
+            </p>
+
+            <p>
+                If you are looking for a
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                for product specifications, customized requirements and
+                project quotations.
+            </p>
+
+        </div>
+
+    </div>
+</section>
         <?php
         $product_name = 'Ladder Cable Tray';
         require_once('widget-product.php');
