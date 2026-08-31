@@ -459,15 +459,15 @@
         ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
     </script>
 
-    <link rel="stylesheet" href="<?=$siteUrl;?>/css/bootstrap.css">
-<link rel="stylesheet" href="<?=$siteUrl;?>/js/slider/ubislider.css">
-<link rel="stylesheet" href="<?=$siteUrl;?>/css/style.css">
-<link rel="stylesheet" href="<?=$siteUrl;?>/css/responsive.css">
-<link rel="stylesheet" href="<?=$siteUrl;?>/css/model-custom.css">
-<link rel="stylesheet" href="<?=$siteUrl;?>/css/sidebar-btn.css">
-    
-    <link rel="shortcut icon" src="<?=$siteUrl;?>/images/favicon.png" type="image/x-icon">
-    <link rel="icon" src="<?=$siteUrl;?>/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="<?= $siteUrl; ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= $siteUrl; ?>/js/slider/ubislider.css">
+    <link rel="stylesheet" href="<?= $siteUrl; ?>/css/style.css">
+    <link rel="stylesheet" href="<?= $siteUrl; ?>/css/responsive.css">
+    <link rel="stylesheet" href="<?= $siteUrl; ?>/css/model-custom.css">
+    <link rel="stylesheet" href="<?= $siteUrl; ?>/css/sidebar-btn.css">
+
+    <link rel="shortcut icon" src="<?= $siteUrl; ?>/images/favicon.png" type="image/x-icon">
+    <link rel="icon" src="<?= $siteUrl; ?>/images/favicon.png" type="image/x-icon">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -532,7 +532,281 @@
 
 <body>
     <div class="page-wrapper product">
-        <?php require_once('header.php'); ?>
+        <div class="preloader"></div>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRG5N2H" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <?php include("pop-model.php"); ?>
+        <header class="main-header header-style-two">
+            <div class="header-upper">
+                <div class="auto-container">
+                    <div class="upper-inner clearfix">
+                        <div class="pull-left logo-box">
+                            <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
+                        </div>
+                        <div class="upper-right clearfix">
+                            <div class="upper-column info-box">
+                                <div class="icon-box"><span class="flaticon-e-mail-envelope"></span></div>
+                                <ul>
+                                    <li><a href="mailto:sales@jetcotech.in"> sales@jetcotech.in</a> | <a
+                                            href="mailto:marketing@jetcotech.in">marketing@jetcotech.in</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="upper-column info-box ">
+                                <div class="icon-box"><span class="flaticon-phone-receiver"></span></div>
+                                <ul>
+                                    <li><a href="tel:+917575007163">+91 75750
+                                            07163</a> | <a href="tel:+916351897900">+91 63518 97900</a></li>
+                                </ul>
+                            </div>
+                            <div class="upper-column info-box pl-0">
+                                <ul class="social-icon-one">
+                                    <li><a href="https://www.facebook.com/JetcotechEngineeringLLP" target="_blank"><span
+                                                class="fa fa-facebook-square"></span></a></li>
+                                    <li><a href="https://www.instagram.com/jetcotechengineering/" target="_blank"><span
+                                                class="fa fa-instagram"></span></a></li>
+                                    <li><a href="https://www.linkedin.com/company/jetcotech-engineering" target="_blank"><span
+                                                class="fa fa-linkedin-square"></span></a></li>
+                                    <li><a href="https://www.youtube.com/@jetcotechengineering2226" target="_blank"><span
+                                                class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="social-box"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="outer-container clearfix">
+                        <div class="nav-outer clearfix">
+                            <nav class="main-menu navbar-expand-md">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                                </div>
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li class="home"><a href="index.html">Home</a></li>
+                                        <li class="dropdown about">
+                                            <a href="javascript:;">Company Profile</a>
+                                            <ul>
+                                                <li class="aboutus"><a href="about-us.html">About Us</a></li>
+                                                <li class="certificate"><a href="certificate.html">Certificate</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="product dropdown">
+                                            <a onclick="productfunc()" href="product.php">Products </a>
+                                            <ul>
+                                                <li class="dropdown CableTray">
+                                                    <a onclick="cablefunc()" href="cable-tray.php">Cable Tray</a>
+                                                    <ul>
+                                                        <li class="PerforattedCableTray"><a
+                                                                href="perforated-cable-tray.html">Perforated Cable Tray</a></li>
+                                                        <li class="LadderCableTray"><a href="ladder-cable-tray.html">Ladder
+                                                                Cable Tray</a>
+                                                        </li>
+                                                        <li class="WireMeshCableTray"><a href="wire-mesh-cable-tray.html">Wire
+                                                                Mesh Cable Tray</a>
+                                                        </li>
+                                                        <li class="RacewayCableTray"><a href="raceway-cable-tray.html">Raceway
+                                                                Cable Tray</a>
+                                                        </li>
+                                                        <li class="EmbossedPerforatedCableTray"><a
+                                                                href="embossed-perforated-cable-tray.html">Embossed Perforated
+                                                                Cable Tray</a>
+                                                        </li>
+                                                        <li class="HeavyDutyLadderCableTray"><a
+                                                                href="heavy-duty-ladder-cable-tray.html">Heavy Duty Ladder Cable
+                                                                Tray</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown LightingPoles">
+                                                    <a onclick="lightingfun()" href="lighting-poles.php">Lighting Poles</a>
+                                                    <ul>
+                                                        <li class="OctagonalLightingPoles"><a
+                                                                href="polygonal-octagonal-lighting-poles.html">Polygonal /
+                                                                Octagonal Lighting Poles</a>
+                                                        </li>
+                                                        <li class="SwagedLightingPoles"><a
+                                                                href="swaged-lighting-poles.html">Swaged Lighting Poles</a></li>
+                                                        <li class="ConicalPoles"><a href="conical-poles.html">Conical Poles</a>
+                                                        </li>
+                                                        <li class="DecorativeCustomisedPoles"><a
+                                                                href="decorative-poles.html">Decorative / Customised Poles</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown MastPoles">
+                                                    <a onclick="mastfun()" href="mast-poles.php">Mast Poles</a>
+                                                    <ul>
+                                                        <li class="HighMastPoles"><a href="high-mast-poles.html">High Mast
+                                                                Poles</a>
+                                                        </li>
+                                                        <li class="FlagMastPoles"><a href="flag-mast-poles.html">Flag Mast
+                                                                Poles</a>
+                                                        </li>
+                                                        <li class="StadiumMastPoles"><a href="stadium-mast-poles.html">Stadium
+                                                                Mast Poles</a>
+                                                        </li>
+                                                        <li class="SignageMastPoles"><a href="signage-mast-pole.html">Signage
+                                                                Mast Poles</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown FrpProducts">
+                                                    <a onclick="frpfun()" href="frp-products.html">Frp Products</a>
+                                                    <ul>
+                                                        <li class="FrpPerforatedCableTray"><a
+                                                                href="frp-perforated-cable-tray.php">Frp Perforated Cable
+                                                                Tray</a></li>
+                                                        <li class="FrpLadderCableTray"><a href="frp-ladder-cable-tray.php">Frp
+                                                                Ladder Cable Tray</a></li>
+                                                        <li class="FrpMouldedPultrudedGratings"><a
+                                                                href="frp-moulded-&-pultruded-gratings.html">Frp Moulded &amp;
+                                                                Pultruded Gratings</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalogue"><a href="catalogue.html">Catalogue</a></li>
+                                        <li class="clients"><a href="clients.html">Clients</a></li>
+                                        <li class="faculty"><a href="facility.html">Facilities</a></li>
+                                        <li class="dropdown contact">
+                                            <a href="javascript:;">Contact Us</a>
+                                            <ul>
+                                                <li class="contactus"><a href="contact-us.html">Contact Us</a></li>
+                                                <li class="becomeadealer"><a href="become-a-dealer.html">Become A Dealer</a>
+                                                </li>
+                                                <li class="career"><a href="career.html">Career</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-header">
+                <div class="auto-container clearfix">
+                    <div class="logo pull-left"> <a href="index.html" class="img-responsive"><img src="/images/logo-small.png"
+                                alt="" title=""></a> </div>
+                    <div class="right-col pull-right">
+                        <nav class="main-menu navbar-expand-md">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                                aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span
+                                    class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                                <ul class="navigation clearfix">
+                                    <li class="home"><a href="index.html">Home</a></li>
+                                    <li class="dropdown about">
+                                        <a href="javascript:;">Company Profile</a>
+                                        <ul>
+                                            <li class="aboutus"><a href="about-us.html">About Us</a></li>
+                                            <li class="certificate"><a href="certificate.html">Certificate</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="product dropdown">
+                                        <a onclick="productfunc()" href="product.php">Products</a>
+                                        <ul>
+                                            <li class="dropdown CableTray">
+                                                <a onclick="cablefunc()" href="cable-tray.html">Cable Tray</a>
+                                                <ul>
+                                                    <li class="PerforattedCableTray"><a
+                                                            href="perforated-cable-tray.html">Perforatted Cable Tray</a></li>
+                                                    <li class="LadderCableTray"><a href="ladder-cable-tray.html">Ladder Cable
+                                                            Tray</a>
+                                                    </li>
+                                                    <li class="WireMeshCableTray"><a href="wire-mesh-cable-tray.html">Wire Mesh
+                                                            Cable Tray</a>
+                                                    </li>
+                                                    <li class="RacewayCableTray"><a href="raceway-cable-tray.html">Raceway Cable
+                                                            Tray</a>
+                                                    </li>
+                                                    <li class="EmbossedPerforatedCableTray"><a
+                                                            href="embossed-perforated-cable-tray.html">Embossed Perforated Cable
+                                                            Tray</a>
+                                                    </li>
+                                                    <li class="HeavyDutyLadderCableTray"><a
+                                                            href="heavy-duty-ladder-cable-tray.html">Heavy Duty Ladder Cable
+                                                            Tray</a>
+                                                    </li>
+                                                    <!-- <li class="CableTrayAccessories"><a href="cable-tray-accessories.html">Cable
+                                    Tray Accessories</a></li> -->
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown LightingPoles">
+                                                <a onclick="lightingfun()" href="lighting-poles.php">Lighting Poles</a>
+                                                <ul>
+                                                    <li class="OctagonalLightingPoles"><a
+                                                            href="polygonal-octagonal-lighting-poles.html">Polygonal / Octagonal
+                                                            Lighting Poles</a>
+                                                    </li>
+                                                    <li class="SwagedLightingPoles"><a href="swaged-lighting-poles.html">Swaged
+                                                            Lighting Poles</a>
+                                                    </li>
+                                                    <li class="ConicalPoles"><a href="conical-poles.html">Conical Poles</a></li>
+                                                    <li class="DecorativeCustomisedPoles"><a
+                                                            href="decorative-poles.html">Decorative / Customised Poles</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown MastPoles">
+                                                <a onclick="mastfun()" href="mast-poles.php">Mast Poles</a>
+                                                <ul>
+                                                    <li class="HighMastPoles"><a href="high-mast-poles.html">High Mast Poles</a>
+                                                    </li>
+                                                    <li class="FlagMastPoles"><a href="flag-mast-poles.html">Flag Mast Poles</a>
+                                                    </li>
+                                                    <li class="StadiumMastPoles"><a href="stadium-mast-poles.html">Stadium Mast
+                                                            Poles</a>
+                                                    </li>
+                                                    <li class="SignageMastPoles"><a href="signage-mast-pole.html">Signage Mast
+                                                            Poles</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown FrpProducts">
+                                                <a onclick="frpfun()" href="frp-products.html">Frp Products</a>
+                                                <ul>
+                                                    <li class="FrpPerforatedCableTray"><a
+                                                            href="frp-perforated-cable-tray.php">Frp Perforated Cable Tray</a>
+                                                    </li>
+                                                    <li class="FrpLadderCableTray"><a href="frp-ladder-cable-tray.php">Frp
+                                                            Ladder Cable Tray</a></li>
+                                                    <li class="FrpMouldedPultrudedGratings"><a
+                                                            href="frp-moulded-&-pultruded-gratings.html">Frp Moulded &amp;
+                                                            Pultruded Gratings</a></li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="catalogue"><a href="catalogue.html">Catalogue</a></li>
+                                    <li class="faculty"><a href="facility.html">Facilities</a></li>
+                                    <li class="clients"><a href="clients.html">Clients</a></li>
+                                    <li class="dropdown contact">
+                                        <a href="javascript:;">Contact Us</a>
+                                        <ul>
+                                            <li class="contactus"><a href="contact-us.html">Contact Us</a></li>
+                                            <li class="becomeadealer"><a href="become-a-dealer.html">Become A Dealer</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
         <section class="page-title" style="background-image:url(/images/background/perforatted-cable-tray-bg.jpg)">
             <div class="auto-container">
                 <div class="content">
@@ -1108,94 +1382,94 @@
         </style>
     </div>
     <script src="/js/jquery.js"></script>
-<script src="/js/slider/jquery.js"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/slider/jquery.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
 
-<script src="/js/sticky.js"></script>
-<script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="/js/jquery.fancybox.js"></script>
-<script src="/js/appear.js"></script>
-<script src="/js/owl.js"></script>
-<script src="/js/wow.js"></script>
-<script src="/js/jquery-ui.js"></script>
-<script src="/js/main.js"></script>
-<link href="/js/slider/ubislider.css" rel="stylesheet" type="text/css">
+    <script src="/js/sticky.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/js/jquery.fancybox.js"></script>
+    <script src="/js/appear.js"></script>
+    <script src="/js/owl.js"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/main.js"></script>
+    <link href="/js/slider/ubislider.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="/js/slider/jqueryElevateZoom.js"></script>
-<script src="/js/slider/ubislider.js"></script>
-<script src="/js/index.js"></script>
-<script src="/js/jquery.validate.min.js"></script>
-<script src="/js/form-buzz.js"></script>
-<script type="text/javascript">
-$('#pdrzoom').ubislider({
-    arrowsToggle: true,
-    type: 'ecommerce',
-    hideArrows: true,
-    autoSlideOnLastClick: true,
-    modalOnClick: false,
-    position: 'vertical',
-    onTopImageChange: function() {
-        $('#imageSlider3 img').elevateZoom();
-    }
-});
+    <script type="text/javascript" src="/js/slider/jqueryElevateZoom.js"></script>
+    <script src="/js/slider/ubislider.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/form-buzz.js"></script>
+    <script type="text/javascript">
+        $('#pdrzoom').ubislider({
+            arrowsToggle: true,
+            type: 'ecommerce',
+            hideArrows: true,
+            autoSlideOnLastClick: true,
+            modalOnClick: false,
+            position: 'vertical',
+            onTopImageChange: function() {
+                $('#imageSlider3 img').elevateZoom();
+            }
+        });
 
 
-$(document).ready(function() {
+        $(document).ready(function() {
 
-    var total_li_node = $('.ubislider-inner li').length;
-    var current_li_node = 0;
-    var slider_height = -85;
+            var total_li_node = $('.ubislider-inner li').length;
+            var current_li_node = 0;
+            var slider_height = -85;
 
-    thumbAutoSlide(current_li_node);
-
-    function thumbAutoSlide(current_li_node) {
-
-        var h = (slider_height * current_li_node) + 'px';
-        //gal1 top -85 set karvu
-        $('#gal1').css('top', h);
-        current_li_node++;
-
-        if (current_li_node == total_li_node) {
-            current_li_node = 0;
-        }
-
-        setTimeout(function() {
             thumbAutoSlide(current_li_node);
-        }, 2000);
-    }
 
-});
-</script>
+            function thumbAutoSlide(current_li_node) {
+
+                var h = (slider_height * current_li_node) + 'px';
+                //gal1 top -85 set karvu
+                $('#gal1').css('top', h);
+                current_li_node++;
+
+                if (current_li_node == total_li_node) {
+                    current_li_node = 0;
+                }
+
+                setTimeout(function() {
+                    thumbAutoSlide(current_li_node);
+                }, 2000);
+            }
+
+        });
+    </script>
 
 
     <script>
-    function productfunc() {
-        window.location.href = 'product.html';
-    }
-</script>
+        function productfunc() {
+            window.location.href = 'product.html';
+        }
+    </script>
 
     <script>
-    function cablefunc() {
-        window.location.href = 'cable-tray.html';
-    }
-</script>
+        function cablefunc() {
+            window.location.href = 'cable-tray.html';
+        }
+    </script>
     <script>
-    function lightingfun() {
-        window.location.href = 'lighting-poles.html';
-    }
-</script>
+        function lightingfun() {
+            window.location.href = 'lighting-poles.html';
+        }
+    </script>
     <script>
-    function mastfun() {
-        window.location.href = 'mast-poles.html';
-    }
-</script>
-<script>
-    function frpfun() {
-        window.location.href = 'frp-products.html';
-    }
-</script>
+        function mastfun() {
+            window.location.href = 'mast-poles.html';
+        }
+    </script>
+    <script>
+        function frpfun() {
+            window.location.href = 'frp-products.html';
+        }
+    </script>
 
 </body>
 
