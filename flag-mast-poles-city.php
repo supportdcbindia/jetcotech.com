@@ -181,7 +181,11 @@
     <meta name="geo.region" content="IN-GJ" />
     <meta name="geo.placename" content="Morbi, Gujarat, India" />
     <meta name="document-type" content="Public" />
-
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
     <!-- Add your Google verification code here -->
     <meta name="google-site-verification" content="ADD_GOOGLE_SITE_VERIFICATION_CODE_HERE" />
 
