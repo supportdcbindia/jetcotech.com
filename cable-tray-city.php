@@ -1198,6 +1198,101 @@
                 </div>
             </div>
         </section>
+        <section class="products-intro-section">
+    <div class="auto-container">
+        <div class="products-intro-content">
+
+            <span class="section-tag">
+                CABLE MANAGEMENT SOLUTIONS
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?>
+            </h2>
+
+            <p>
+                JETCOTECH is a trusted
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, providing engineered
+                cable management solutions for industrial, commercial and
+                infrastructure applications.
+            </p>
+
+            <p>
+                Our cable tray range is developed for organized and efficient
+                cable routing across different project requirements. JETCOTECH
+                offers Perforated Cable Trays, Ladder Cable Trays, Wire Mesh
+                Cable Trays, Raceway Cable Trays, Embossed Perforated Cable
+                Trays and Heavy Duty Ladder Cable Trays.
+            </p>
+
+        </div>
+    </div>
+</section>
+<section class="products-seo-content">
+    <div class="auto-container">
+
+        <div class="products-seo-inner">
+
+            <span class="section-tag">
+                JETCOTECH CABLE TRAY SOLUTIONS
+            </span>
+
+            <h2>
+                <?= htmlspecialchars($productName); ?>
+                <?= htmlspecialchars($typeName); ?>
+                in <?= htmlspecialchars($cityName); ?> for Industrial Applications
+            </h2>
+
+            <p>
+                Looking for a reliable
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>? JETCOTECH provides a
+                comprehensive range of cable management solutions designed for
+                different electrical and industrial installation requirements.
+            </p>
+
+            <p>
+                Our product range includes Perforated Cable Trays, Ladder Cable
+                Trays, Wire Mesh Cable Trays, Raceway Cable Trays, Embossed
+                Perforated Cable Trays and Heavy Duty Ladder Cable Trays.
+                Different configurations can be selected according to the
+                cable routing, installation and project requirements.
+            </p>
+
+            <p>
+                JETCOTECH focuses on dependable manufacturing and
+                application-oriented cable management solutions. Depending on
+                the product, standard and tailor-made sizes can be considered
+                to meet specific project requirements. For example, JETCOTECH
+                states that tailor-made sizes can be manufactured for its
+                Embossed Perforated Cable Tray range. :contentReference[oaicite:1]{index=1}
+            </p>
+
+            <p>
+                The cable tray solutions are suitable for industrial plants,
+                commercial projects, electrical installations and
+                infrastructure applications where organized cable routing and
+                support are required.
+            </p>
+
+            <p>
+                If you are looking for a
+                <?= strtolower(htmlspecialchars($productName)); ?>
+                <?= strtolower(htmlspecialchars($typeName)); ?>
+                in <?= htmlspecialchars($cityName); ?>, explore the JETCOTECH
+                range and contact our team for product specifications,
+                project requirements and quotations.
+            </p>
+
+        </div>
+
+    </div>
+</section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>
