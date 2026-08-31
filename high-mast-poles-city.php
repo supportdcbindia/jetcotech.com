@@ -1029,7 +1029,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php include('get-quote.php');?>
+                            <?php include('get-quote.php'); ?>
 
                             <div class="sidebar-widget banner-widget">
                                 <div class="widget-content"
@@ -1379,14 +1379,121 @@
                 </div>
             </div>
         </div>
-        <?php require_once('footer.php');?>
+        <section class="products-intro-section">
+            <div class="auto-container">
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        HIGH MAST LIGHTING SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering high mast
+                        lighting solutions for applications where large areas need
+                        to be illuminated effectively with minimum interference from
+                        the lighting installation.
+                    </p>
+
+                    <p>
+                        High mast lighting is particularly suitable for industrial
+                        and commercial areas, docks, airports, flyovers, stations,
+                        car parks and other large outdoor spaces where efficient
+                        illumination and convenient maintenance are important.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH HIGH MAST POLES
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?> for Large Area Lighting
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH provides
+                        high mast lighting solutions for projects requiring
+                        illumination across large outdoor areas. High mast systems
+                        can reduce the need for numerous conventional lighting
+                        columns while providing a practical lighting arrangement.
+                    </p>
+
+                    <p>
+                        High mast lighting is suitable for industrial and commercial
+                        areas, docks, airports, flyovers, stations, car parks and
+                        other locations where large spaces require effective
+                        illumination with minimum interference from the supporting
+                        installation.
+                    </p>
+
+                    <p>
+                        JETCOTECH high mast poles can be provided with accessories
+                        according to customer requirements. These may include a
+                        raising and lowering system, trailing cable, power tool,
+                        feeder pillar for automatic switching operation of
+                        luminaires, lighting finial and aviation obstruction
+                        warning light.
+                    </p>
+
+                    <p>
+                        The appropriate high mast configuration can be selected
+                        according to the application, site requirements and project
+                        specifications. Customers in
+                        <?= htmlspecialchars($cityName); ?>
+                        can discuss their requirements with JETCOTECH for a suitable
+                        high mast lighting solution.
+                    </p>
+
+                    <p>
+                        With its focus on engineered lighting solutions, JETCOTECH
+                        serves customers looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        in <?= htmlspecialchars($cityName); ?> as well as across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, project requirements and
+                        quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <script>
-$('.product').addClass(' current ');
-$('.MastPoles').addClass(' current ');
-$('.HighMastPoles').addClass(' current ');
+    $('.product').addClass(' current ');
+    $('.MastPoles').addClass(' current ');
+    $('.HighMastPoles').addClass(' current ');
 </script>
