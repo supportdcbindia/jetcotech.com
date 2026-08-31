@@ -15,8 +15,8 @@
 <?php */ ?>
     <?php
 
-    $type = strtolower(trim($_GET['type'] ?? 'manufacturer'));
-    $city = ucwords(str_replace('-', ' ', trim($_GET['city'] ?? 'India')));
+    $typeName = $type = strtolower(trim($_GET['type'] ?? 'manufacturer'));
+    $cityName = $city = ucwords(str_replace('-', ' ', trim($_GET['city'] ?? 'India')));
 
     /* Product name can come dynamically from your existing product/category variable */
     $productName = $productName ?? 'Industrial Products';
@@ -44,228 +44,41 @@
     $currentUrl = $siteUrl . $requestPath;
 
     /* ---------------------------------------------
-   City + Type SEO URL Detection
-   Example:
-   /cable-tray-manufacturer-in-ahmedabad.php
-   /high-mast-pole-supplier-in-mumbai.php
---------------------------------------------- */
-
-    $isCityTypePage = false;
-    $typeSlug = "";
-    $typeName = "";
-    $citySlug = "";
-    $cityName = "";
-    $productSlug = "";
-    $productName = "";
-
-    $pageSlug = preg_replace('/\.(php|html)$/i', '', $currentPage);
-
-    if (preg_match('/^(.+)-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)$/i', $pageSlug, $matches)) {
-        $isCityTypePage = true;
-
-        $productSlug = strtolower($matches[1]);
-        $typeSlug = strtolower($matches[2]);
-        $citySlug = strtolower($matches[3]);
-
-        $productName = ucwords(str_replace('-', ' ', $productSlug));
-        $typeName = ucwords(str_replace('-', ' ', $typeSlug));
-        $cityName = ucwords(str_replace('-', ' ', $citySlug));
-    }
-
-    /* ---------------------------------------------
-   Page Meta Data
---------------------------------------------- */
-
-    $pageMeta = [
-
-        "index.php" => [
-            "title" => "Jetcotech | Cable Tray, Lighting Pole & High Mast Pole Manufacturer",
-            "description" => "Jetcotech is a trusted manufacturer, supplier and exporter of cable trays, lighting poles, high mast poles, earthing solutions, solar structures and industrial electrical infrastructure products.",
-            "keywords" => "Cable Tray Manufacturer, Lighting Pole Manufacturer, High Mast Pole Manufacturer, Earthing Solutions, Solar Structure Manufacturer, Jetcotech",
-            "subject" => "Cable Tray, Lighting Pole and Electrical Infrastructure Manufacturer",
-            "type" => "website"
-        ],
-
-        "about-us.html" => [
-            "title" => "About Jetcotech | Cable Tray & Lighting Pole Manufacturer",
-            "description" => "Know more about Jetcotech, a manufacturer, supplier and exporter of cable trays, lighting poles, high mast poles, earthing solutions and solar structures.",
-            "keywords" => "About Jetcotech, Cable Tray Manufacturer, Lighting Pole Manufacturer, High Mast Pole Manufacturer, Electrical Infrastructure Manufacturer",
-            "subject" => "About Cable Tray and Lighting Pole Manufacturer",
-            "type" => "website"
-        ],
-
-        "about-us.php" => [
-            "title" => "About Jetcotech | Cable Tray & Lighting Pole Manufacturer",
-            "description" => "Know more about Jetcotech, a manufacturer, supplier and exporter of cable trays, lighting poles, high mast poles, earthing solutions and solar structures.",
-            "keywords" => "About Jetcotech, Cable Tray Manufacturer, Lighting Pole Manufacturer, High Mast Pole Manufacturer, Electrical Infrastructure Manufacturer",
-            "subject" => "About Cable Tray and Lighting Pole Manufacturer",
-            "type" => "website"
-        ],
-
-        "cable-tray.php" => [
-            "title" => "Cable Tray Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech is a leading Cable Tray Manufacturer and Supplier in India offering perforated cable tray, ladder cable tray, wire mesh cable tray, raceway cable tray and cable tray accessories.",
-            "keywords" => "Cable Tray Manufacturer, Cable Tray Supplier, Perforated Cable Tray, Ladder Cable Tray, Wire Mesh Cable Tray, Raceway Cable Tray, Cable Tray Accessories",
-            "subject" => "Cable Tray Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "perforated-cable-tray.php" => [
-            "title" => "Perforated Cable Tray Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech manufactures Perforated Cable Trays with durable construction, corrosion resistance and reliable support for industrial, commercial and infrastructure cable management applications.",
-            "keywords" => "Perforated Cable Tray Manufacturer, Perforated Cable Tray Supplier, GI Perforated Cable Tray, MS Cable Tray, Industrial Cable Tray",
-            "subject" => "Perforated Cable Tray Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "ladder-cable-tray.php" => [
-            "title" => "Ladder Cable Tray Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech offers Ladder Cable Tray systems for heavy cable support, power cables, control cables and industrial cable management applications with strong design and easy installation.",
-            "keywords" => "Ladder Cable Tray Manufacturer, Ladder Cable Tray Supplier, Heavy Duty Ladder Cable Tray, Industrial Ladder Cable Tray, Cable Tray System",
-            "subject" => "Ladder Cable Tray Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "wire-mesh-cable-tray.php" => [
-            "title" => "Wire Mesh Cable Tray Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech manufactures Wire Mesh Cable Trays for flexible, ventilated and lightweight cable management solutions used in commercial, industrial and electrical projects.",
-            "keywords" => "Wire Mesh Cable Tray Manufacturer, Wire Mesh Cable Tray Supplier, Basket Cable Tray, Cable Management Tray, Industrial Cable Tray",
-            "subject" => "Wire Mesh Cable Tray Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "raceway-cable-tray.php" => [
-            "title" => "Raceway Cable Tray Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech provides Raceway Cable Tray and cable trunking systems for safe routing, protection and organization of electrical wiring in industrial and commercial buildings.",
-            "keywords" => "Raceway Cable Tray Manufacturer, Raceway Cable Tray Supplier, Cable Trunking System, Raceway Cable Tray, Electrical Raceway",
-            "subject" => "Raceway Cable Tray Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "embossed-perforated-cable-tray.php" => [
-            "title" => "Embossed Perforated Cable Tray Manufacturer in India | Jetcotech",
-            "description" => "Jetcotech manufactures Embossed Perforated Cable Trays for strong, reliable and well-ventilated cable management in industrial and infrastructure projects.",
-            "keywords" => "Embossed Perforated Cable Tray Manufacturer, Embossed Cable Tray, Perforated Cable Tray Supplier, Heavy Duty Cable Tray",
-            "subject" => "Embossed Perforated Cable Tray Manufacturer in India",
-            "type" => "product"
-        ],
-
-        "heavy-duty-ladder-cable-tray.php" => [
-            "title" => "Heavy Duty Ladder Cable Tray Manufacturer in India | Jetcotech",
-            "description" => "Jetcotech offers Heavy Duty Ladder Cable Trays designed for high strength, heavy cable load, industrial power distribution and large infrastructure cable routing applications.",
-            "keywords" => "Heavy Duty Ladder Cable Tray Manufacturer, Heavy Duty Cable Tray, Industrial Ladder Cable Tray, Cable Tray Manufacturer India",
-            "subject" => "Heavy Duty Ladder Cable Tray Manufacturer in India",
-            "type" => "product"
-        ],
-
-        "lighting-poles.php" => [
-            "title" => "Lighting Pole Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech is a trusted Lighting Pole Manufacturer in India offering polygonal lighting poles, octagonal lighting poles, conical poles, signage mast poles and stadium mast poles.",
-            "keywords" => "Lighting Pole Manufacturer, Lighting Pole Supplier, Octagonal Pole Manufacturer, Polygonal Pole, Conical Pole, Street Light Pole Manufacturer",
-            "subject" => "Lighting Pole Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "polygonal-octagonal-lighting-poles.php" => [
-            "title" => "Polygonal & Octagonal Lighting Pole Manufacturer | Jetcotech",
-            "description" => "Jetcotech manufactures Polygonal and Octagonal Lighting Poles for street lighting, industrial lighting, commercial lighting and infrastructure lighting projects.",
-            "keywords" => "Polygonal Lighting Pole Manufacturer, Octagonal Lighting Pole Manufacturer, Street Light Pole Manufacturer, Lighting Pole Supplier",
-            "subject" => "Polygonal and Octagonal Lighting Pole Manufacturer",
-            "type" => "product"
-        ],
-
-        "conical-poles.php" => [
-            "title" => "Conical Pole Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech manufactures Conical Poles for lighting, street lighting, industrial lighting and outdoor infrastructure applications with durable structure and quality finish.",
-            "keywords" => "Conical Pole Manufacturer, Conical Pole Supplier, Street Light Pole, Lighting Pole Manufacturer, GI Conical Pole",
-            "subject" => "Conical Pole Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "high-mast-poles.php" => [
-            "title" => "High Mast Pole Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech is a reliable High Mast Pole Manufacturer and Supplier in India offering high mast lighting pole solutions for highways, yards, ports, industrial areas and large outdoor spaces.",
-            "keywords" => "High Mast Pole Manufacturer, High Mast Pole Supplier, High Mast Lighting Pole, High Mast Light Pole, Industrial Lighting Pole",
-            "subject" => "High Mast Pole Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "signage-mast-pole.html" => [
-            "title" => "Signage Mast Pole Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech manufactures Signage Mast Poles for outdoor advertising, highway signage, commercial signage and infrastructure signage applications.",
-            "keywords" => "Signage Mast Pole Manufacturer, Signage Pole Supplier, Outdoor Signage Pole, Highway Signage Pole, Mast Pole Manufacturer",
-            "subject" => "Signage Mast Pole Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "stadium-mast-poles.php" => [
-            "title" => "Stadium Mast Pole Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech offers Stadium Mast Poles for stadium lighting, sports ground lighting, large area lighting and outdoor lighting infrastructure projects.",
-            "keywords" => "Stadium Mast Pole Manufacturer, Stadium Lighting Pole, High Mast Stadium Pole, Sports Lighting Pole, Mast Pole Manufacturer",
-            "subject" => "Stadium Mast Pole Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "earthing-solutions.php" => [
-            "title" => "Earthing Solution Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech provides Earthing Solutions for electrical safety, industrial projects, solar projects, infrastructure and power distribution applications.",
-            "keywords" => "Earthing Solution Manufacturer, Earthing System Supplier, Electrical Earthing, Industrial Earthing, Earthing Material Manufacturer",
-            "subject" => "Earthing Solution Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "solar-structures.php" => [
-            "title" => "Solar Structure Manufacturer & Supplier in India | Jetcotech",
-            "description" => "Jetcotech manufactures Solar Structures for solar panel mounting, rooftop solar projects, ground mounted solar plants and industrial solar installations.",
-            "keywords" => "Solar Structure Manufacturer, Solar Mounting Structure, Solar Panel Structure, Solar Structure Supplier, Solar Support Structure",
-            "subject" => "Solar Structure Manufacturer & Supplier in India",
-            "type" => "product"
-        ],
-
-        "frp-moulded-pultruded.php" => [
-            "title" => "FRP Moulded & Pultruded Products Manufacturer | Jetcotech",
-            "description" => "Jetcotech supplies FRP moulded and pultruded products for industrial, electrical, infrastructure and corrosion resistant applications.",
-            "keywords" => "FRP Moulded Products, FRP Pultruded Products, FRP Product Manufacturer, Industrial FRP Products, FRP Supplier",
-            "subject" => "FRP Moulded and Pultruded Products Manufacturer",
-            "type" => "product"
-        ],
-
-        "become-a-dealer.html" => [
-            "title" => "Contact Jetcotech | Cable Tray & Lighting Pole Manufacturer",
-            "description" => "Contact Jetcotech for cable trays, lighting poles, high mast poles, earthing solutions, solar structures and electrical infrastructure product requirements.",
-            "keywords" => "Contact Jetcotech, Cable Tray Manufacturer Contact, Lighting Pole Manufacturer Contact, High Mast Pole Supplier, Become Dealer Jetcotech",
-            "subject" => "Contact Cable Tray and Lighting Pole Manufacturer",
-            "type" => "website"
-        ],
-
-        "contact-us.php" => [
-            "title" => "Contact Jetcotech | Cable Tray & Lighting Pole Manufacturer",
-            "description" => "Contact Jetcotech for cable trays, lighting poles, high mast poles, earthing solutions, solar structures and electrical infrastructure product requirements.",
-            "keywords" => "Contact Jetcotech, Cable Tray Manufacturer Contact, Lighting Pole Manufacturer Contact, High Mast Pole Supplier",
-            "subject" => "Contact Cable Tray and Lighting Pole Manufacturer",
-            "type" => "website"
-        ]
-    ];
-
-    /* ---------------------------------------------
    Dynamic City + Type Meta
 --------------------------------------------- */
 
     if ($isCityTypePage) {
 
-        $pageTitle = $productName . " " . $typeName . " in " . $cityName . " | " . $companyName;
+        // Clean values
+        $cityName = ucwords(str_replace("-", " ", trim($cityName)));
+        $typeName = ucwords(str_replace("-", " ", trim($typeName)));
 
-        $pageDescription = $companyName . " is a trusted " . $productName . " " . $typeName . " in " . $cityName . " offering high quality cable trays, lighting poles, high mast poles, earthing solutions, solar structures and industrial electrical infrastructure products.";
+        // Main Product Category
+        if (empty($productName)) {
+            $productName = "Industrial Products";
+        }
 
-        $pageKeywords = $productName . " " . $typeName . " in " . $cityName . ", " .
-            "Best " . $productName . " " . $typeName . " in " . $cityName . ", " .
-            "Top " . $productName . " " . $typeName . " in " . $cityName . ", " .
+        $pageTitle =
+            $productName . " " . $typeName . " in " . $cityName .
+            " | " . $companyName;
+
+        $pageDescription =
+            $companyName .
+            " is a manufacturer, supplier and exporter of " .
+            strtolower($productName) . " in " .
+            $cityName .
+            ", offering cable trays, lighting poles, mast poles and FRP products for industrial and commercial applications.";
+
+        $pageKeywords =
+            $productName . " " . $typeName . " in " . $cityName . ", " .
+            $productName . " in " . $cityName . ", " .
             $productName . " Manufacturer in " . $cityName . ", " .
             $productName . " Supplier in " . $cityName . ", " .
-            $productName . " Exporter in " . $cityName . ", " .
-            $productName . " Price in " . $cityName;
+            $productName . " Exporter in " . $cityName;
 
-        $pageSubject = $productName . " " . $typeName . " in " . $cityName;
+        $pageSubject =
+            $productName . " " . $typeName . " in " . $cityName;
+
         $pageType = "product";
     } else {
 
@@ -276,27 +89,51 @@
         if (!isset($pageMeta[$currentPage])) {
 
             $slug = preg_replace('/\.(php|html)$/i', '', $currentPage);
-            $pageName = ucwords(str_replace("-", " ", $slug));
+
+            $pageName = ucwords(
+                str_replace("-", " ", $slug)
+            );
 
             $pageMeta[$currentPage] = [
-                "title" => $pageName . " Manufacturer & Supplier in India | " . $companyName,
-                "description" => $companyName . " is a trusted manufacturer, supplier and exporter of " . $pageName . ", cable trays, lighting poles, high mast poles, earthing solutions and solar structures.",
-                "keywords" => $pageName . " Manufacturer, " . $pageName . " Supplier, " . $pageName . " Exporter, Cable Tray Manufacturer, Lighting Pole Manufacturer, High Mast Pole Manufacturer, " . $companyName,
-                "subject" => $pageName . " Manufacturer & Supplier in India",
+
+                "title" =>
+                $pageName .
+                    " Manufacturer & Supplier in India | " .
+                    $companyName,
+
+                "description" =>
+                $companyName .
+                    " is a trusted manufacturer, supplier and exporter of " .
+                    $pageName .
+                    ", cable trays, lighting poles, mast poles and FRP products.",
+
+                "keywords" =>
+                $pageName .
+                    " Manufacturer, " .
+                    $pageName .
+                    " Supplier, " .
+                    $pageName .
+                    " Exporter, " .
+                    $companyName,
+
+                "subject" =>
+                $pageName .
+                    " Manufacturer & Supplier in India",
+
                 "type" => "product"
             ];
         }
 
         $meta = $pageMeta[$currentPage];
 
-        $pageTitle = $meta['title'];
+        $pageTitle       = $meta['title'];
         $pageDescription = $meta['description'];
-        $pageKeywords = $meta['keywords'];
-        $pageSubject = $meta['subject'];
-        $pageType = $meta['type'];
+        $pageKeywords    = $meta['keywords'];
+        $pageSubject     = $meta['subject'];
+        $pageType        = $meta['type'];
     }
-
     ?>
+
 
     <title><?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
 
@@ -1176,13 +1013,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/cable-tray-<?=$type?>-in-<?=$city?>.php">Cable Tray</a>
+                                        <a href="/cable-tray-<?= $type ?>-in-<?= $city ?>.php">Cable Tray</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/cable-tray-<?=$type?>-in-<?=$city?>.php"
+                                    <a href="/cable-tray-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1217,13 +1054,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/lighting-poles-<?=$type?>-in-<?=$city?>.php">Lighting Poles</a>
+                                        <a href="/lighting-poles-<?= $type ?>-in-<?= $city ?>.php">Lighting Poles</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/lighting-poles-<?=$type?>-in-<?=$city?>.php"
+                                    <a href="/lighting-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1258,13 +1095,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/mast-poles-<?=$type?>-in-<?=$city?>.php">Mast Poles</a>
+                                        <a href="/mast-poles-<?= $type ?>-in-<?= $city ?>.php">Mast Poles</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/mast-poles-<?=$type?>-in-<?=$city?>.php"
+                                    <a href="/mast-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1299,13 +1136,13 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="/frp-products-<?=$type?>-in-<?=$city?>.php">FRP Products</a>
+                                        <a href="/frp-products-<?= $type ?>-in-<?= $city ?>.php">FRP Products</a>
                                     </h3>
                                 </div>
 
                                 <div class="product-card-actions">
 
-                                    <a href="/frp-products-<?=$type?>-in-<?=$city?>.php"
+                                    <a href="/frp-products-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
