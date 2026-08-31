@@ -1011,7 +1011,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="high-mast-poles-<?= $type ?>-in-<?= $city ?>.html">
+                                        <a href="high-mast-poles-<?= $type ?>-in-<?= $city ?>.php">
                                             High Mast Poles
                                         </a>
                                     </h3>
@@ -1019,7 +1019,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="high-mast-poles-<?= $type ?>-in-<?= $city ?>.html"
+                                    <a href="high-mast-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1052,7 +1052,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="flag-mast-poles-<?= $type ?>-in-<?= $city ?>.html">
+                                        <a href="flag-mast-poles-<?= $type ?>-in-<?= $city ?>.php">
                                             Flag Mast Poles
                                         </a>
                                     </h3>
@@ -1060,7 +1060,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="flag-mast-poles-<?= $type ?>-in-<?= $city ?>.html"
+                                    <a href="flag-mast-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1093,7 +1093,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="stadium-mast-poles-<?= $type ?>-in-<?= $city ?>.html">
+                                        <a href="stadium-mast-poles-<?= $type ?>-in-<?= $city ?>.php">
                                             Stadium Mast Poles
                                         </a>
                                     </h3>
@@ -1101,7 +1101,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="stadium-mast-poles-<?= $type ?>-in-<?= $city ?>.html"
+                                    <a href="stadium-mast-poles-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1134,7 +1134,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="signage-mast-pole-<?= $type ?>-in-<?= $city ?>.html">
+                                        <a href="signage-mast-pole-<?= $type ?>-in-<?= $city ?>.php">
                                             Signage Mast Poles
                                         </a>
                                     </h3>
@@ -1142,7 +1142,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="signage-mast-pole-<?= $type ?>-in-<?= $city ?>.html"
+                                    <a href="signage-mast-pole-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
