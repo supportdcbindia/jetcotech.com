@@ -175,11 +175,11 @@
     <meta name="geo.region" content="IN-GJ" />
     <meta name="geo.placename" content="Morbi, Gujarat, India" />
     <meta name="document-type" content="Public" />
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Add your Google verification code here -->
     <meta name="google-site-verification" content="ADD_GOOGLE_SITE_VERIFICATION_CODE_HERE" />
 
@@ -1173,6 +1173,118 @@
                 </div>
             </div>
         </div>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        INDUSTRIAL CABLE MANAGEMENT
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering reliable cable
+                        management solutions for industrial, commercial and
+                        infrastructure applications.
+                    </p>
+
+                    <p>
+                        Our Perforated Cable Trays are designed for organized routing
+                        and support of electrical cables, with different sizes,
+                        thicknesses and finishes available to suit diverse project
+                        requirements.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH PERFORATED CABLE TRAY
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies perforated cable tray solutions for electrical
+                        cable management requirements across industrial and
+                        commercial projects.
+                    </p>
+
+                    <p>
+                        Perforated Cable Trays provide an organized pathway for
+                        electrical cables and wiring systems. The perforated tray
+                        design allows cables to be routed and supported while
+                        providing a practical solution for different installation
+                        requirements.
+                    </p>
+
+                    <p>
+                        JETCOTECH offers cable tray solutions in different widths,
+                        heights and thicknesses. Standard product sizes are available,
+                        while tailor-made sizes can also be manufactured according to
+                        specific project requirements.
+                    </p>
+
+                    <p>
+                        Depending on the application, Perforated Cable Trays can be
+                        supplied with suitable finishes such as Pre-Galvanized,
+                        Hot Dip Galvanized and Powder Coated finishes. The selection
+                        can be made according to the installation environment and
+                        project specifications.
+                    </p>
+
+                    <p>
+                        Perforated Cable Trays are suitable for cable management
+                        requirements in industrial facilities, commercial buildings,
+                        electrical installations, infrastructure projects and other
+                        applications where systematic cable routing and support are
+                        required.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and cable management
+                        product range, JETCOTECH serves customers looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        project quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>
