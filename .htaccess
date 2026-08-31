@@ -19,6 +19,9 @@ RewriteRule ^index\.php$ https://www.jetcotech.com/? [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
 RewriteRule ^index\.php$ https://www.jetcotech.com/? [R=301,L]
 
+RewriteRule ^product/(manufacturer|supplier|exporter)/([a-zA-Z0-9-]+)/?$ product-city.php?type=$1&city=$2 [L,QSA]
+
+
 </IfModule>
 
 #RewriteRule 404.html/?$ 404.php
