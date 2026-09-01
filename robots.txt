@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary system/query URLs
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /test/
+Disallow: /tmp/
+
+# Block internal PHP/API/action files if they are not meant for indexing
+Disallow: /inquiry-action.php
+
+# Sitemap
+Sitemap: https://www.jetcotech.com/sitemap.xml
