@@ -28,34 +28,34 @@
     # ==================================================
     RewriteRule ^product/(manufacturer|supplier|exporter)/([a-zA-Z0-9-]+)/?$ product-city.php?type=$1&city=$2 [L,QSA]
 
-        RewriteRule ^cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ lighting-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ mast-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^frp-products-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-products-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ lighting-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ mast-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^frp-products-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-products-city.php?type=$1&city=$2 [L,QSA]
 
-RewriteRule ^high-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ high-mast-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^flag-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ flag-mast-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^stadium-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ stadium-mast-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^signage-mast-pole-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ signage-mast-pole-city.php?type=$1&city=$2 [L,QSA]
-
-
-RewriteRule ^perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^wire-mesh-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ wire-mesh-cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^raceway-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ raceway-cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^embossed-perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ embossed-perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^heavy-duty-ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ heavy-duty-ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^high-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ high-mast-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^flag-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ flag-mast-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^stadium-mast-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ stadium-mast-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^signage-mast-pole-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ signage-mast-pole-city.php?type=$1&city=$2 [L,QSA]
 
 
-RewriteRule ^polygonal-octagonal-lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ polygonal-octagonal-lighting-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^swaged-lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ swaged-lighting-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^conical-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ conical-poles-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^decorative-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ decorative-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^wire-mesh-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ wire-mesh-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^raceway-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ raceway-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^embossed-perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ embossed-perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^heavy-duty-ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ heavy-duty-ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
 
 
-RewriteRule ^frp-perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^frp-ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
-RewriteRule ^frp-moulded-&-pultruded-gratings-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-moulded-&-pultruded-gratings-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^polygonal-octagonal-lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ polygonal-octagonal-lighting-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^swaged-lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ swaged-lighting-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^conical-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ conical-poles-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^decorative-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ decorative-poles-city.php?type=$1&city=$2 [L,QSA]
+
+
+    RewriteRule ^frp-perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^frp-ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+    RewriteRule ^frp-moulded-&-pultruded-gratings-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-moulded-&-pultruded-gratings-city.php?type=$1&city=$2 [L,QSA]
     # ==================================================
     # EXISTING FILES
     # ==================================================
