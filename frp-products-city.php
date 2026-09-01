@@ -181,11 +181,11 @@
     <meta name="geo.region" content="IN-GJ" />
     <meta name="geo.placename" content="Morbi, Gujarat, India" />
     <meta name="document-type" content="Public" />
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Add your Google verification code here -->
     <meta name="google-site-verification" content="ADD_GOOGLE_SITE_VERIFICATION_CODE_HERE" />
 
@@ -1014,7 +1014,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="frp-perforated-cable-tray.php">
+                                        <a href="frp-perforated-cable-tray-<?= $type ?>-in-<?= $city ?>.php">
                                             FRP Perforated Cable Tray
                                         </a>
                                     </h3>
@@ -1022,7 +1022,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="frp-perforated-cable-tray.php"
+                                    <a href="frp-perforated-cable-tray-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1055,7 +1055,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="frp-ladder-cable-tray.php">
+                                        <a href="frp-ladder-cable-tray-<?= $type ?>-in-<?= $city ?>.php">
                                             FRP Ladder Cable Tray
                                         </a>
                                     </h3>
@@ -1063,7 +1063,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="frp-ladder-cable-tray.php"
+                                    <a href="frp-ladder-cable-tray-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
@@ -1096,7 +1096,7 @@
 
                                 <div class="case-study-title">
                                     <h3>
-                                        <a href="frp-moulded-&amp;-pultruded-gratings.html">
+                                        <a href="frp-moulded-&amp;-pultruded-gratings-<?= $type ?>-in-<?= $city ?>.php">
                                             FRP Moulded &amp; Pultruded Gratings
                                         </a>
                                     </h3>
@@ -1104,7 +1104,7 @@
 
                                 <div class="product-card-actions">
 
-                                    <a href="frp-moulded-&amp;-pultruded-gratings.html"
+                                    <a href="frp-moulded-&amp;-pultruded-gratings-<?= $type ?>-in-<?= $city ?>.php"
                                         class="product-view-btn">
                                         View Details
                                         <i class="fa fa-arrow-right"></i>
