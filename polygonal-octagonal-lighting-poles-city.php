@@ -983,7 +983,7 @@
         <section class="page-title" style="background-image:url(images/background/octagonal-lighting-poles-bg.jpg)">
             <div class="auto-container">
                 <div class="content">
-                    <h1>Polygonal / Octagonal Lighting Poles  <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
+                    <h1>Polygonal / Octagonal Lighting Poles <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
                     <ul class="page-breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li>Lighting Poles</li>
@@ -1316,6 +1316,119 @@
                 </div>
             </div>
         </div>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        ENGINEERED LIGHTING POLE SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering engineered
+                        lighting pole solutions for roads, highways, industrial
+                        facilities, commercial developments and outdoor lighting
+                        applications.
+                    </p>
+
+                    <p>
+                        Our Polygonal / Octagonal Lighting Poles are designed for
+                        dependable outdoor lighting installations and can be
+                        configured according to project requirements, installation
+                        conditions and application-specific needs.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH LIGHTING POLES
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies polygonal and octagonal lighting poles for
+                        outdoor illumination and infrastructure projects.
+                    </p>
+
+                    <p>
+                        Polygonal / Octagonal Lighting Poles provide a practical
+                        structural solution for supporting lighting fixtures across
+                        roads, highways, industrial premises, commercial areas,
+                        parking spaces and other outdoor locations requiring
+                        elevated lighting.
+                    </p>
+
+                    <p>
+                        The polygonal construction provides a suitable form for
+                        different lighting pole applications, while the pole
+                        configuration can be selected according to required height,
+                        luminaire arrangement, mounting requirements and site
+                        conditions.
+                    </p>
+
+                    <p>
+                        JETCOTECH focuses on application-specific manufacturing and
+                        can provide lighting pole solutions according to individual
+                        project requirements. Specifications can be considered based
+                        on the installation location, lighting requirement and
+                        structural requirements of the project.
+                    </p>
+
+                    <p>
+                        These lighting poles are suitable for road and highway
+                        lighting, industrial facilities, commercial developments,
+                        parking areas, public infrastructure and other outdoor
+                        lighting applications.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and lighting
+                        infrastructure product range, JETCOTECH serves customers
+                        looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        project quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>

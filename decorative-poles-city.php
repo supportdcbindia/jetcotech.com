@@ -983,7 +983,7 @@
         <section class="page-title" style="background-image:url(images/background/wire-mesh-cable-tray-bg.jpg)">
             <div class="auto-container">
                 <div class="content">
-                    <h1>Decorative / Customised Poles  <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
+                    <h1>Decorative / Customised Poles <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
                     <ul class="page-breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li>Cable Tray</li>
@@ -1021,7 +1021,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php include('get-quote.php');?>
+                            <?php include('get-quote.php'); ?>
 
                             <div class="sidebar-widget sidebar-blog-category">
                                 <div class="sidebar-title-two">
@@ -1093,14 +1093,128 @@
                 </div>
             </div>
         </div>
-        <?php require_once('footer.php');?>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        DECORATIVE LIGHTING POLE SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering decorative
+                        lighting pole solutions for commercial developments,
+                        public spaces, roads, landscape areas and outdoor
+                        architectural applications.
+                    </p>
+
+                    <p>
+                        Our Decorative Poles are designed to combine functional
+                        outdoor lighting with an attractive pole appearance.
+                        Different designs and configurations can be considered
+                        according to the architectural style and requirements of
+                        the project.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH DECORATIVE POLES
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies Decorative Poles for outdoor lighting,
+                        architectural and infrastructure applications.
+                    </p>
+
+                    <p>
+                        Decorative Poles are designed for projects where outdoor
+                        lighting needs to provide both illumination and an
+                        aesthetically suitable appearance. They can be used to
+                        enhance the visual character of roads, walkways, commercial
+                        developments, public areas and landscaped spaces.
+                    </p>
+
+                    <p>
+                        JETCOTECH offers Decorative Pole solutions for different
+                        project requirements. Pole design, height, lighting
+                        arrangement and other specifications can be considered
+                        according to the application, installation location and
+                        architectural requirements.
+                    </p>
+
+                    <p>
+                        These poles are suitable for commercial areas, residential
+                        developments, parks, gardens, walkways, institutional
+                        premises, roads, parking areas and other outdoor locations
+                        where decorative lighting is required.
+                    </p>
+
+                    <p>
+                        Decorative Poles can also be considered for customized
+                        projects where the pole design and lighting arrangement need
+                        to complement the surrounding architecture or landscape.
+                        Project-specific requirements can be discussed with the
+                        JETCOTECH team.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and lighting
+                        infrastructure product range, JETCOTECH serves customers
+                        looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        project quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <script>
-$('.product').addClass(' current ');
-$('.CableTray').addClass(' current ');
-$('.DecorativeCustomisedPoles').addClass(' current ');
+    $('.product').addClass(' current ');
+    $('.CableTray').addClass(' current ');
+    $('.DecorativeCustomisedPoles').addClass(' current ');
 </script>

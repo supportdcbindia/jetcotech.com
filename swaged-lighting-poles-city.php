@@ -983,7 +983,7 @@
         <section class="page-title" style="background-image:url(images/background/swaged-lighting-poles-bg.jpg)">
             <div class="auto-container">
                 <div class="content">
-                    <h1>Swaged Lighting Poles  <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
+                    <h1>Swaged Lighting Poles <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
                     <ul class="page-breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li>Lighting Poles</li>
@@ -1013,7 +1013,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php include('get-quote.php');?>
+                            <?php include('get-quote.php'); ?>
                             <div class="sidebar-widget sidebar-blog-category">
                                 <div class="sidebar-title-two">
                                     <h4>Features</h4>
@@ -1064,28 +1064,140 @@
                 </div>
             </div>
         </div>
-        <?php require_once('footer.php');?>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        ENGINEERED LIGHTING POLE SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering engineered
+                        lighting pole solutions for roads, highways, industrial
+                        facilities, commercial areas and outdoor infrastructure
+                        applications.
+                    </p>
+
+                    <p>
+                        Our Swaged Lighting Poles are designed for outdoor lighting
+                        installations and can be developed according to project
+                        requirements, pole height, lighting arrangement and
+                        application-specific needs.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH SWAGED LIGHTING POLES
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies Swaged Lighting Poles for outdoor illumination,
+                        infrastructure and project-specific lighting requirements.
+                    </p>
+
+                    <p>
+                        Swaged Lighting Poles are designed using a multi-section
+                        construction in which individual pole sections are swaged
+                        together to form a continuous lighting pole structure. This
+                        configuration makes them suitable for a variety of outdoor
+                        lighting and infrastructure applications.
+                    </p>
+
+                    <p>
+                        JETCOTECH offers Swaged Lighting Pole solutions for different
+                        project requirements, with specifications determined according
+                        to pole height, lighting fixture arrangement, installation
+                        conditions and structural requirements.
+                    </p>
+
+                    <p>
+                        These lighting poles can be used for road lighting, highway
+                        lighting, industrial premises, commercial developments,
+                        parking areas, institutional projects and other outdoor
+                        locations requiring elevated lighting fixtures.
+                    </p>
+
+                    <p>
+                        Depending on the project, pole dimensions, mounting
+                        configuration, finish and other specifications can be selected
+                        according to the intended application and site conditions.
+                        Customized solutions can also be considered for specific
+                        requirements.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and lighting
+                        infrastructure product range, JETCOTECH serves customers
+                        looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        project quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <style>
-.product .services-block-eleven .inner-box {
-    padding: 0px 10px;
-}
+    .product .services-block-eleven .inner-box {
+        padding: 0px 10px;
+    }
 
-.services-block-eleven .inner-box .content h6 {
-    text-align: left;
-}
+    .services-block-eleven .inner-box .content h6 {
+        text-align: left;
+    }
 
-.product .list-style-one li {
-    font-size: 12px;
-    margin-bottom: 5px;
-}
+    .product .list-style-one li {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
 </style>
 <script>
-$('.product').addClass(' current ');
-$('.LightingPoles').addClass(' current ');
-$('.SwagedLightingPoles').addClass(' current ');
+    $('.product').addClass(' current ');
+    $('.LightingPoles').addClass(' current ');
+    $('.SwagedLightingPoles').addClass(' current ');
 </script>

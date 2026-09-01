@@ -983,7 +983,7 @@
         <section class="page-title" style="background-image:url(images/background/high-mast-poles-bg.jpg)">
             <div class="auto-container">
                 <div class="content">
-                    <h1>Conical Poles  <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
+                    <h1>Conical Poles <?= ucfirst($type); ?> in <?= ucfirst($city); ?></h1>
                     <ul class="page-breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li>Mast Poles</li>
@@ -1023,7 +1023,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php include('get-quote.php');?>
+                            <?php include('get-quote.php'); ?>
 
                         </aside>
                     </div>
@@ -1281,14 +1281,128 @@
                 </div>
             </div>
         </div>
-        <?php require_once('footer.php');?>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        ENGINEERED LIGHTING POLE SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering engineered
+                        lighting pole solutions for roads, highways, industrial
+                        facilities, commercial developments and outdoor
+                        infrastructure applications.
+                    </p>
+
+                    <p>
+                        Our Conical Poles are designed for outdoor lighting
+                        applications where reliable structural support and an
+                        appropriate pole configuration are required. Solutions can
+                        be developed according to project requirements and
+                        installation conditions.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH CONICAL POLES
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies Conical Poles for outdoor lighting and
+                        infrastructure applications.
+                    </p>
+
+                    <p>
+                        Conical Poles are tapered lighting poles designed to provide
+                        support for lighting fixtures at roads, highways, industrial
+                        premises, commercial developments, parking areas and other
+                        outdoor locations. Their tapered profile provides a practical
+                        solution for a variety of lighting infrastructure projects.
+                    </p>
+
+                    <p>
+                        JETCOTECH develops lighting pole solutions according to
+                        application-specific requirements. Pole height, lighting
+                        arrangement, mounting configuration and other specifications
+                        can be considered based on the project and installation
+                        conditions.
+                    </p>
+
+                    <p>
+                        Conical Poles are suitable for projects requiring elevated
+                        outdoor lighting and can be used across road lighting,
+                        highway infrastructure, industrial areas, commercial
+                        developments, institutional premises and parking
+                        installations.
+                    </p>
+
+                    <p>
+                        The pole configuration can be selected according to the
+                        required lighting arrangement, installation location and
+                        project-specific structural requirements. Customized
+                        solutions can also be considered for specific applications.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and lighting
+                        infrastructure product range, JETCOTECH serves customers
+                        looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        project quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <script>
-$('.product').addClass(' current ');
-$('.LightingPoles').addClass(' current ');
-$('.ConicalPoles').addClass(' current ');
+    $('.product').addClass(' current ');
+    $('.LightingPoles').addClass(' current ');
+    $('.ConicalPoles').addClass(' current ');
 </script>
