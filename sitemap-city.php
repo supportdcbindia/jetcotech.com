@@ -384,7 +384,7 @@ $urls =[];
 foreach ($productPages as $productSlug) {
     foreach ($types as $type) {
         foreach ($cities as $city) {
-            addUrl($urls,  "product/" . $type . "/" . $city, "0.85", "monthly");
+            addUrl($urls,  $productSlug."-" . $type . "-in-" . $city.".php", "0.85", "monthly");
         }
     }
 }
