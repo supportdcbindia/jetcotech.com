@@ -51,6 +51,11 @@ RewriteRule ^polygonal-octagonal-lighting-poles-(manufacturer|supplier|exporter)
 RewriteRule ^swaged-lighting-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ swaged-lighting-poles-city.php?type=$1&city=$2 [L,QSA]
 RewriteRule ^conical-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ conical-poles-city.php?type=$1&city=$2 [L,QSA]
 RewriteRule ^decorative-poles-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ decorative-poles-city.php?type=$1&city=$2 [L,QSA]
+
+
+RewriteRule ^frp-perforated-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-perforated-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+RewriteRule ^frp-ladder-cable-tray-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-ladder-cable-tray-city.php?type=$1&city=$2 [L,QSA]
+RewriteRule ^frp-moulded-&-pultruded-gratings-(manufacturer|supplier|exporter)-in-([a-zA-Z0-9-]+)\.php$ frp-moulded-&-pultruded-gratings-city.php?type=$1&city=$2 [L,QSA]
     # ==================================================
     # EXISTING FILES
     # ==================================================
