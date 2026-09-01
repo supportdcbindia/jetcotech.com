@@ -1111,6 +1111,116 @@
                 </div>
             </div>
         </div>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        FRP CABLE MANAGEMENT SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering FRP cable
+                        management solutions for industrial, commercial and
+                        infrastructure applications.
+                    </p>
+
+                    <p>
+                        Our FRP Perforated Cable Trays are designed for organized
+                        routing and support of electrical cables in applications
+                        where a non-metallic cable management solution is required.
+                        They can be considered for different project and installation
+                        requirements.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH FRP PERFORATED CABLE TRAY
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies FRP Perforated Cable Trays for electrical cable
+                        management requirements across industrial, commercial and
+                        infrastructure projects.
+                    </p>
+
+                    <p>
+                        FRP Perforated Cable Tray provides a structured pathway for
+                        routing and supporting electrical cables. The perforated
+                        configuration offers a practical cable management arrangement
+                        for installations requiring an FRP-based tray solution.
+                    </p>
+
+                    <p>
+                        FRP cable tray systems are suitable for applications where
+                        non-metallic cable management solutions are preferred.
+                        Depending on the project, product dimensions and configuration
+                        can be selected according to cable quantity, installation
+                        conditions and application requirements.
+                    </p>
+
+                    <p>
+                        JETCOTECH offers FRP cable management products as part of its
+                        dedicated FRP product range, which also includes FRP Ladder
+                        Cable Tray and FRP Moulded &amp; Pultruded Gratings.
+                    </p>
+
+                    <p>
+                        FRP Perforated Cable Trays can be considered for industrial
+                        plants, chemical and process facilities, commercial projects,
+                        infrastructure installations and other locations requiring
+                        organized electrical cable routing.
+                    </p>
+
+                    <p>
+                        With its manufacturing capabilities and FRP product range,
+                        JETCOTECH serves customers looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        project quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
         <?php require_once('footer.php'); ?>
     </div>
     <?php require_once('script.php'); ?>

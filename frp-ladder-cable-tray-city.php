@@ -1016,7 +1016,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php include('get-quote.php');?>
+                            <?php include('get-quote.php'); ?>
                             <div class="sidebar-widget sidebar-blog-category">
                                 <div class="sidebar-title-two">
                                     <h4>Features</h4>
@@ -1119,14 +1119,135 @@
                 </div>
             </div>
         </div>
-        <?php require_once('footer.php');?>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        FRP CABLE MANAGEMENT SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering FRP cable
+                        management solutions for industrial, electrical,
+                        infrastructure and specialized applications.
+                    </p>
+
+                    <p>
+                        FRP Ladder Cable Trays are designed to provide an organized
+                        and reliable support system for electrical cables. Their
+                        non-metallic construction makes them suitable for applications
+                        where electrical and thermal non-conductivity, corrosion
+                        resistance and long service life are important.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH FRP LADDER CABLE TRAY
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH manufactures
+                        and supplies FRP Ladder Cable Trays for organized electrical
+                        cable routing and support across industrial, commercial and
+                        infrastructure projects.
+                    </p>
+
+                    <p>
+                        FRP Ladder Cable Tray provides a ladder-type support
+                        arrangement for electrical cables and wiring systems. Its FRP
+                        construction is suitable for applications where a
+                        non-metallic cable management solution is preferred.
+                    </p>
+
+                    <p>
+                        According to JETCOTECH, the FRP Ladder Cable Tray offers
+                        corrosion resistance, low maintenance, fire retardancy and a
+                        high strength-to-weight ratio. The product is also
+                        electrically and thermally non-conductive, making it suitable
+                        for specialized cable management applications.
+                    </p>
+
+                    <p>
+                        JETCOTECH offers FRP Ladder Cable Trays using ISOFR, VEFR and
+                        PHENOLIC raw materials, with finishes as per IS. Standard
+                        widths range from 100 mm to 1200 mm, with different height
+                        and thickness options available. The standard length is
+                        3000 mm, while tailor-made sizes can also be manufactured
+                        according to project requirements.
+                    </p>
+
+                    <p>
+                        FRP Ladder Cable Trays can be considered for industrial
+                        plants, chemical and process facilities, electrical
+                        installations, infrastructure projects and other applications
+                        where corrosion-resistant and non-conductive cable support is
+                        required.
+                    </p>
+
+                    <p>
+                        Additional product advantages include low installation cost,
+                        long service life and UV protection, making FRP Ladder Cable
+                        Tray a practical option for demanding cable management
+                        environments.
+                    </p>
+
+                    <p>
+                        With its FRP and cable management product capabilities,
+                        JETCOTECH serves customers looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for a
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized sizes and project
+                        quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <script>
-jQuery('.product').addClass(' current ');
-jQuery('.FrpProducts').addClass(' current ');
-jQuery('.FrpLadderCableTray').addClass(' current ');
+    jQuery('.product').addClass(' current ');
+    jQuery('.FrpProducts').addClass(' current ');
+    jQuery('.FrpLadderCableTray').addClass(' current ');
 </script>

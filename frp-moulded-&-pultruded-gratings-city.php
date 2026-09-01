@@ -1021,7 +1021,7 @@
                                 </div>
                             </div>
 
-                            <?php include('get-quote.php');?>
+                            <?php include('get-quote.php'); ?>
 
 
                             <div class="sidebar-widget sidebar-blog-category">
@@ -1103,14 +1103,127 @@
                 </div>
             </div>
         </div>
-        <?php require_once('footer.php');?>
+        <section class="products-intro-section">
+            <div class="auto-container">
+
+                <div class="products-intro-content">
+
+                    <span class="section-tag">
+                        FRP GRATING SOLUTIONS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        JETCOTECH is a trusted
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, offering FRP grating
+                        solutions for industrial, commercial and infrastructure
+                        applications.
+                    </p>
+
+                    <p>
+                        FRP Moulded &amp; Pultruded Gratings provide practical
+                        structural and access solutions for applications requiring
+                        durable, non-metallic grating systems. Different grating
+                        configurations can be selected according to project and
+                        installation requirements.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="products-seo-content">
+            <div class="auto-container">
+
+                <div class="products-seo-inner">
+
+                    <span class="section-tag">
+                        JETCOTECH FRP GRATINGS
+                    </span>
+
+                    <h2>
+                        <?= htmlspecialchars($productName); ?>
+                        <?= htmlspecialchars($typeName); ?>
+                        in <?= htmlspecialchars($cityName); ?>
+                    </h2>
+
+                    <p>
+                        Looking for a reliable
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>? JETCOTECH offers
+                        FRP Moulded and Pultruded Gratings for industrial,
+                        infrastructure and specialized applications.
+                    </p>
+
+                    <p>
+                        FRP gratings provide a non-metallic alternative for platforms,
+                        walkways, access areas and other installations where a
+                        lightweight and durable grating solution is required. Their
+                        construction makes them suitable for a range of demanding
+                        industrial environments.
+                    </p>
+
+                    <p>
+                        Moulded and Pultruded FRP Gratings are available in different
+                        configurations to suit specific application requirements.
+                        The appropriate grating type can be selected according to
+                        load requirements, installation conditions, dimensions and
+                        intended use.
+                    </p>
+
+                    <p>
+                        FRP grating solutions can be considered for chemical plants,
+                        process industries, industrial facilities, wastewater
+                        treatment areas, infrastructure projects, walkways,
+                        platforms and other locations requiring non-metallic access
+                        and flooring solutions.
+                    </p>
+
+                    <p>
+                        JETCOTECH focuses on application-oriented FRP solutions and
+                        can provide product configurations according to specific
+                        project requirements. Customized dimensions and project
+                        requirements can be discussed with the technical team.
+                    </p>
+
+                    <p>
+                        With its FRP product capabilities and industrial
+                        manufacturing expertise, JETCOTECH serves customers looking
+                        for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        solutions in <?= htmlspecialchars($cityName); ?> and across
+                        India.
+                    </p>
+
+                    <p>
+                        If you are looking for
+                        <?= strtolower(htmlspecialchars($productName)); ?>
+                        <?= strtolower(htmlspecialchars($typeName)); ?>
+                        in <?= htmlspecialchars($cityName); ?>, contact JETCOTECH
+                        for product specifications, customized requirements and
+                        project quotations.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <script>
-jQuery('.product').addClass(' current ');
-jQuery('.FrpProducts').addClass(' current ');
-jQuery('.FrpMouldedPultrudedGratings').addClass(' current ');
+    jQuery('.product').addClass(' current ');
+    jQuery('.FrpProducts').addClass(' current ');
+    jQuery('.FrpMouldedPultrudedGratings').addClass(' current ');
 </script>
