@@ -179,7 +179,7 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
                                 </div>
                                 <div class="form-group has-feedback class-feedback">
                                     <div class="col-md-12">
-                                        <div class="row p-0">
+                                        <div class="">
                                             <div class="col-md-12 col-sm-12 col-xs-12 mybottom p-0">
                                                 <select id="country1" name="country" class="form-control"></select>
                                             </div>
