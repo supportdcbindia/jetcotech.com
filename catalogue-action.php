@@ -46,8 +46,8 @@ $email = $_POST['email'];
 
 $phone = $_POST['number'];
 
-$city = $_POST['city'];
-
+$city = $_POST['country'];
+$code = $_POST['code'];
 $path = $_POST['path'];
 
 $path1 = explode("/", $path);
@@ -170,13 +170,13 @@ if($response->result){
 
                                         <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Mobile:</td>
 
-                                        <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>' . $phone . '</b></td>
+                                        <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>'.$code."".$phone.'</b></td>
 
                                       </tr>
 
                                       <tr>
 
-                                        <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">City:</td>
+                                        <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Country:</td>
 
                                         <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000;line-height:17px"><b>' . $city . '</b></td>
 

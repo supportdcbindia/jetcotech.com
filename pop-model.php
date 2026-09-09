@@ -81,8 +81,17 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
                                 </div>
                                 <div class="form-group has-feedback class-feedback">
                                     <div class="col-md-12">
-                                        <input name="city" id="city" type="text" placeholder="City"
-                                            class="form-control">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 mybottom" style="padding: 0px 12px;">
+                                                <select id="country" name="country" class="form-control"></select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 mybottom" style="display: none;">
+                                                <select name="code" id="state" class="form-control"
+                                                    style="padding-right: 0;color: #999;">
+                                                    <option value="">+00</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group has-feedback">
@@ -170,8 +179,17 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
                                 </div>
                                 <div class="form-group has-feedback class-feedback">
                                     <div class="col-md-12">
-                                        <input name="city" id="city" type="text" placeholder="City"
-                                            class="form-control">
+                                        <div class="row p-0">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 mybottom p-0">
+                                                <select id="country1" name="country" class="form-control"></select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 mybottom p-0" style="display: none;">
+                                                <select name="code" id="state1" class="form-control"
+                                                    style="padding-right: 0;color: #999;">
+                                                    <option value="">+00</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group has-feedback">

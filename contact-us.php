@@ -73,11 +73,20 @@
                                         </div>
                                     </div>
                                     <div class="form-group has-feedback class-feedback">
-                                        <div class="col-md-12">
-                                            <input name="city" id="city" type="text" placeholder="City"
-                                                class="form-control">
+                                    <div class="col-md-12">
+                                        <div class="row p-0">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 mybottom p-0">
+                                                <select id="country2" name="country" class="form-control"></select>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 mybottom p-0" style="display: none;">
+                                                <select name="code" id="state2" class="form-control"
+                                                    style="padding-right: 0;color: #999;">
+                                                    <option value="">+00</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
                                     <div class="form-group has-feedback">
                                         <div class="col-md-12">
                                             <input name="number" id="number" type="tel" placeholder="Phone"

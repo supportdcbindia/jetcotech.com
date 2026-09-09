@@ -18,7 +18,23 @@
 <script src="js/slider/ubislider.js"></script>
 <script src="js/index.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+ <script src="js/js.js"></script>
 <script src="js/form-buzz.js"></script>
+<script language="javascript">
+     populateCountries("country", "state");
+ </script>
+ <script language="javascript">
+     populateCountries("country1", "state1");
+ </script>
+ <script language="javascript">
+     populateCountries("country2", "state2");
+ </script>
+ <script language="javascript">
+     populateCountries("country3", "state3");
+ </script>
+ <script language="javascript">
+     populateCountries("country11", "state11");
+ </script>
 <script type="text/javascript">
 $('#pdrzoom').ubislider({
     arrowsToggle: true,
