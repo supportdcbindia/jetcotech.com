@@ -94,6 +94,11 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group has-feedback class-feedback">
+                                    <div class="col-md-12">
+                                        <input name="city" id="city" type="text" placeholder="City" class="form-control">
+                                    </div>
+                                </div>
                                 <div class="form-group has-feedback">
                                     <div class="col-md-12">
                                         <input name="number" id="number" type="tel" placeholder="Phone" maxlength="15"
@@ -190,6 +195,11 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
                                                 </select>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback class-feedback">
+                                    <div class="col-md-12">
+                                        <input name="city" id="city" type="text" placeholder="City" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group has-feedback">

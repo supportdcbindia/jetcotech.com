@@ -229,6 +229,14 @@ if($response->result){
             <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000"><b>'.$country.'</b></td>
 
           </tr>
+          <tr>
+
+                                        <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">City:</td>
+
+                                        <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000;line-height:17px"><b>' . $_POST['city'] . '</b></td>
+
+                                      </tr>
+
 
           
 

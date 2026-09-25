@@ -2,38 +2,38 @@
 <html>
 
 <head>
-    <?php require_once('head.php');?>
+    <?php require_once('head.php'); ?>
     <title>Contact Us | JetcoTech - Morbi</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NCRG5N2H');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NCRG5N2H');
     </script>
     <!-- End Google Tag Manager -->
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
     </script>
 </head>
 
 <body>
     <div class="page-wrapper">
-        <?php require_once('header.php');?>
+        <?php require_once('header.php'); ?>
         <section class="page-title" style="background-image:url(images/background/contact.jpg)">
             <div class="auto-container">
                 <div class="content">
@@ -73,20 +73,25 @@
                                         </div>
                                     </div>
                                     <div class="form-group has-feedback class-feedback">
-                                    <div class="col-md-12">
-                                        <div class="">
-                                            <div class="col-md-12 col-sm-12 col-xs-12 mybottom p-0">
-                                                <select id="country2" name="country" class="form-control"></select>
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 col-xs-4 mybottom p-0" style="display: none;">
-                                                <select name="code" id="state2" class="form-control"
-                                                    style="padding-right: 0;color: #999;">
-                                                    <option value="">+00</option>
-                                                </select>
+                                        <div class="col-md-12">
+                                            <div class="">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 mybottom p-0">
+                                                    <select id="country2" name="country" class="form-control"></select>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 mybottom p-0" style="display: none;">
+                                                    <select name="code" id="state2" class="form-control"
+                                                        style="padding-right: 0;color: #999;">
+                                                        <option value="">+00</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="form-group has-feedback class-feedback">
+                                        <div class="col-md-12">
+                                            <input name="city" id="city" type="text" placeholder="City" class="form-control">
+                                        </div>
+                                    </div>
                                     <div class="form-group has-feedback">
                                         <div class="col-md-12">
                                             <input name="number" id="number" type="tel" placeholder="Phone"
@@ -123,19 +128,19 @@
                         </div>
                     </div>
                     <div class="sidebar-side col-lg-4 col-md-12 col-sm-12 hide_contact_sidebar">
-                        <?php require_once('widget-contact.php');?>
+                        <?php require_once('widget-contact.php'); ?>
                     </div>
                 </div>
             </div>
         </section>
-        <?php require_once('footer.php');?>
+        <?php require_once('footer.php'); ?>
     </div>
-    <?php require_once('script.php');?>
+    <?php require_once('script.php'); ?>
 </body>
 
 </html>
 <script>
-$('.contact').addClass(' current ');
-$('.contactus').addClass(' current ');
-$('.contact').addClass(' active ');
+    $('.contact').addClass(' current ');
+    $('.contactus').addClass(' current ');
+    $('.contact').addClass(' active ');
 </script>
