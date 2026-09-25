@@ -42,9 +42,14 @@ $(document).ready(function() {
         required: true,
         namenew: true,
       },
+      
       number: {
         required: true,
         number: true,
+      },
+      country: {
+        required: true,
+        
       },
       message: {
         required: true,
@@ -113,6 +118,10 @@ $(document).ready(function() {
         required: true,
         namenew: true,
       },
+      country: {
+        required: true,
+        
+      },
       number: {
         required: true,
         number: true,
@@ -176,6 +185,10 @@ $(document).ready(function() {
       city: {
         required: true,
         namenew: true,
+      },
+      country: {
+        required: true,
+        
       },
       number: {
         required: true,
