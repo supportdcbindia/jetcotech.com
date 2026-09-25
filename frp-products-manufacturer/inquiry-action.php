@@ -47,6 +47,8 @@ $phone    = htmlspecialchars(trim($_POST['phone']));
 $company     = htmlspecialchars(trim($_POST['company']));
 $country     = htmlspecialchars(trim($_POST['country']));
 
+$city     = htmlspecialchars(trim($_POST['city']));
+
 $logData = [
   "time"     => date("Y-m-d H:i:s"),
   "ip"       => $_SERVER['REMOTE_ADDR'],
@@ -122,6 +124,7 @@ $subject = "Lead From Jetco Industries FRP Products Landing Page";
     <tr><td>Mobile:</td><td><b>' . $phone . '</b></td></tr>
     
     <tr><td>Country :</td><td><b>' . $country . '</b></td></tr>
+    <tr><td>City :</td><td><b>' . $city . '</b></td></tr>
     <tr><td>Message:</td><td><b>' . $message . '</b></td></tr>
 
     </table>
