@@ -39,6 +39,8 @@ function send_request($data)
   return $response;
 }
 
+echo "<pre>"; print_r($_POST); exit;
+
 // ================== INPUT (SECOND CODE FIELDS) ==================
 $name     = htmlspecialchars(trim($_POST['name']));
 $email    = htmlspecialchars(trim($_POST['email']));
