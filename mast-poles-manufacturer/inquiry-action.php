@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
+// ================== ERROR + HEADERS ==================
+error_reporting(0);
 // header("Access-Control-Allow-Origin: *");
 // header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 // header("Access-Control-Allow-Headers: Content-Type, Authorization");
@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 //     exit();
 // }
 
-// header("Content-Type: application/json");
+header("Content-Type: application/json");
 
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
@@ -27,7 +27,6 @@ fwrite($myfile, json_encode($_POST));
 // ================== API SPAM CHECK ==================
 function send_request($data)
 {
-  return true;
   $curl = curl_init();
   curl_setopt_array($curl, array(
     CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
@@ -68,9 +67,9 @@ $curlArr = array_merge($_POST, $_SERVER);
 $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
 $curlArr['save'] = false;
 
-// $response = send_request($curlArr);
+$response = send_request($curlArr);
 
-if (false) {
+if ($response->result) {
   $curlArr['save'] = true;
   $curlArr['bcoz'] = "API FAIL";
   $curlArr['status'] = "FAIL";
@@ -91,24 +90,24 @@ if (
 }
 
 // ================== EMAIL VALIDATION ==================
-// if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
-//   echo json_encode(["success" => false]);
-//   exit;
-// }
+if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
+  echo json_encode(["success" => false]);
+  exit;
+}
 
-// // ================== JUNK CHECK ==================
-// preg_match_all('#\bhttps?://#', $message, $links);
-// preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $emails);
+// ================== JUNK CHECK ==================
+preg_match_all('#\bhttps?://#', $message, $links);
+preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $emails);
 
-// if (count($links[0]) > 0 || count($emails[0]) > 0) {
-//   echo json_encode(["success" => false]);
-//   exit;
-// }
+if (count($links[0]) > 0 || count($emails[0]) > 0) {
+  echo json_encode(["success" => false]);
+  exit;
+}
 
 
-// $form_type = htmlspecialchars(trim($_POST['form_type']));
+$form_type = htmlspecialchars(trim($_POST['form_type']));
 
-$subject = "Lead From Jetco Industries Mast Pole Manufacturer Landing Page ";
+$subject = "Lead From Jetco Industries Mast Pole Manufacturer Landing Page";
 
   $message_body = '
     <html>
@@ -169,32 +168,22 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $response = curl_exec($ch);
-
 $result = json_decode($response, true);
 
-// ================== CRM ==================
+$url = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
+  'name' => $name,
+  'mobile' => $phone,
+  'email' => $email,
+  'brancharea' => $message,
+  'source' => '10',
+  'company' => '1'
+]);
 
-// $crmUrl = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
-//     'name'       => $name,
-//     'mobile'     => $phone,
-//     'email'      => $email,
-//     'brancharea' => $message,
-//     'source'     => '10',
-//     'company'    => '1'
-// ]);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-// $crmCh = curl_init();
-
-// curl_setopt_array($crmCh, [
-//     CURLOPT_URL => $crmUrl,
-//     CURLOPT_RETURNTRANSFER => true,
-//     CURLOPT_TIMEOUT => 30
-// ]);
-
-// $crmResponse = curl_exec($crmCh);
-// $crmError = curl_error($crmCh);
-
-// curl_close($crmCh);
+$response = curl_exec($ch);
 // if (curl_errno($ch)) {
 //     echo 'Error: ' . curl_error($ch);
 // } else {
@@ -209,3 +198,4 @@ if (isset($result['data']['succeeded']) && $result['data']['succeeded'] > 0) {
 } else {
   echo json_encode(["success" => false]);
 }
+?>
