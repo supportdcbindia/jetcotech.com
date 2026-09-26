@@ -11,7 +11,7 @@ error_reporting(0);
 //     exit();
 // }
 
-header("Content-Type: application/json");
+// header("Content-Type: application/json");
 
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
@@ -48,27 +48,27 @@ $phone    = htmlspecialchars(trim($_POST['phone']));
 $company     = htmlspecialchars(trim($_POST['company']));
 $country     = htmlspecialchars(trim($_POST['country']));
 $city     = htmlspecialchars(trim($_POST['city']));
-$logData = [
-  "time"     => date("Y-m-d H:i:s"),
-  "ip"       => $_SERVER['REMOTE_ADDR'],
-  "name"     => $name,
-  "email"    => $email,
-  "phone"    => $phone,
-  "company_name"  => $company,
-  "message"  => $message,
-  "user_agent" => $_SERVER['HTTP_USER_AGENT']
-];
+// $logData = [
+//   "time"     => date("Y-m-d H:i:s"),
+//   "ip"       => $_SERVER['REMOTE_ADDR'],
+//   "name"     => $name,
+//   "email"    => $email,
+//   "phone"    => $phone,
+//   "company_name"  => $company,
+//   "message"  => $message,
+//   "user_agent" => $_SERVER['HTTP_USER_AGENT']
+// ];
 
-$logFile = fopen("inquiry-log.txt", "a+");
-fwrite($logFile, json_encode($logData) . PHP_EOL);
-fclose($logFile);
+// $logFile = fopen("inquiry-log.txt", "a+");
+// fwrite($logFile, json_encode($logData) . PHP_EOL);
+// fclose($logFile);
 
 // ================== API CHECK ==================
-$curlArr = array_merge($_POST, $_SERVER);
-$curlArr['sitename'] = $_SERVER['HTTP_HOST'];
-$curlArr['save'] = false;
+// $curlArr = array_merge($_POST, $_SERVER);
+// $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
+// $curlArr['save'] = false;
 
-$response = send_request($curlArr);
+// $response = send_request($curlArr);
 
 if (false) {
   $curlArr['save'] = true;
@@ -81,32 +81,32 @@ if (false) {
 }
 
 // ================== REQUIRED VALIDATION ==================
-if (
-  empty($name) ||
-  empty($email) ||
-  empty($phone)
-) {
-  echo json_encode(["success" => false]);
-  exit;
-}
+// if (
+//   empty($name) ||
+//   empty($email) ||
+//   empty($phone)
+// ) {
+//   echo json_encode(["success" => false]);
+//   exit;
+// }
 
 // ================== EMAIL VALIDATION ==================
-if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
-  echo json_encode(["success" => false]);
-  exit;
-}
+// if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
+//   echo json_encode(["success" => false]);
+//   exit;
+// }
 
-// ================== JUNK CHECK ==================
-preg_match_all('#\bhttps?://#', $message, $links);
-preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $emails);
+// // ================== JUNK CHECK ==================
+// preg_match_all('#\bhttps?://#', $message, $links);
+// preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $emails);
 
-if (count($links[0]) > 0 || count($emails[0]) > 0) {
-  echo json_encode(["success" => false]);
-  exit;
-}
+// if (count($links[0]) > 0 || count($emails[0]) > 0) {
+//   echo json_encode(["success" => false]);
+//   exit;
+// }
 
 
-$form_type = htmlspecialchars(trim($_POST['form_type']));
+// $form_type = htmlspecialchars(trim($_POST['form_type']));
 
 $subject = "Lead From Jetco Industries Mast Pole Manufacturer Landing Page";
 
