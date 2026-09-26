@@ -25,20 +25,20 @@ fwrite($myfile, json_encode($_SERVER));
 fwrite($myfile, json_encode($_POST));
 
 // ================== API SPAM CHECK ==================
-// function send_request($data)
-// {
-//   return true;
-//   $curl = curl_init();
-//   curl_setopt_array($curl, array(
-//     CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
-//     CURLOPT_RETURNTRANSFER => true,
-//     CURLOPT_POST => true,
-//     CURLOPT_POSTFIELDS => $data,
-//   ));
-//   $response = json_decode(curl_exec($curl));
-//   curl_close($curl);
-//   return $response;
-// }
+function send_request($data)
+{
+  return true;
+  $curl = curl_init();
+  curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => $data,
+  ));
+  $response = json_decode(curl_exec($curl));
+  curl_close($curl);
+  return $response;
+}
 
 // ================== INPUT (SECOND CODE FIELDS) ==================
 $name     = htmlspecialchars(trim($_POST['name']));
@@ -91,19 +91,19 @@ if (
 }
 
 // ================== EMAIL VALIDATION ==================
-if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
-  echo json_encode(["success" => false]);
-  exit;
-}
+// if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
+//   echo json_encode(["success" => false]);
+//   exit;
+// }
 
-// ================== JUNK CHECK ==================
-preg_match_all('#\bhttps?://#', $message, $links);
-preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $emails);
+// // ================== JUNK CHECK ==================
+// preg_match_all('#\bhttps?://#', $message, $links);
+// preg_match_all('/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i', $message, $emails);
 
-if (count($links[0]) > 0 || count($emails[0]) > 0) {
-  echo json_encode(["success" => false]);
-  exit;
-}
+// if (count($links[0]) > 0 || count($emails[0]) > 0) {
+//   echo json_encode(["success" => false]);
+//   exit;
+// }
 
 
 // $form_type = htmlspecialchars(trim($_POST['form_type']));
@@ -174,27 +174,27 @@ $result = json_decode($response, true);
 
 // ================== CRM ==================
 
-$crmUrl = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
-    'name'       => $name,
-    'mobile'     => $phone,
-    'email'      => $email,
-    'brancharea' => $message,
-    'source'     => '10',
-    'company'    => '1'
-]);
+// $crmUrl = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
+//     'name'       => $name,
+//     'mobile'     => $phone,
+//     'email'      => $email,
+//     'brancharea' => $message,
+//     'source'     => '10',
+//     'company'    => '1'
+// ]);
 
-$crmCh = curl_init();
+// $crmCh = curl_init();
 
-curl_setopt_array($crmCh, [
-    CURLOPT_URL => $crmUrl,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT => 30
-]);
+// curl_setopt_array($crmCh, [
+//     CURLOPT_URL => $crmUrl,
+//     CURLOPT_RETURNTRANSFER => true,
+//     CURLOPT_TIMEOUT => 30
+// ]);
 
-$crmResponse = curl_exec($crmCh);
-$crmError = curl_error($crmCh);
+// $crmResponse = curl_exec($crmCh);
+// $crmError = curl_error($crmCh);
 
-curl_close($crmCh);
+// curl_close($crmCh);
 // if (curl_errno($ch)) {
 //     echo 'Error: ' . curl_error($ch);
 // } else {
