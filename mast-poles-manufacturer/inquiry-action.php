@@ -6,9 +6,9 @@ error_reporting(0);
 // header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 // header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
-echo "<pre>"; print_r($_POST);
-echo "<pre>"; print_r($_REQUEST);
-exit;
+// echo "<pre>"; print_r($_POST);
+// echo "<pre>"; print_r($_REQUEST);
+// exit;
 
 // if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 //     http_response_code(200);
@@ -74,15 +74,15 @@ $city     = htmlspecialchars(trim($_POST['city']));
 
 // $response = send_request($curlArr);
 
-if (false) {
-  $curlArr['save'] = true;
-  $curlArr['bcoz'] = "API FAIL";
-  $curlArr['status'] = "FAIL";
-  send_request($curlArr);
+// if (false) {
+//   $curlArr['save'] = true;
+//   $curlArr['bcoz'] = "API FAIL";
+//   $curlArr['status'] = "FAIL";
+//   send_request($curlArr);
 
-  echo json_encode(["success" => false]);
-  exit;
-}
+//   echo json_encode(["success" => false]);
+//   exit;
+// }
 
 // ================== REQUIRED VALIDATION ==================
 // if (
