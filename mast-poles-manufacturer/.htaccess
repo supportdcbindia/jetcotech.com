@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /mast-poles-manufacturer
+RewriteBase /mast-poles-manufacturer/
 
 # Force HTTPS + WWW
 RewriteCond %{HTTPS} !=on [OR]
