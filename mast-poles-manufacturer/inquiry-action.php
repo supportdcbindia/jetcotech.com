@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 //     exit();
 // }
 
-header("Content-Type: application/json");
+// header("Content-Type: application/json");
 
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
@@ -25,20 +25,20 @@ fwrite($myfile, json_encode($_SERVER));
 fwrite($myfile, json_encode($_POST));
 
 // ================== API SPAM CHECK ==================
-function send_request($data)
-{
-  return true;
-  $curl = curl_init();
-  curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POST => true,
-    CURLOPT_POSTFIELDS => $data,
-  ));
-  $response = json_decode(curl_exec($curl));
-  curl_close($curl);
-  return $response;
-}
+// function send_request($data)
+// {
+//   return true;
+//   $curl = curl_init();
+//   curl_setopt_array($curl, array(
+//     CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
+//     CURLOPT_RETURNTRANSFER => true,
+//     CURLOPT_POST => true,
+//     CURLOPT_POSTFIELDS => $data,
+//   ));
+//   $response = json_decode(curl_exec($curl));
+//   curl_close($curl);
+//   return $response;
+// }
 
 // ================== INPUT (SECOND CODE FIELDS) ==================
 $name     = htmlspecialchars(trim($_POST['name']));
