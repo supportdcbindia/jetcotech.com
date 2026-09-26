@@ -68,9 +68,9 @@ $curlArr = array_merge($_POST, $_SERVER);
 $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
 $curlArr['save'] = false;
 
-$response = send_request($curlArr);
+// $response = send_request($curlArr);
 
-if ($response == false) {
+if (false) {
   $curlArr['save'] = true;
   $curlArr['bcoz'] = "API FAIL";
   $curlArr['status'] = "FAIL";
