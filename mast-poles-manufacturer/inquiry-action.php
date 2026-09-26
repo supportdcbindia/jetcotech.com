@@ -106,7 +106,7 @@ if (count($links[0]) > 0 || count($emails[0]) > 0) {
 }
 
 
-$form_type = htmlspecialchars(trim($_POST['form_type']));
+// $form_type = htmlspecialchars(trim($_POST['form_type']));
 
 $subject = "Lead From Jetco Industries Mast Pole Manufacturer Landing Page ";
 
