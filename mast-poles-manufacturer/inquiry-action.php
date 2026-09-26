@@ -39,8 +39,6 @@ function send_request($data)
   return $response;
 }
 
-echo "<pre>"; print_r($_POST); exit;
-
 // ================== INPUT (SECOND CODE FIELDS) ==================
 $name     = htmlspecialchars(trim($_POST['name']));
 $email    = htmlspecialchars(trim($_POST['email']));
@@ -70,6 +68,10 @@ $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
 $curlArr['save'] = false;
 
 $response = send_request($curlArr);
+
+echo "<pre>"; print_r($response);
+echo "<pre>"; print_r($_POST);
+exit;
 
 if ($response->result) {
   $curlArr['save'] = true;
