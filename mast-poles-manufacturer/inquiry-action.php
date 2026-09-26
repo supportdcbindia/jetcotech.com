@@ -171,20 +171,20 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 $result = json_decode($response, true);
 
-$url = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
-  'name' => $name,
-  'mobile' => $phone,
-  'email' => $email,
-  'brancharea' => $message,
-  'source' => '10',
-  'company' => '1'
-]);
+// $url = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
+//   'name' => $name,
+//   'mobile' => $phone,
+//   'email' => $email,
+//   'brancharea' => $message,
+//   'source' => '10',
+//   'company' => '1'
+// ]);
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+// $ch = curl_init();
+// curl_setopt($ch, CURLOPT_URL, $url);
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-$response = curl_exec($ch);
+// $response = curl_exec($ch);
 // if (curl_errno($ch)) {
 //     echo 'Error: ' . curl_error($ch);
 // } else {
