@@ -27,6 +27,7 @@ fwrite($myfile, json_encode($_POST));
 // ================== API SPAM CHECK ==================
 function send_request($data)
 {
+  return true;
   $curl = curl_init();
   curl_setopt_array($curl, array(
     CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
@@ -69,7 +70,7 @@ $curlArr['save'] = false;
 
 $response = send_request($curlArr);
 
-if ($response->result) {
+if (false) {
   $curlArr['save'] = true;
   $curlArr['bcoz'] = "API FAIL";
   $curlArr['status'] = "FAIL";
