@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 //     exit();
 // }
 
-
+header("Content-Type: application/json");
 
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
@@ -27,7 +27,6 @@ fwrite($myfile, json_encode($_POST));
 // ================== API SPAM CHECK ==================
 function send_request($data)
 {
-  return true;
   $curl = curl_init();
   curl_setopt_array($curl, array(
     CURLOPT_URL => 'https://dcbindia.in/akismetcurl/akismet_check.php',
@@ -68,9 +67,9 @@ $curlArr = array_merge($_POST, $_SERVER);
 $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
 $curlArr['save'] = false;
 
-// $response = send_request($curlArr);
+$response = send_request($curlArr);
 
-if (false) {
+if ($response->result) {
   $curlArr['save'] = true;
   $curlArr['bcoz'] = "API FAIL";
   $curlArr['status'] = "FAIL";
