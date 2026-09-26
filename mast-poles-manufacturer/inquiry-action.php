@@ -169,22 +169,32 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $response = curl_exec($ch);
+
 $result = json_decode($response, true);
 
-$url = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
-  'name' => $name,
-  'mobile' => $phone,
-  'email' => $email,
-  'brancharea' => $message,
-  'source' => '10',
-  'company' => '1'
+// ================== CRM ==================
+
+$crmUrl = "https://jetcotech.teknovatecrm.in/lead?" . http_build_query([
+    'name'       => $name,
+    'mobile'     => $phone,
+    'email'      => $email,
+    'brancharea' => $message,
+    'source'     => '10',
+    'company'    => '1'
 ]);
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$crmCh = curl_init();
 
-$response = curl_exec($ch);
+curl_setopt_array($crmCh, [
+    CURLOPT_URL => $crmUrl,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_TIMEOUT => 30
+]);
+
+$crmResponse = curl_exec($crmCh);
+$crmError = curl_error($crmCh);
+
+curl_close($crmCh);
 // if (curl_errno($ch)) {
 //     echo 'Error: ' . curl_error($ch);
 // } else {
